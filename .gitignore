@@ -1,0 +1,16 @@
+
+.DS_Store
+trans/1.txt
+trans/2.txt
+trans/3.txt
+trans/4.txt
+trans/add_project_info.py
+trans/merge_en_zh.py
+trans/name-description.txt
+trans/name_des.txt
+trans/projects.yaml
+trans/translate.py
+trans/translation_cate.txt
+trans/translation_des.txt
+trans/translation_explain.txt
+update_zh.sh

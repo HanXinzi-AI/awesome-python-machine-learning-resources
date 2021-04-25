@@ -1,0 +1,5851 @@
+configuration:
+  markdown_header_file: "config/header.md"
+  markdown_footer_file: "config/footer.md"
+  projects_history_folder: "history"
+
+categories:
+  - category: "ml-frameworks"
+    title: "Machine Learning Frameworks"
+    subtitle: "General-purpose machine learning and deep learning frameworks."
+  - category: "data-viz"
+    title: "Data Visualization"
+    subtitle: "General-purpose and task-specific data visualization libraries."
+  - category: "nlp"
+    title: "Text Data & NLP"
+    subtitle: "Libraries for processing, cleaning, manipulating, and analyzing text data as well as libraries for NLP tasks such as language detection, fuzzy matching, classification, seq2seq learning, conversational AI, keyword extraction, and translation."
+  - category: "image"
+    title: "Image Data"
+    subtitle: "Libraries for image & video processing, manipulation, and augmentation as well as libraries for computer vision tasks such as facial recognition, object detection, and classification."
+  - category: "graph"
+    title: "Graph Data"
+    subtitle: "Libraries for graph processing, clustering, embedding, and machine learning tasks."
+  - category: "audio"
+    title: "Audio Data"
+    subtitle: "Libraries for audio analysis, manipulation, transformation, and extraction, as well as speech recognition and music generation tasks."
+  - category: "geospatial-data"
+    title: "Geospatial Data"
+    subtitle: "Libraries to load, process, analyze, and write geographic data as well as libraries for spatial analysis, map visualization, and geocoding."
+  - category: "financial-data"
+    title: "Financial Data"
+    subtitle: "Libraries for algorithmic stock/crypto trading, risk analytics, backtesting, technical analysis, and other tasks on financial data."
+  - category: "time-series-data"
+    title: "Time Series Data"
+    subtitle: "Libraries for forecasting, anomaly detection, feature extraction, and machine learning on time-series and sequential data."
+  - category: "medical-data"
+    title: "Medical Data"
+    subtitle: "Libraries for processing and analyzing medical data such as MRIs, EEGs, genomic data, and other medical imaging formats."
+  - category: "ocr"
+    title: "Optical Character Recognition"
+    subtitle: "Libraries for optical character recognition (OCR) and text extraction from images or videos."
+  - category: "data-containers"
+    title: "Data Containers & Structures"
+    subtitle: "General-purpose data containers & structures as well as utilities & extensions for pandas."
+  - category: "data-loading"
+    title: "Data Loading & Extraction"
+    subtitle: "Libraries for loading, collecting, and extracting data from a variety of data sources and formats."
+  - category: "web-scraping"
+    title: "Web Scraping & Crawling"
+    subtitle: "Libraries for web scraping, crawling, downloading, and mining as well as libraries."
+  - category: "data-pipelines"
+    title: "Data Pipelines & Streaming"
+    subtitle: "Libraries for data batch- and stream-processing, workflow automation, job scheduling, and other data pipeline tasks."
+  - category: "distributed-ml"
+    title: "Distributed Machine Learning"
+    subtitle: "Libraries that provide capabilities to distribute and parallelize machine learning tasks across large-scale compute infrastructure."
+  - category: "hyperopt"
+    title: "Hyperparameter Optimization & AutoML"
+    subtitle: "Libraries for hyperparameter optimization, automl and neural architecture search."
+  - category: "reinforcement-learning"
+    title: "Reinforcement Learning"
+    subtitle: "Libraries for building and evaluating reinforcement learning & agent-based systems."
+  - category: "recommender-systems"
+    title: "Recommender Systems"
+    subtitle: "Libraries for building and evaluating recommendation systems."
+  - category: "privacy-ml"
+    title: "Privacy Machine Learning"
+    subtitle: "Libraries for encrypted and privacy-preserving machine learning using methods like federated learning & differential privacy."
+  - category: "ml-experiments"
+    title: "Workflow & Experiment Tracking"
+    subtitle: "Libraries to organize, track, and visualize machine learning experiments."
+  - category: "model-serialisation"
+    title: "Model Serialization & Conversion"
+    subtitle: "Libraries to serialize models to files, convert between a variety of model formats, and optimize models for deployment."
+  - category: "interpretability"
+    title: "Model Interpretability"
+    subtitle: "Libraries to visualize, explain, debug, evaluate, and interpret machine learning models."
+  - category: "nn-search"
+    title: "Vector Similarity Search (ANN)"
+    subtitle: "Libraries for Approximate Nearest Neighbor Search and Vector Indexing/Similarity Search."
+  - category: "probabilistics"
+    title: "Probabilistics & Statistics"
+    subtitle: "Libraries providing capabilities for probabilistic programming/reasoning, bayesian inference, gaussian processes, or statistics."
+  - category: "adversarial"
+    title: "Adversarial Robustness"
+    subtitle: "Libraries for testing the robustness of machine learning models against attacks with adversarial/malicious examples."
+  - category: "gpu-utilities"
+    title: "GPU Utilities"
+    subtitle: "Libraries that require and make use of CUDA/GPU system capabilities to optimize data handling and machine learning tasks."
+  - category: "tensorflow-utils"
+    title: "Tensorflow Utilities"
+    subtitle: "Libraries that extend TensorFlow with additional capabilities."
+  - category: "sklearn-utils"
+    title: "Sklearn Utilities"
+    subtitle: "Libraries that extend scikit-learn with additional capabilities."
+  - category: "pytorch-utils"
+    title: "Pytorch Utilities"
+    subtitle: "Libraries that extend Pytorch with additional capabilities."
+  - category: "db-clients"
+    title: "Database Clients"
+    subtitle: "Libraries for connecting to, operating, and querying databases."
+  - category: "chinese-nlp"
+    title: "Chinese NLP"
+
+labels:
+  - label: "tensorflow"
+    image: "https://git.io/JLy1A"
+    description: "Tensorflow related project"
+  - label: "sklearn"
+    image: "https://git.io/JLy1F"
+    description: "Sklearn related project"
+  - label: "pytorch"
+    image: "https://git.io/JLy1Q"
+    description: "PyTorch related project"
+  - label: "mxnet"
+    image: "https://git.io/JLy1X"
+    description: "MxNet related project"
+  - label: "spark"
+    image: "https://git.io/JLy1N"
+    description: "Apache Spark related project"
+  - label: "jupyter"
+    image: "https://git.io/JLy1E"
+    description: "Jupyter related project"
+  - label: "paddle"
+    image: "https://git.io/JLy1M"
+    description: "PaddlePaddle related project"
+  - label: "pandas"
+    image: "https://git.io/JLy1S"
+    description: "Pandas related project"
+
+projects:
+  - name: Tensorflow
+    show: True
+    description: "An Open Source Machine Learning Framework for Everyone."
+    github_id: tensorflow/tensorflow
+    pypi_id: tensorflow
+    conda_id: conda-forge/tensorflow
+    dockerhub_id: tensorflow/tensorflow
+    docs_url: https://www.tensorflow.org/overview
+    category: ml-frameworks
+    labels: ["tensorflow"]
+  - name: PyTorch
+    show: True
+    description: "Tensors and Dynamic neural networks in Python with strong GPU.."
+    github_id: pytorch/pytorch
+    conda_id: pytorch/pytorch
+    pypi_id: torch
+    docs_url: https://pytorch.org/docs/stable/index.html
+    license: BSD-3-Clause
+    category: ml-frameworks
+    labels: ["pytorch"]
+  - name: Keras
+    show: True
+    description: "Deep Learning for humans."
+    pypi_id: keras
+    github_id: keras-team/keras
+    conda_id: conda-forge/keras
+    docs_url: https://keras.io
+    labels: ["tensorflow"]
+    category: ml-frameworks
+  - name: XGBoost
+    show: True
+    description: "Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or.."
+    pypi_id: xgboost
+    github_id: dmlc/xgboost
+    conda_id: conda-forge/xgboost
+    docs_url: https://xgboost.readthedocs.io/en/latest/
+    category: ml-frameworks
+  - name: scikit-learn
+    show: True
+    description: "scikit-learn: machine learning in Python."
+    pypi_id: scikit-learn
+    github_id: scikit-learn/scikit-learn
+    conda_id: conda-forge/scikit-learn
+    category: ml-frameworks
+    labels: ["sklearn"]
+  - name: CNTK
+    show: True
+    description: "Microsoft Cognitive Toolkit (CNTK), an open source deep-learning toolkit."
+    pypi_id: cntk
+    github_id: microsoft/CNTK
+    category: ml-frameworks
+  - name: MXNet
+    show: True
+    description: "Lightweight, Portable, Flexible Distributed/Mobile Deep Learning.."
+    pypi_id: mxnet
+    github_id: apache/incubator-mxnet
+    conda_id: mxnet
+    category: ml-frameworks
+    labels: ["mxnet"]
+  - name: Catboost
+    show: True
+    description: "A fast, scalable, high performance Gradient Boosting on Decision.."
+    pypi_id: catboost
+    github_id: catboost/catboost
+    conda_id: conda-forge/catboost
+    category: ml-frameworks
+  - name: Fastai
+    show: True
+    description: "The fastai deep learning library."
+    pypi_id: fastai
+    github_id: fastai/fastai
+    labels: ["pytorch"]
+    category: ml-frameworks
+  - name: LightGBM
+    show: True
+    description: "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT,.."
+    pypi_id: lightgbm
+    conda_id: conda-forge/lightgbm
+    github_id: microsoft/LightGBM
+    category: ml-frameworks
+  - name: Theano
+    show: True
+    description: "Theano is a Python library that allows you to define, optimize, and.."
+    pypi_id: theano
+    conda_id: conda-forge/theano
+    github_id: Theano/Theano
+    category: ml-frameworks
+  - name: Chainer
+    show: True
+    description: "A flexible framework of neural networks for deep learning."
+    pypi_id: chainer
+    github_id: chainer/chainer
+    category: ml-frameworks
+  - name: TFlearn
+    show: True
+    description: "Deep learning library featuring a higher-level API for TensorFlow."
+    pypi_id: tflearn
+    github_id: tflearn/tflearn
+    category: ml-frameworks
+    labels: ["tensorflow"]
+  - name: Sonnet
+    show: True
+    description: "TensorFlow-based neural network library."
+    pypi_id: dm-sonnet
+    github_id: deepmind/sonnet
+    conda_id: conda-forge/sonnet
+    category: ml-frameworks
+    labels: ["tensorflow"]
+  - name: Vowpal Wabbit
+    show: True
+    description: "Vowpal Wabbit is a machine learning system which pushes the.."
+    pypi_id: vowpalwabbit
+    github_id: VowpalWabbit/vowpal_wabbit
+    license: BSD-3-Clause
+    category: ml-frameworks
+  - name: Ludwig
+    show: True
+    description: "Ludwig is a toolbox that allows to train and evaluate deep.."
+    pypi_id: ludwig
+    github_id: ludwig-ai/ludwig
+    category: ml-frameworks
+    labels: ["tensorflow"]
+  - name: PaddlePaddle
+    show: True
+    description: "PArallel Distributed Deep LEarning: Machine Learning.."
+    pypi_id: paddlepaddle
+    github_id: PaddlePaddle/Paddle
+    labels: ["paddle"]
+    category: ml-frameworks
+  - name: PySpark
+    show: True
+    description: "Apache Spark Python API."
+    pypi_id: pyspark
+    github_id: apache/spark
+    helm_id: stable/spark
+    conda_id: conda-forge/pyspark
+    labels: ["spark"]
+    description: "Apache Spark Python API."
+    category: ml-frameworks
+  - name: PyFlink
+    show: True
+    description: "Apache Flink Python API."
+    pypi_id: apache-flink
+    github_id: apache/flink
+    description: "Apache Flink Python API."
+    category: ml-frameworks
+  - name: ktrain
+    show: True
+    description: "ktrain is a Python library that makes deep learning and AI more.."
+    pypi_id: ktrain
+    github_id: amaiya/ktrain
+    labels: ["tensorflow"]
+    category: ml-frameworks
+  - name: tensorpack
+    show: True
+    description: "A Neural Net Training Interface on TensorFlow, with focus on.."
+    pypi_id: tensorpack
+    github_id: tensorpack/tensorpack
+    labels: ["tensorflow"]
+    category: ml-frameworks
+  - name: Ignite
+    show: True
+    description: "High-level library to help with training and evaluating neural.."
+    pypi_id: pytorch-ignite
+    github_id: pytorch/ignite
+    conda_id: pytorch/ignite
+    labels: ["pytorch"]
+    category: ml-frameworks
+  - name: pytorch-lightning
+    show: True
+    description: "The lightweight PyTorch wrapper for high-performance.."
+    pypi_id: pytorch-lightning
+    github_id: PyTorchLightning/pytorch-lightning
+    conda_id: conda-forge/pytorch-lightning
+    labels: ["pytorch"]
+    category: ml-frameworks
+  - name: skorch
+    show: True
+    description: "A scikit-learn compatible neural network library that wraps.."
+    pypi_id: skorch
+    github_id: skorch-dev/skorch
+    conda_id: conda-forge/skorch
+    labels: ["pytorch", "sklearn"]
+    category: ml-frameworks
+  - name: Torchbearer
+    show: True
+    description: "torchbearer: A model fitting library for PyTorch."
+    pypi_id: torchbearer
+    github_id: pytorchbearer/torchbearer
+    labels: ["pytorch"]
+    category: ml-frameworks
+  - name: Neural Network Libraries
+    show: True
+    description: "Neural Network Libraries."
+    pypi_id: nnabla
+    github_id: sony/nnabla
+    category: ml-frameworks
+  - name: ThunderGBM
+    show: True
+    description: "ThunderGBM: Fast GBDTs and Random Forests on GPUs."
+    pypi_id: thundergbm
+    github_id: Xtra-Computing/thundergbm
+    category: ml-frameworks
+  - name: ThunderSVM
+    show: True
+    description: "ThunderSVM: A Fast SVM Library on GPUs and CPUs."
+    pypi_id: thundersvm
+    github_id: Xtra-Computing/thundersvm
+    category: ml-frameworks
+  - name: xLearn
+    show: True
+    description: "High performance, easy-to-use, and scalable machine learning (ML).."
+    pypi_id: xlearn
+    github_id: aksnzhy/xlearn
+    category: ml-frameworks
+  - name: mlpack
+    show: True
+    description: "mlpack: a scalable C++ machine learning library --."
+    pypi_id: mlpack
+    github_id: mlpack/mlpack
+    conda_id: conda-forge/mlpack
+    category: ml-frameworks
+  - name: SHOGUN
+    show: True
+    description: "Unified and efficient Machine Learning."
+    conda_id: conda-forge/shogun
+    brew_id: shogun
+    github_id: shogun-toolbox/shogun
+    dockerhub_id: shogun/shogun
+    category: ml-frameworks
+  - name: dyNET
+    show: True
+    description: "DyNet: The Dynamic Neural Network Toolkit."
+    pypi_id: dyNET
+    github_id: clab/dynet
+    category: ml-frameworks
+  - name: Turi Create
+    show: True
+    description: "Turi Create simplifies the development of custom machine learning.."
+    pypi_id: turicreate
+    github_id: apple/turicreate
+    category: ml-frameworks
+  - name: NeuPy
+    show: True
+    description: "NeuPy is a Tensorflow based python library for prototyping and building.."
+    pypi_id: neupy
+    github_id: itdxer/neupy
+    category: ml-frameworks
+  - name: StarSpace
+    show: True
+    description: "Learning embeddings for classification, retrieval and ranking."
+    github_id: facebookresearch/StarSpace
+    # TODO: Add package manager
+    category: ml-frameworks
+  - name: NuPIC
+    show: True
+    description: "Numenta Platform for Intelligent Computing is an implementation.."
+    pypi_id: nupic
+    github_id: numenta/nupic
+    category: ml-frameworks
+  - name: MindsDB
+    show: True
+    description: "Predictive AI layer for existing databases."
+    pypi_id: mindsdb
+    github_id: mindsdb/mindsdb
+    labels: ["pytorch"]
+    category: ml-frameworks
+  - name: StatsModels
+    show: True
+    description: "Statsmodels: statistical modeling and econometrics in Python."
+    pypi_id: statsmodels
+    conda_id: conda-forge/statsmodels
+    github_id: statsmodels/statsmodels
+    category: ml-frameworks
+  - name: Neural Tangents
+    show: True
+    description: "Fast and Easy Infinite Neural Networks in Python."
+    pypi_id: neural-tangents
+    license: Apache-2.0
+    github_id: google/neural-tangents
+    category: ml-frameworks
+  - name: mace
+    show: True
+    description: "MACE is a deep learning inference framework optimized for mobile.."
+    github_id: XiaoMi/mace
+    category: ml-frameworks
+  - name: NeoML
+    show: True
+    description: "Machine learning framework for both deep learning and traditional.."
+    github_id: neoml-lib/neoml
+    license: Apache-2.0
+    category: ml-frameworks
+  - name: Thinc
+    show: True
+    description: "A refreshing functional take on deep learning, compatible with your favorite.."
+    github_id: explosion/thinc
+    pypi_id: thinc
+    conda_id: conda-forge/thinc
+    category: ml-frameworks
+  - name: jax
+    show: True
+    description: "Composable transformations of Python+NumPy programs: differentiate,.."
+    pypi_id: jax
+    conda_id: conda-forge/jaxlib
+    github_id: google/jax
+    category: ml-frameworks
+  - name: Flax
+    show: True
+    description: "Flax is a neural network library for JAX that is designed for.."
+    pypi_id: flax
+    github_id: google/flax
+    labels: ["jax"]
+    category: ml-frameworks
+  - name: Objax
+    show: True
+    description: "Objax is a machine learning framework that provides an Object.."
+    pypi_id: objax
+    github_id: google/objax
+    labels: ["jax"]
+    category: ml-frameworks
+  - name: Haiku
+    show: True
+    description: "JAX-based neural network library."
+    github_id: deepmind/dm-haiku
+    category: ml-frameworks
+  - name: einops
+    show: True
+    description: "Deep learning operations reinvented (for pytorch, tensorflow, jax and.."
+    pypi_id: einops
+    github_id: arogozhnikov/einops
+    conda_id: conda-forge/einops
+    category: ml-frameworks
+  # NLP
+  - name: VizSeq
+    show: True
+    description: "An Analysis Toolkit for Natural Language Generation (Translation,.."
+    pypi_id: vizseq
+    github_id: facebookresearch/vizseq
+    category: nlp
+  - name: NeuralQA
+    show: True
+    description: "NeuralQA: A Usable Library for Question Answering on Large Datasets with.."
+    pypi_id: neuralqa
+    github_id: victordibia/neuralqa
+    category: nlp
+  - name: SciSpacy
+    show: True
+    description: "A full spaCy pipeline and models for scientific/biomedical.."
+    pypi_id: scispacy
+    github_id: allenai/scispacy
+    category: nlp
+  - name: Jina
+    show: True
+    description: "An easier way to build neural search on the cloud."
+    pypi_id: jina
+    github_id: jina-ai/jina
+    dockerhub_id: jinaai/jina
+    category: ml-frameworks
+  - name: Texthero
+    show: True
+    description: "Text preprocessing, representation and visualization from zero to hero."
+    pypi_id: texthero
+    github_id: jbesomi/texthero
+    category: nlp
+  - name: spaCy
+    show: True
+    description: "Industrial-strength Natural Language Processing (NLP) in Python."
+    pypi_id: spacy
+    conda_id: conda-forge/spacy
+    github_id: explosion/spaCy
+    category: nlp
+  - name: gensim
+    show: True
+    description: "Topic Modelling for Humans."
+    pypi_id: gensim
+    github_id: RaRe-Technologies/gensim
+    conda_id: conda-forge/gensim
+    category: nlp
+  - name: pyfasttext
+    show: True
+    description: "Yet another Python binding for fastText."
+    pypi_id: pyfasttext
+    github_id: vrasneur/pyfasttext
+    category: nlp
+  - name: fuzzywuzzy
+    show: True
+    description: "Fuzzy String Matching in Python."
+    pypi_id: fuzzywuzzy
+    github_id: seatgeek/fuzzywuzzy
+    conda_id: conda-forge/fuzzywuzzy
+    category: nlp
+  - name: nltk
+    show: True
+    description: "Suite of libraries and programs for symbolic and statistical natural.."
+    pypi_id: nltk
+    github_id: nltk/nltk
+    conda_id: conda-forge/nltk
+    description: "Suite of libraries and programs for symbolic and statistical natural language processing for English."
+    category: nlp
+  - name: torchtext
+    show: True
+    description: "Data loaders and abstractions for text and NLP."
+    pypi_id: torchtext
+    github_id: pytorch/text
+    labels: ["pytorch"]
+    category: nlp
+  - name: textacy
+    show: True
+    description: "NLP, before and after spaCy."
+    pypi_id: textacy
+    conda_id: conda-forge/textacy
+    github_id: chartbeat-labs/textacy
+    category: nlp
+  - name: TextBlob
+    show: True
+    description: "Simple, Pythonic, text processing--Sentiment analysis, part-of-speech.."
+    pypi_id: textblob
+    github_id: sloria/TextBlob
+    conda_id: conda-forge/textblob
+    category: nlp
+  - name: flashtext
+    show: True
+    description: "Extract Keywords from sentence or Replace keywords in sentences."
+    pypi_id: flashtext
+    github_id: vi3k6i5/flashtext
+    category: nlp
+  - name: scattertext
+    show: True
+    description: "Beautiful visualizations of how language differs among document.."
+    pypi_id: scattertext
+    github_id: JasonKessler/scattertext
+    conda_id: conda-forge/scattertext
+    category: nlp
+  - name: sentencepiece
+    show: True
+    description: "Unsupervised text tokenizer for Neural Network-based text.."
+    pypi_id: sentencepiece
+    conda_id: conda-forge/sentencepiece
+    github_id: google/sentencepiece
+    category: nlp
+  - name: langid
+    show: True
+    description: "Stand-alone language identification system."
+    pypi_id: langid
+    github_id: saffsd/langid.py
+    category: nlp
+  - name: flair
+    show: True
+    description: "A very simple framework for state-of-the-art Natural Language Processing.."
+    pypi_id: flair
+    github_id: flairNLP/flair
+    labels: ["pytorch"]
+    category: nlp
+  - name: pyahocorasick
+    show: True
+    description: "Python module (C extension and plain python) implementing Aho-.."
+    pypi_id: pyahocorasick
+    github_id: WojciechMula/pyahocorasick
+    conda_id: conda-forge/pyahocorasick
+    category: nlp
+  - name: ftfy
+    show: True
+    description: "Fixes mojibake and other glitches in Unicode text, after the fact."
+    pypi_id: ftfy
+    github_id: LuminosoInsight/python-ftfy
+    conda_id: conda-forge/ftfy
+    category: nlp
+  - name: stop-words
+    show: True
+    description: "Get list of common stop words in various languages in Python."
+    pypi_id: stop-words
+    github_id: Alir3z4/python-stop-words
+    category: nlp
+  - name: stanza
+    show: True
+    description: "Official Stanford NLP Python Library for Many Human Languages."
+    pypi_id: stanza
+    github_id: stanfordnlp/stanza
+    conda_id: stanfordnlp/stanza
+    category: nlp
+  - name: inflect
+    show: True
+    description: "Correctly generate plurals, ordinals, indefinite articles; convert numbers.."
+    pypi_id: inflect
+    github_id: jaraco/inflect
+    conda_id: conda-forge/inflect
+    category: nlp
+  - name: transformers
+    show: True
+    description: "Transformers: State-of-the-art Natural Language.."
+    pypi_id: transformers
+    github_id: huggingface/transformers
+    conda_id: conda-forge/transformers
+    labels: ["pytorch", "tensorflow"]
+    category: nlp
+  - name: AllenNLP
+    show: True
+    description: "An open-source NLP research library, built on PyTorch."
+    pypi_id: allennlp
+    github_id: allenai/allennlp
+    labels: ["pytorch"]
+    category: nlp
+  - name: DELTA
+    show: True
+    description: "DELTA is a deep learning based natural language and speech.."
+    github_id: Delta-ML/delta
+    dockerhub_id: zh794390558/delta
+    labels: ["tensorflow"]
+    pypi_id: delta-nlp
+    category: nlp
+  - name: ParlAI
+    show: True
+    description: "A framework for training and evaluating AI models on a variety of.."
+    github_id: facebookresearch/ParlAI
+    labels: ["pytorch"]
+    pypi_id: parlai
+    category: nlp
+  - name: pytorch-nlp
+    show: True
+    description: "Basic Utilities for PyTorch Natural Language Processing (NLP)."
+    pypi_id: pytorch-nlp
+    github_id: PetrochukM/PyTorch-NLP
+    labels: ["pytorch"]
+    category: nlp
+  - name: spacy-transformers
+    show: True
+    description: "Use pretrained transformers like BERT, XLNet and GPT-2.."
+    pypi_id: spacy-transformers
+    github_id: explosion/spacy-transformers
+    labels: ["spacy"]
+    category: nlp
+  - name: Camphr
+    show: True
+    description: "spaCy plugin for Transformers , Udify, ELmo, etc."
+    pypi_id: camphr
+    github_id: PKSHATechnology-Research/camphr
+    labels: ["spacy"]
+    category: nlp
+  - name: finetune
+    show: True
+    description: "Scikit-learn style model finetuning for NLP."
+    pypi_id: finetune
+    github_id: IndicoDataSolutions/finetune
+    labels: ["tensorflow", "sklearn"]
+    category: nlp
+  - name: fast-bert
+    show: True
+    description: "Super easy library for BERT based NLP models."
+    pypi_id: fast-bert
+    github_id: kaushaltrivedi/fast-bert
+    category: nlp
+  - name: fastText
+    show: True
+    description: "Library for fast text representation and classification."
+    pypi_id: fasttext
+    github_id: facebookresearch/fastText
+    conda_id: conda-forge/fasttext
+    category: nlp
+  - name: Rasa
+    show: True
+    description: "Open source machine learning framework to automate text- and voice-.."
+    pypi_id: rasa
+    github_id: RasaHQ/rasa
+    labels: ["tensorflow"]
+    category: nlp
+  - name: ChatterBot
+    show: True
+    description: "ChatterBot is a machine learning, conversational dialog engine.."
+    pypi_id: chatterbot
+    github_id: gunthercox/ChatterBot
+    category: nlp
+  - name: DeepPavlov
+    show: True
+    description: "An open source library for deep learning end-to-end dialog.."
+    pypi_id: deeppavlov
+    github_id: deepmipt/DeepPavlov
+    labels: ["tensorflow"]
+    category: nlp
+  - name: PyText
+    show: True
+    description: "A natural language modeling framework based on PyTorch."
+    pypi_id: pytext-nlp
+    github_id: facebookresearch/pytext
+    labels: ["pytorch"]
+    category: nlp
+  - name: OpenNMT
+    show: True
+    description: "Open Source Neural Machine Translation in PyTorch."
+    pypi_id: OpenNMT-py
+    github_id: OpenNMT/OpenNMT-py
+    labels: ["pytorch"]
+    category: nlp
+  - name: GluonNLP
+    show: True
+    description: "Toolkit that enables easy text preprocessing, datasets loading.."
+    pypi_id: gluonnlp
+    github_id: dmlc/gluon-nlp
+    description: "Toolkit that enables easy text preprocessing, datasets loading and neural models building to help you speed up your Natural Language Processing (NLP) research."
+    labels: ["mxnet"]
+    category: nlp
+  - name: Sockeye
+    show: True
+    description: "Sequence-to-sequence framework with a focus on Neural Machine.."
+    pypi_id: sockeye
+    github_id: awslabs/sockeye
+    labels: ["mxnet"]
+    category: nlp
+  - name: Snips NLU
+    show: True
+    description: "Snips Python library to extract meaning from text."
+    pypi_id: snips-nlu
+    github_id: snipsco/snips-nlu
+    category: nlp
+  - name: fairseq
+    show: True
+    description: "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+    pypi_id: fairseq
+    github_id: pytorch/fairseq
+    labels: ["pytorch"]
+    category: nlp
+  - name: Kashgari
+    show: True
+    description: "Kashgari is a production-level NLP Transfer learning framework.."
+    pypi_id: kashgari-tf
+    github_id: BrikerMan/Kashgari
+    labels: ["tensorflow"]
+    category: nlp
+  - name: TensorFlow Text
+    show: True
+    description: "Making text a first-class citizen in TensorFlow."
+    pypi_id: tensorflow-text
+    github_id: tensorflow/text
+    labels: ["tensorflow"]
+    category: nlp
+  - name: YouTokenToMe
+    show: True
+    description: "Unsupervised text tokenizer focused on computational efficiency."
+    pypi_id: youtokentome
+    github_id: vkcom/youtokentome
+    category: nlp
+  - name: CLTK
+    show: True
+    description: "The Classical Language Toolkit."
+    pypi_id: cltk
+    github_id: cltk/cltk
+    category: nlp
+  - name: NLP Architect
+    show: True
+    description: "A model library for exploring state-of-the-art deep learning.."
+    pypi_id: nlp-architect
+    github_id: IntelLabs/nlp-architect
+    category: nlp
+  - name: jellyfish
+    show: True
+    description: "a python library for doing approximate and phonetic matching of.."
+    pypi_id: jellyfish
+    github_id: jamesturk/jellyfish
+    conda_id: conda-forge/jellyfish
+    category: nlp
+  - name: T5
+    show: True
+    description: "Code for the paper Exploring the Limits of Transfer Learning with a.."
+    pypi_id: t5
+    github_id: google-research/text-to-text-transfer-transformer
+    labels: ["tensorflow"]
+    category: nlp
+  - name: polyglot
+    show: True
+    description: "Multilingual text (NLP) processing toolkit."
+    pypi_id: polyglot
+    github_id: aboSamoor/polyglot
+    category: nlp
+  - name: Dedupe
+    show: True
+    description: "A python library for accurate and scalable fuzzy matching, record.."
+    pypi_id: dedupe
+    github_id: dedupeio/dedupe
+    category: nlp
+  - name: NeuroNER
+    show: True
+    description: "Named-entity recognition using neural networks. Easy-to-use and.."
+    pypi_id: pyneuroner
+    github_id: Franck-Dernoncourt/NeuroNER
+    category: nlp
+  - name: Sumy
+    show: True
+    description: "Module for automatic summarization of text documents and HTML pages."
+    pypi_id: sumy
+    github_id: miso-belica/sumy
+    category: nlp
+  - name: TextDistance
+    show: True
+    description: "Compute distance between sequences. 30+ algorithms, pure python.."
+    pypi_id: textdistance
+    github_id: life4/textdistance
+    conda_id: conda-forge/textdistance
+    category: nlp
+  - name: phonenumbers
+    show: True
+    description: "Python port of Google's libphonenumber."
+    pypi_id: phonenumbers
+    github_id: daviddrysdale/python-phonenumbers
+    conda_id: conda-forge/phonenumbers
+    category: nlp
+  - name: Translate
+    show: True
+    description: "Translate - a PyTorch Language Library."
+    github_id: pytorch/translate
+    pypi_id: pytorch-translate
+    labels: ["pytorch"]
+    category: nlp
+  - name: TransferNLP
+    show: True
+    description: "NLP library designed for reproducible experimentation.."
+    pypi_id: transfer-nlp
+    github_id: feedly/transfer-nlp
+    labels: ["pytorch"]
+    category: nlp
+  - name: FARM
+    show: True
+    description: "Fast & easy transfer learning for NLP. Harvesting language models.."
+    pypi_id: farm
+    github_id: deepset-ai/FARM
+    labels: ["pytorch"]
+    category: nlp
+  - name: textpipe
+    show: True
+    description: "Textpipe: clean and extract metadata from text."
+    pypi_id: textpipe
+    github_id: textpipe/textpipe
+    category: nlp
+  - name: anaGo
+    show: True
+    description: "Bidirectional LSTM-CRF and ELMo for Named-Entity Recognition, Part-of-.."
+    pypi_id: anago
+    github_id: Hironsan/anago
+    labels: ["tensorflow"]
+    category: nlp
+  - name: NeMo
+    show: True
+    description: "NeMo: a toolkit for conversational AI."
+    pypi_id: nemo-toolkit
+    github_id: NVIDIA/NeMo
+    labels: ["pytorch"]
+    category: nlp
+  - name: MatchZoo
+    show: True
+    description: "Facilitating the design, comparison and sharing of deep.."
+    pypi_id: matchzoo
+    github_id: NTMC-Community/MatchZoo
+    labels: ["tensorflow"]
+    category: nlp
+  - name: Texar
+    show: True
+    description: "Toolkit for Machine Learning, Natural Language Processing, and.."
+    pypi_id: texar
+    github_id: asyml/texar
+    labels: ["tensorflow"]
+    category: nlp
+  - name: PyTextRank
+    show: True
+    description: "Python implementation of TextRank for phrase extraction and.."
+    pypi_id: pytextrank
+    github_id: DerwenAI/pytextrank
+    category: nlp
+  - name: pySBD
+    show: True
+    description: "pySBD (Python Sentence Boundary Disambiguation) is a rule-based sentence.."
+    pypi_id: pysbd
+    github_id: nipunsadvilkar/pySBD
+    category: nlp
+  - name: Headliner
+    show: True
+    description: "Easy training and deployment of seq2seq models."
+    pypi_id: headliner
+    github_id: as-ideas/headliner
+    category: nlp
+  - name: Tokenizers
+    show: True
+    description: "Fast State-of-the-Art Tokenizers optimized for Research and.."
+    pypi_id: tokenizers
+    github_id: huggingface/tokenizers
+    conda_id: conda-forge/tokenizers
+    category: nlp
+  - name: DeepMatcher
+    show: True
+    description: "Python package for performing Entity and Text Matching using.."
+    pypi_id: deepmatcher
+    github_id: anhaidgroup/deepmatcher
+    category: nlp
+  - name: Ciphey
+    show: True
+    description: "Automatically decrypt encryptions without knowing the key or cipher,.."
+    pypi_id: ciphey
+    github_id: Ciphey/Ciphey
+    dockerhub_id: remnux/ciphey
+    category: nlp
+  - name: ONNX-T5
+    show: True
+    description: "Summarization, translation, sentiment-analysis, text-generation and.."
+    pypi_id: onnxt5
+    github_id: abelriboulot/onnxt5
+    category: nlp
+  # Image Processing
+  - name: Caer
+    show: True
+    description: "A lightweight Computer Vision library. Scale your models, not boilerplate."
+    pypi_id: caer
+    github_id: jasmcaus/caer
+    docs_url: https://caer.rtfd.io
+    description: "A lightweight Computer Vision library. Scale your models, not boilerplate."
+    category: image
+  - name: Classy Vision
+    show: True
+    description: "An end-to-end PyTorch framework for image and video.."
+    github_id: facebookresearch/ClassyVision
+    pypi_id: classy_vision
+    conda_id: conda-forge/classy_vision
+    labels: ["pytorch"]
+    category: image
+  - name: Torch Points 3D
+    show: True
+    description: "Pytorch framework for doing deep learning on point clouds."
+    github_id: nicolas-chaulet/torch-points3d
+    pypi_id: torch-points3d
+    license: BSD-3-Clause
+    labels: ["pytorch"]
+    category: image
+  - name: Face Alignment
+    show: True
+    description: "2D and 3D Face alignment library build using pytorch."
+    github_id: 1adrianb/face-alignment
+    pypi_id: face-alignment
+    labels: ["pytorch"]
+    category: image
+  - name: PyTorch Image Models
+    show: True
+    description: "PyTorch image models, scripts, pretrained weights --.."
+    github_id: rwightman/pytorch-image-models
+    labels: ["pytorch"]
+    category: image
+  - name: torchvision
+    show: True
+    description: "Datasets, Transforms and Models specific to Computer Vision."
+    github_id: pytorch/vision
+    pypi_id: torchvision
+    conda_id: conda-forge/torchvision
+    labels: ["pytorch"]
+    category: image
+  - name: ImageHash
+    show: True
+    description: "A Python Perceptual Image Hashing Module."
+    pypi_id: ImageHash
+    conda_id: conda-forge/imagehash
+    github_id: JohannesBuchner/imagehash
+    category: image
+  - name: imgaug
+    show: True
+    description: "Image augmentation for machine learning experiments."
+    pypi_id: imgaug
+    github_id: aleju/imgaug
+    conda_id: conda-forge/imgaug
+    category: image
+  - name: scikit-image
+    show: True
+    description: "Image processing in Python."
+    pypi_id: scikit-image
+    github_id: scikit-image/scikit-image
+    conda_id: conda-forge/scikit-image
+    category: image
+  - name: imageio
+    show: True
+    description: "Python library for reading and writing image data."
+    pypi_id: imageio
+    github_id: imageio/imageio
+    conda_id: conda-forge/imageio
+    category: image
+  - name: Augmentor
+    show: True
+    description: "Image augmentation library in Python for machine learning."
+    pypi_id: Augmentor
+    github_id: mdbloice/Augmentor
+    category: image
+  - name: opencv-python # TODO: use main opencv repo?
+    show: True
+    pypi_id: opencv-python
+    github_id: skvark/opencv-python
+    category: image
+  - name: imageai
+    show: True
+    description: "A python library built to empower developers to build applications and.."
+    pypi_id: imageai
+    github_id: OlafenwaMoses/ImageAI
+    category: image
+  - name: Pillow
+    show: True
+    description: "The friendly PIL fork (Python Imaging Library)."
+    pypi_id: Pillow
+    github_id: python-pillow/Pillow
+    conda_id: conda-forge/pillow
+    license: PIL
+    show: True
+    category: image
+  - name: PyTorch3D
+    show: True
+    description: "PyTorch3D is FAIR's library of reusable components for deep.."
+    pypi_id: pytorch3d
+    github_id: facebookresearch/pytorch3d
+    conda_id: pytorch3d/pytorch3d
+    labels: ["pytorch"]
+    category: image
+  - name: Pillow-SIMD
+    show: True
+    description: "The friendly PIL fork."
+    pypi_id: pillow-simd
+    github_id: uploadcare/pillow-simd
+    license: PIL
+    category: image
+  - name: GluonCV
+    show: True
+    description: "Gluon CV Toolkit."
+    pypi_id: gluoncv
+    github_id: dmlc/gluon-cv
+    labels: ["mxnet"]
+    category: image
+  - name: MMF
+    show: True
+    description: "A modular framework for vision & language multimodal research from.."
+    github_id: facebookresearch/mmf
+    labels: ["pytorch"]
+    license: BSD-3-Clause
+    pypi_id: mmf
+    category: image
+  - name: Image Deduplicator
+    show: True
+    description: "Finding duplicate images made easy!."
+    github_id: idealo/imagededup
+    pypi_id: imagededup
+    labels: ["tensorflow"]
+    category: image
+  - name: Kornia
+    show: True
+    description: "Open Source Differentiable Computer Vision Library for PyTorch."
+    github_id: kornia/kornia
+    pypi_id: kornia
+    labels: ["pytorch"]
+    category: image
+  - name: detectron2
+    show: True
+    description: "Detectron2 is FAIR's next-generation platform for object.."
+    github_id: facebookresearch/detectron2
+    labels: ["pytorch"]
+    conda_id: conda-forge/detectron2
+    category: image
+  - name: tensorflow-graphics
+    show: True
+    description: "TensorFlow Graphics: Differentiable Graphics Layers.."
+    pypi_id: tensorflow-graphics
+    github_id: tensorflow/graphics
+    labels: ["tensorflow"]
+    category: image
+  - name: MMDetection
+    show: True
+    description: "OpenMMLab Detection Toolbox and Benchmark."
+    github_id: open-mmlab/mmdetection
+    labels: ["pytorch"]
+    # TODO: Add package manager
+    category: image
+  - name: Albumentations
+    show: True
+    description: "Fast image augmentation library and an easy-to-use wrapper.."
+    github_id: albumentations-team/albumentations
+    pypi_id: albumentations
+    conda_id: conda-forge/albumentations
+    labels: ["pytorch"]
+    category: image
+  - name: Face Recognition
+    show: True
+    description: "The world's simplest facial recognition api for.."
+    github_id: ageitgey/face_recognition
+    pypi_id: face_recognition
+    labels: ["pytorch"]
+    category: image
+  - name: imutils
+    show: True
+    description: "A series of convenience functions to make basic image processing.."
+    github_id: jrosebr1/imutils
+    pypi_id: imutils
+    conda_id: conda-forge/imutils
+    category: image
+  - name: InsightFace
+    show: True
+    description: "Face Analysis Project on MXNet and PyTorch."
+    github_id: deepinsight/insightface
+    pypi_id: insightface
+    labels: ["mxnet"]
+    category: image
+  - name: Luminoth
+    show: True
+    description: "Deep Learning toolkit for Computer Vision."
+    github_id: tryolabs/luminoth
+    pypi_id: luminoth
+    labels: ["tensorflow"]
+    category: image
+  - name: Image Super-Resolution
+    show: True
+    description: "Super-scale your images and run experiments with.."
+    github_id: idealo/image-super-resolution
+    pypi_id: ISR
+    dockerhub_id: idealo/image-super-resolution-gpu
+    labels: ["tensorflow"]
+    category: image
+  - name: pycls
+    show: True
+    description: "Codebase for Image Classification Research, written in PyTorch."
+    github_id: facebookresearch/pycls
+    labels: ["pytorch"]
+    category: image
+  - name: PySlowFast
+    show: True
+    description: "PySlowFast: video understanding codebase from FAIR for.."
+    github_id: facebookresearch/SlowFast
+    labels: ["pytorch"]
+    category: image
+  - name: MoviePy
+    show: True
+    description: "Video editing with Python."
+    github_id: Zulko/moviepy
+    pypi_id: moviepy
+    conda_id: conda-forge/moviepy
+    category: image
+  - name: DE⫶TR
+    show: True
+    github_id: facebookresearch/detr
+    labels: ["pytorch"]
+    category: image
+  - name: PaddleDetection
+    show: True
+    description: "Object detection and instance segmentation toolkit.."
+    github_id: PaddlePaddle/PaddleDetection
+    labels: ["paddle"]
+    category: image
+  # OCR
+  - name: Tesseract
+    show: True
+    description: "Python-tesseract is an optical character recognition (OCR) tool.."
+    github_id: madmaze/pytesseract
+    pypi_id: pytesseract
+    conda_id: conda-forge/pytesseract
+    description: "Python-tesseract is an optical character recognition (OCR) tool for python."
+    category: ocr
+  - name: PaddleOCR
+    show: True
+    description: "Awesome multilingual OCR toolkits based on PaddlePaddle.."
+    github_id: PaddlePaddle/PaddleOCR
+    pypi_id: paddleocr
+    labels: ["paddle"]
+    category: ocr
+  - name: keras-ocr
+    show: True
+    description: "A packaged and flexible version of the CRAFT text detector and.."
+    github_id: faustomorales/keras-ocr
+    pypi_id: keras-ocr
+    labels: ["tensorflow"]
+    category: ocr
+  - name: tesserocr
+    show: True
+    description: "A Python wrapper for the tesseract-ocr API."
+    github_id: sirfz/tesserocr
+    pypi_id: tesserocr
+    conda_id: conda-forge/tesserocr
+    category: ocr
+  - name: attention-ocr
+    show: True
+    description: "A Tensorflow model for text recognition (CNN + seq2seq with.."
+    github_id: emedvedev/attention-ocr
+    pypi_id: aocr
+    labels: ["tensorflow"]
+    category: ocr
+  - name: doc2text
+    show: True
+    description: "Detect text blocks and OCR poorly scanned PDFs in bulk. Python module.."
+    github_id: jlsutherland/doc2text
+    pypi_id: doc2text
+    category: ocr
+  - name: OCRmyPDF
+    show: True
+    description: "OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them.."
+    github_id: jbarlow83/OCRmyPDF
+    pypi_id: ocrmypdf
+    apt_id: ocrmypdf
+    brew_id: ocrmypdf
+    category: ocr
+  - name: EasyOCR
+    show: True
+    description: "Ready-to-use OCR with 80+ supported languages and all popular writing.."
+    github_id: JaidedAI/EasyOCR
+    pypi_id: easyocr
+    category: ocr
+  - name: calamari
+    show: True
+    description: "Line based ATR Engine based on OCRopy."
+    pypi_id: calamari_ocr
+    github_id: Calamari-OCR/calamari
+    category: ocr
+  # Data Visualization
+  - name: Bokeh
+    show: True
+    description: "Interactive Data Visualization in the browser, from Python."
+    pypi_id: bokeh
+    github_id: bokeh/bokeh
+    conda_id: conda-forge/bokeh
+    category: data-viz
+  - name: AutoViz
+    show: True
+    description: "Automatically Visualize any dataset, any size with a single line of.."
+    github_id: AutoViML/AutoViz
+    pypi_id: autoviz
+    category: data-viz
+  - name: Plotly
+    show: True
+    description: "The interactive graphing library for Python (includes Plotly Express)."
+    pypi_id: plotly
+    github_id: plotly/plotly.py
+    conda_id: conda-forge/plotly
+    npm_id: plotlywidget
+    category: data-viz
+  - name: HoloViews
+    show: True
+    description: "With Holoviews, your data visualizes itself."
+    pypi_id: holoviews
+    github_id: holoviz/holoviews
+    conda_id: conda-forge/holoviews
+    npm_id: "@pyviz/jupyterlab_pyviz"
+    labels: ["jupyter"]
+    category: data-viz
+  - name: Chartify
+    show: True
+    description: "Python library that makes it easy for data scientists to create.."
+    pypi_id: chartify
+    github_id: spotify/chartify
+    conda_id: conda-forge/chartify
+    category: data-viz
+  - name: Seaborn
+    show: True
+    description: "Statistical data visualization using matplotlib."
+    pypi_id: seaborn
+    github_id: mwaskom/seaborn
+    conda_id: conda-forge/seaborn
+    category: data-viz
+  - name: Matplotlib
+    show: True
+    description: "matplotlib: plotting with Python."
+    pypi_id: matplotlib
+    conda_id: conda-forge/matplotlib
+    github_id: matplotlib/matplotlib
+    show: True
+    category: data-viz
+  - name: Altair
+    show: True
+    description: "Declarative statistical visualization library for Python."
+    pypi_id: altair
+    github_id: altair-viz/altair
+    conda_id: conda-forge/altair
+    category: data-viz
+  - name: bqplot
+    show: True
+    description: "Plotting library for IPython/Jupyter notebooks."
+    pypi_id: bqplot
+    github_id: bqplot/bqplot
+    npm_id: bqplot
+    conda_id: conda-forge/bqplot
+    labels: ["jupyter"]
+    category: data-viz
+  - name: hvPlot
+    show: True
+    description: "A high-level plotting API for pandas, dask, xarray, and networkx built on.."
+    pypi_id: hvplot
+    github_id: holoviz/hvplot
+    conda_id: conda-forge/hvplot
+    category: data-viz
+  - name: Cufflinks
+    show: True
+    description: "Productivity Tools for Plotly + Pandas."
+    pypi_id: cufflinks
+    github_id: santosjorge/cufflinks
+    labels: ["pandas"]
+    category: data-viz
+  - name: datashader
+    show: True
+    description: "Quickly and accurately render even the largest data."
+    pypi_id: datashader
+    github_id: holoviz/datashader
+    conda_id: conda-forge/datashader
+    category: data-viz
+  - name: pdvega
+    show: True
+    description: "Interactive plotting for Pandas using Vega-Lite."
+    pypi_id: pdvega
+    github_id: altair-viz/pdvega
+    category: data-viz
+  - name: vega
+    show: True
+    description: "IPython/Jupyter notebook module for Vega and Vega-Lite."
+    pypi_id: vega
+    github_id: vega/ipyvega
+    conda_id: conda-forge/vega
+    labels: ["jupyter"]
+    category: data-viz
+  - name: missingno
+    show: True
+    description: "Missing data visualization module for Python."
+    pypi_id: missingno
+    conda_id: conda-forge/missingno
+    github_id: ResidentMario/missingno
+    category: data-viz
+  - name: UMAP
+    show: True
+    description: "Uniform Manifold Approximation and Projection."
+    pypi_id: umap-learn
+    github_id: lmcinnes/umap
+    category: data-viz
+  - name: wordcloud
+    show: True
+    description: "A little word cloud generator in Python."
+    pypi_id: wordcloud
+    github_id: amueller/word_cloud
+    conda_id: conda-forge/wordcloud
+    category: data-viz
+  - name: data-describe
+    show: True
+    description: "datadescribe: Pythonic EDA Accelerator for Data Science."
+    github_id: data-describe/data-describe
+    pypi_id: data-describe
+    category: data-viz
+  - name: pandas-profiling
+    show: True
+    description: "Create HTML profiling reports from pandas DataFrame.."
+    pypi_id: pandas-profiling
+    conda_id: conda-forge/pandas-profiling
+    github_id: pandas-profiling/pandas-profiling
+    labels: ["jupyter", "pandas"]
+    category: data-viz
+  - name: PandasGUI
+    show: True
+    description: "A GUI for Pandas DataFrames."
+    pypi_id: pandasgui
+    github_id: adamerose/pandasgui
+    labels: ["pandas"]
+    category: data-viz
+  - name: Sweetviz
+    show: True
+    description: "Visualize and compare datasets, target values and associations, with one.."
+    pypi_id: sweetviz
+    github_id: fbdesignpro/sweetviz
+    category: data-viz
+  - name: HyperTools
+    show: True
+    description: "A Python toolbox for gaining geometric insights into high-dimensional.."
+    pypi_id: hypertools
+    github_id: ContextLab/hypertools
+    category: data-viz
+  - name: Pandas-Bokeh
+    show: True
+    description: "Bokeh Plotting Backend for Pandas and GeoPandas."
+    pypi_id: pandas-bokeh
+    github_id: PatrikHlobil/Pandas-Bokeh
+    labels: ["pandas"]
+    category: data-viz
+  - name: VisPy
+    show: True
+    description: "High-performance interactive 2D/3D data visualization library."
+    pypi_id: vispy
+    github_id: vispy/vispy
+    npm_id: vispy
+    conda_id: conda-forge/vispy
+    description: "High-performance interactive 2D/3D data visualization library."
+    labels: ["jupyter"]
+    category: data-viz
+  - name: PyVista
+    show: True
+    description: "3D plotting and mesh analysis through a streamlined interface for the.."
+    pypi_id: pyvista
+    github_id: pyvista/pyvista
+    conda_id: conda-forge/pyvista
+    labels: ["jupyter"]
+    category: data-viz
+  - name: nx-altair
+    show: True
+    description: "Draw interactive NetworkX graphs with Altair."
+    pypi_id: nx-altair
+    github_id: Zsailer/nx_altair
+    labels: ["jupyter"]
+    category: data-viz
+  - name: pythreejs
+    show: True
+    description: "A Jupyter - Three.js bridge."
+    pypi_id: pythreejs
+    github_id: jupyter-widgets/pythreejs
+    npm_id: jupyter-threejs
+    conda_id: conda-forge/pythreejs
+    labels: ["jupyter"]
+    category: data-viz
+  - name: Facets Overview
+    show: True
+    description: "Visualizations for machine learning datasets."
+    pypi_id: facets-overview
+    github_id: pair-code/facets
+    labels: ["jupyter"]
+    category: data-viz
+  - name: pivottablejs
+    show: True
+    description: "Dragndrop Pivot Tables and Charts for Jupyter/IPython.."
+    pypi_id: pivottablejs
+    github_id: nicolaskruchten/jupyter_pivottablejs
+    labels: ["jupyter"]
+    category: data-viz
+  - name: Perspective
+    show: True
+    description: "Streaming pivot visualization via WebAssembly."
+    pypi_id: perspective-python
+    github_id: finos/perspective
+    npm_id: "@finos/perspective-jupyterlab"
+    labels: ["jupyter"]
+    category: data-viz
+  - name: pyecharts
+    show: True
+    description: "Python Echarts Plotting Library."
+    pypi_id: pyecharts
+    github_id: pyecharts/pyecharts
+    docs_url: https://github.com/pyecharts/pyecharts/blob/master/README.en.md
+    labels: ["jupyter"]
+    category: data-viz
+  - name: PyWaffle
+    show: True
+    description: "Make Waffle Charts in Python."
+    pypi_id: pywaffle
+    github_id: gyli/PyWaffle
+    category: data-viz
+  - name: openTSNE
+    show: True
+    description: "Extensible, parallel implementations of t-SNE."
+    pypi_id: opentsne
+    github_id: pavlin-policar/openTSNE
+    conda_id: conda-forge/opentsne
+    category: data-viz
+  - name: nptsne
+    show: True
+    description: "nptsne is a numpy compatible python binary package that offers a number.."
+    pypi_id: nptsne
+    github_id: biovault/nptsne
+    category: data-viz
+  - name: HiPlot
+    show: True
+    description: "HiPlot makes understanding high dimensional data easy."
+    pypi_id: hiplot
+    github_id: facebookresearch/hiplot
+    conda_id: conda-forge/hiplot
+    category: data-viz
+  - name: PyQtGraph
+    show: True
+    description: "Fast data visualization and GUI tools for scientific / engineering.."
+    pypi_id: pyqtgraph
+    github_id: pyqtgraph/pyqtgraph
+    conda_id: conda-forge/pyqtgraph
+    category: data-viz
+  # Model Interpretability
+  - name: What-If Tool
+    show: True
+    description: "Source code/webpage/demos for the What-If Tool."
+    pypi_id: witwidget
+    github_id: PAIR-code/what-if-tool
+    npm_id: wit-widget
+    category: interpretability
+  - name: LIT
+    show: True
+    description: "The Language Interpretability Tool: Interactively analyze NLP models for.."
+    pypi_id: lit-nlp
+    github_id: PAIR-code/lit
+    category: interpretability
+  - name: yellowbrick
+    show: True
+    description: "Visual analysis and diagnostic tools to facilitate machine.."
+    pypi_id: yellowbrick
+    github_id: DistrictDataLabs/yellowbrick
+    labels: ["sklearn"]
+    category: interpretability
+  - name: FlashTorch
+    show: True
+    description: "Visualization toolkit for neural networks in PyTorch! Demo --."
+    pypi_id: flashtorch
+    github_id: MisaOgura/flashtorch
+    labels: ["pytorch"]
+    category: interpretability
+  - name: DoWhy
+    show: True
+    description: "DoWhy is a Python library for causal inference that supports explicit.."
+    pypi_id: dowhy
+    github_id: Microsoft/dowhy
+    conda_id: conda-forge/dowhy
+    category: interpretability
+  - name: eli5
+    show: True
+    description: "A library for debugging/inspecting machine learning classifiers and.."
+    pypi_id: eli5
+    github_id: TeamHG-Memex/eli5
+    conda_id: conda-forge/eli5
+    category: interpretability
+  - name: imodels
+    show: True
+    description: "Interpretable ML package for concise, transparent, and accurate predictive.."
+    pypi_id: imodels
+    github_id: csinva/imodels
+    category: interpretability
+  - name: shap
+    show: True
+    description: "A game theoretic approach to explain the output of any machine learning model."
+    pypi_id: shap
+    github_id: slundberg/shap
+    conda_id: conda-forge/shap
+    category: interpretability
+  - name: Lime
+    show: True
+    description: "Lime: Explaining the predictions of any machine learning classifier."
+    pypi_id: lime
+    github_id: marcotcr/lime
+    conda_id: conda-forge/lime
+    category: interpretability
+  - name: scikit-plot
+    show: True
+    description: "An intuitive library to add plotting functionality to.."
+    pypi_id: scikit-plot
+    github_id: reiinakano/scikit-plot
+    conda_id: conda-forge/scikit-plot
+    labels: ["sklearn"]
+    category: interpretability
+  - name: pyLDAvis
+    show: True
+    description: "Python library for interactive topic model visualization. Port of.."
+    pypi_id: pyldavis
+    github_id: bmabey/pyLDAvis
+    conda_id: conda-forge/pyldavis
+    labels: ["jupyter"]
+    category: interpretability
+  - name: Alibi
+    show: True
+    description: "Algorithms for monitoring and explaining machine learning models."
+    pypi_id: alibi
+    github_id: SeldonIO/alibi
+    category: interpretability
+  - name: keract
+    show: True
+    description: "Layers Outputs and Gradients in Keras. Made easy."
+    pypi_id: keract
+    github_id: philipperemy/keract
+    labels: ["tensorflow"]
+    category: interpretability
+  - name: tf-explain
+    show: True
+    description: "Interpretability Methods for tf.keras models with Tensorflow 2.x."
+    pypi_id: tf-explain
+    github_id: sicara/tf-explain
+    labels: ["tensorflow"]
+    category: interpretability
+  - name: InterpretML
+    show: True
+    description: "Fit interpretable models. Explain blackbox machine learning."
+    pypi_id: interpret
+    github_id: interpretml/interpret
+    labels: ["jupyter"]
+    category: interpretability
+  - name: sklearn-evaluation
+    show: True
+    description: "Machine learning model evaluation made easy: plots,.."
+    pypi_id: sklearn-evaluation
+    github_id: edublancas/sklearn-evaluation
+    labels: ["sklearn"]
+    category: interpretability
+  - name: Lucid
+    show: True
+    description: "A collection of infrastructure and tools for research in neural.."
+    pypi_id: lucid
+    github_id: tensorflow/lucid
+    labels: ["tensorflow"]
+    category: interpretability
+  - name: Captum
+    show: True
+    description: "Model interpretability and understanding for PyTorch."
+    pypi_id: captum
+    github_id: pytorch/captum
+    labels: ["pytorch"]
+    category: interpretability
+  - name: Model Analysis
+    show: True
+    description: "Model analysis tools for TensorFlow."
+    pypi_id: tensorflow-model-analysis
+    github_id: tensorflow/model-analysis
+    labels: ["tensorflow", "jupyter"]
+    category: interpretability
+  - name: bias-detector
+    show: True
+    description: "Bias Detector is a python package for detecting bias in machine.."
+    pypi_id: bias-detector
+    github_id: intuit/bias-detector
+    category: interpretability
+  - name: TreeInterpreter
+    show: True
+    description: "Package for interpreting scikit-learn's decision tree.."
+    pypi_id: treeinterpreter
+    github_id: andosa/treeinterpreter
+    labels: ["sklearn"]
+    category: interpretability
+  - name: iNNvestigate
+    show: True
+    description: "A toolbox to iNNvestigate neural networks' predictions!."
+    pypi_id: innvestigate
+    github_id: albermax/innvestigate
+    license: BSD-2-Clause
+    labels: ["tensorflow"]
+    category: interpretability
+  - name: LOFO
+    show: True
+    description: "Leave One Feature Out Importance."
+    pypi_id: lofo-importance
+    github_id: aerdem4/lofo-importance
+    category: interpretability
+  - name: Skater
+    show: True
+    description: "Python Library for Model Interpretation/Explanations."
+    pypi_id: skater
+    github_id: oracle/Skater
+    conda_id: conda-forge/skater
+    category: interpretability
+  - name: XAI
+    show: True
+    description: "XAI - An eXplainability toolbox for machine learning."
+    pypi_id: xai
+    github_id: EthicalML/xai
+    category: interpretability
+  - name: keras-vis
+    show: True
+    description: "Neural network visualization toolkit for keras."
+    pypi_id: keras-vis
+    github_id: raghakot/keras-vis
+    labels: ["tensorflow"]
+    category: interpretability
+  - name: Explainability 360
+    show: True
+    description: "Interpretability and explainability of data and machine.."
+    pypi_id: aix360
+    github_id: Trusted-AI/AIX360
+    category: interpretability
+  - name: Anchor
+    show: True
+    description: "Code for High-Precision Model-Agnostic Explanations paper."
+    pypi_id: anchor_exp
+    github_id: marcotcr/anchor
+    category: interpretability
+  - name: Attribution Priors
+    show: True
+    description: "Tools for training explainable models using.."
+    pypi_id: attributionpriors
+    github_id: suinleelab/attributionpriors
+    labels: ["tensorflow", "pytorch"]
+    category: interpretability
+  - name: Fairness 360
+    show: True
+    description: "A comprehensive set of fairness metrics for datasets and.."
+    pypi_id: aif360
+    github_id: Trusted-AI/AIF360
+    category: interpretability
+  - name: ExplainX.ai
+    show: True
+    description: "Explainable AI framework for data scientists. Explain & debug any.."
+    pypi_id: explainx
+    github_id: explainX/explainx
+    category: interpretability
+  - name: DiCE
+    show: True
+    description: "Generate Diverse Counterfactual Explanations for any machine.."
+    pypi_id: dice-ml
+    github_id: interpretml/DiCE
+    labels: ["tensorflow", "pytorch"]
+    category: interpretability
+  # Graph Processing
+  - name: Paddle Graph Learning
+    show: True
+    description: "Paddle Graph Learning (PGL) is an efficient and.."
+    github_id: PaddlePaddle/PGL
+    pypi_id: pgl
+    labels: ["paddle"]
+    category: graph
+  - name: Karate Club
+    show: True
+    description: "Karate Club: An API Oriented Open-source Python Framework for.."
+    github_id: benedekrozemberczki/karateclub
+    pypi_id: karateclub
+    category: graph
+  - name: GraphVite
+    show: True
+    description: "GraphVite: A General and High-performance Graph Embedding System."
+    github_id: DeepGraphLearning/graphvite
+    conda_id: milagraph/graphvite
+    category: graph
+  - name: networkx
+    show: True
+    description: "Network Analysis in Python."
+    pypi_id: networkx
+    github_id: networkx/networkx
+    conda_id: conda-forge/networkx
+    category: graph
+  - name: dgl
+    show: True
+    description: "Python package built to ease deep learning on graph, on top of existing.."
+    pypi_id: dgl
+    github_id: dmlc/dgl
+    category: graph
+  - name: graph-nets
+    show: True
+    description: "Build Graph Nets in Tensorflow."
+    pypi_id: graph-nets
+    github_id: deepmind/graph_nets
+    labels: ["tensorflow"]
+    category: graph
+  - name: torch-cluster
+    show: True
+    description: "PyTorch Extension Library of Optimized Graph Cluster.."
+    pypi_id: torch-cluster
+    github_id: rusty1s/pytorch_cluster
+    labels: ["pytorch"]
+    category: graph
+  - name: PyTorch Geometric
+    show: True
+    description: "Geometric Deep Learning Extension Library for PyTorch."
+    pypi_id: torch-geometric
+    github_id: rusty1s/pytorch_geometric
+    labels: ["pytorch"]
+    category: graph
+  - name: PyTorch-BigGraph
+    show: True
+    description: "Generate embeddings from large-scale graph-structured.."
+    pypi_id: torchbiggraph
+    github_id: facebookresearch/PyTorch-BigGraph
+    labels: ["pytorch"]
+    category: graph
+  - name: PyKEEN
+    show: True
+    description: "A Python library for learning and evaluating knowledge graph embeddings."
+    pypi_id: pykeen
+    github_id: pykeen/pykeen
+    category: graph
+  - name: AmpliGraph
+    show: True
+    description: "Python library for Representation Learning on Knowledge.."
+    pypi_id: ampligraph
+    github_id: Accenture/AmpliGraph
+    labels: ["tensorflow"]
+    category: graph
+  - name: OpenKE
+    show: True
+    description: "An Open-Source Package for Knowledge Embedding (KE)."
+    github_id: thunlp/OpenKE
+    # TODO: Add package manager
+    category: graph
+  - name: GraphSAGE
+    show: True
+    description: "Representation learning on large graphs using stochastic.."
+    github_id: williamleif/GraphSAGE
+    license: MIT
+    labels: ["tensorflow"]
+    # TODO: Add package manager
+    category: graph
+  - name: StellarGraph
+    show: True
+    description: "StellarGraph - Machine Learning on Graphs."
+    pypi_id: stellargraph
+    github_id: stellargraph/stellargraph
+    labels: ["tensorflow"]
+    category: graph
+  - name: Node2Vec
+    show: True
+    description: "Implementation of the node2vec algorithm."
+    pypi_id: node2vec
+    github_id: eliorc/node2vec
+    conda_id: conda-forge/node2vec
+    category: graph
+  - name: DeepWalk
+    show: True
+    description: "DeepWalk - Deep Learning for Graphs."
+    pypi_id: deepwalk
+    github_id: phanein/deepwalk
+    category: graph
+  - name: OpenNE
+    show: True
+    description: "An Open-Source Package for Network Embedding (NE)."
+    github_id: thunlp/OpenNE
+    labels: ["tensorflow"]
+    # TODO: Add package manager
+    category: graph
+  - name: Spektral
+    show: True
+    description: "Graph Neural Networks with Keras and Tensorflow 2."
+    pypi_id: spektral
+    github_id: danielegrattarola/spektral
+    labels: [tensorflow"]
+    category: graph
+  - name: GraphEmbedding
+    show: True
+    description: "Implementation and experiments of graph embedding algorithms."
+    github_id: shenweichen/GraphEmbedding
+    labels: ["sklearn"]
+    # TODO: Add package manager
+    category: graph
+  - name: igraph
+    show: True
+    description: "Python interface for igraph."
+    github_id: igraph/python-igraph
+    pypi_id: python-igraph
+    conda_id: conda-forge/igraph
+    category: graph
+  - name: DeepGraph
+    show: True
+    description: "Analyze Data with Pandas-based Networks. Documentation:."
+    pypi_id: deepgraph
+    conda_id: conda-forge/deepgraph
+    github_id: deepgraph/deepgraph
+    labels: ["pandas"]
+    category: graph
+  - name: Euler
+    show: True
+    description: "A distributed graph deep learning framework."
+    pypi_id: euler-gl
+    github_id: alibaba/euler
+    labels: ["tensorflow"]
+    category: graph
+  # Geospatial Data
+  - name: GeoViews
+    show: True
+    description: "Simple, concise geographical visualization in Python."
+    pypi_id: geoviews
+    github_id: holoviz/geoviews
+    conda_id: conda-forge/geoviews
+    category: geospatial-data
+  - name: Sentinelsat
+    show: True
+    description: "Search and download Copernicus Sentinel satellite images."
+    pypi_id: sentinelsat
+    github_id: sentinelsat/sentinelsat
+    category: geospatial-data
+  - name: EarthPy
+    show: True
+    description: "A package built to support working with spatial data using open source.."
+    pypi_id: earthpy
+    conda_id: conda-forge/earthpy
+    github_id: earthlab/earthpy
+    category: geospatial-data
+  - name: pyproj
+    show: True
+    description: "Python interface to PROJ (cartographic projections and coordinate.."
+    pypi_id: pyproj
+    github_id: pyproj4/pyproj
+    conda_id: conda-forge/pyproj
+    license: MIT
+    category: geospatial-data
+  - name: GeoPandas
+    show: True
+    description: "Python tools for geographic data."
+    pypi_id: geopandas
+    github_id: geopandas/geopandas
+    conda_id: conda-forge/geopandas
+    labels: ["pandas"]
+    category: geospatial-data
+  - name: folium
+    show: True
+    description: "Python Data. Leaflet.js Maps."
+    pypi_id: folium
+    github_id: python-visualization/folium
+    conda_id: conda-forge/folium
+    category: geospatial-data
+  - name: geopy
+    show: True
+    description: "Geocoding library for Python."
+    pypi_id: geopy
+    github_id: geopy/geopy
+    conda_id: conda-forge/geopy
+    category: geospatial-data
+  - name: geojson
+    show: True
+    description: "Python bindings and utilities for GeoJSON."
+    pypi_id: geojson
+    github_id: jazzband/geojson
+    conda_id: conda-forge/geojson
+    category: geospatial-data
+  - name: PySAL
+    show: True
+    description: "PySAL: Python Spatial Analysis Library Meta-Package."
+    pypi_id: pysal
+    github_id: pysal/pysal
+    conda_id: conda-forge/pysal
+    category: geospatial-data
+  - name: geoplotlib
+    show: True
+    description: "python toolbox for visualizing geographical data and making maps."
+    pypi_id: geoplotlib
+    github_id: andrea-cuttone/geoplotlib
+    category: geospatial-data
+  - name: ArcGIS API
+    show: True
+    description: "Documentation and samples for ArcGIS API for Python."
+    pypi_id: arcgis
+    github_id: Esri/arcgis-python-api
+    dockerhub_id: esridocker/arcgis-api-python-notebook
+    category: geospatial-data
+  - name: Rasterio
+    show: True
+    description: "Rasterio reads and writes geospatial raster datasets."
+    pypi_id: rasterio
+    github_id: mapbox/rasterio
+    conda_id: conda-forge/rasterio
+    category: geospatial-data
+  - name: Cartopy
+    show: True
+    description: "Rasterio reads and writes geospatial raster datasets."
+    pypi_id: Cartopy
+    github_id: mapbox/rasterio
+    conda_id: conda-forge/cartopy
+    category: geospatial-data
+  - name: Fiona
+    show: True
+    description: "Fiona reads and writes geographic data files."
+    pypi_id: fiona
+    github_id: Toblerity/Fiona
+    conda_id: conda-forge/fiona
+    category: geospatial-data
+  - name: Satpy
+    show: True
+    description: "Python package for earth-observing satellite data processing."
+    pypi_id: satpy
+    github_id: pytroll/satpy
+    conda_id: conda-forge/satpy
+    category: geospatial-data
+  - name: Geocoder
+    show: True
+    description: "Python Geocoder."
+    pypi_id: geocoder
+    github_id: DenisCarriere/geocoder
+    conda_id: conda-forge/geocoder
+    snap_id: geocoder
+    category: geospatial-data
+  - name: Mapbox GL
+    show: True
+    description: "Use Mapbox GL JS to visualize data in a Python Jupyter notebook."
+    github_id: mapbox/mapboxgl-jupyter
+    pypi_id: mapboxgl
+    labels: ["jupyter"]
+    category: geospatial-data
+  - name: ipyleaflet
+    show: True
+    description: "A Jupyter - Leaflet.js bridge."
+    pypi_id: ipyleaflet
+    github_id: jupyter-widgets/ipyleaflet
+    conda_id: conda-forge/ipyleaflet
+    npm_id: jupyter-leaflet
+    labels: ["jupyter"]
+    category: geospatial-data
+  - name: gmaps
+    show: True
+    description: "Google maps for Jupyter notebooks."
+    pypi_id: gmaps
+    github_id: pbugnion/gmaps
+    npm_id: jupyter-gmaps
+    conda_id: conda-forge/gmaps
+    license: BSD-3-Clause
+    labels: ["jupyter"]
+    category: geospatial-data
+  - name: pymap3d
+    show: True
+    description: "pure-Python (Numpy optional) 3D coordinate conversions for geospace ecef.."
+    github_id: geospace-code/pymap3d
+    pypi_id: pymap3d
+    conda_id: conda-forge/pymap3d
+    category: geospatial-data
+  # Financial Data
+  - name: Backtesting.py
+    show: True
+    description: "Backtest trading strategies in Python."
+    pypi_id: backtesting
+    github_id: kernc/backtesting.py
+    category: financial-data
+  - name: TensorTrade
+    show: True
+    description: "An open source reinforcement learning framework for training,.."
+    github_id: tensortrade-org/tensortrade
+    pypi_id: tensortrade
+    category: financial-data
+  - name: empyrical
+    show: True
+    description: "Common financial risk and performance metrics. Used by zipline and.."
+    pypi_id: empyrical
+    conda_id: conda-forge/empyrical
+    github_id: quantopian/empyrical
+    category: financial-data
+  - name: pyfolio
+    show: True
+    description: "Portfolio and risk analytics in Python."
+    pypi_id: pyfolio
+    github_id: quantopian/pyfolio
+    conda_id: conda-forge/pyfolio
+    category: financial-data
+  - name: Alphalens
+    show: True
+    description: "Performance analysis of predictive (alpha) stock factors."
+    pypi_id: alphalens
+    github_id: quantopian/alphalens
+    conda_id: conda-forge/alphalens
+    category: financial-data
+  - name: zipline
+    show: True
+    description: "Zipline, a Pythonic Algorithmic Trading Library."
+    pypi_id: zipline
+    github_id: quantopian/zipline
+    category: financial-data
+  - name: ffn
+    show: True
+    description: "ffn - a financial function library for Python."
+    pypi_id: ffn
+    github_id: pmorissette/ffn
+    category: financial-data
+  - name: bt
+    show: True
+    description: "bt - flexible backtesting for Python."
+    pypi_id: bt
+    github_id: pmorissette/bt
+    category: financial-data
+  - name: backtrader
+    show: True
+    description: "Python Backtesting library for trading strategies."
+    pypi_id: backtrader
+    github_id: mementum/backtrader
+    category: financial-data
+  - name: Crypto Signals
+    show: True
+    description: "Github.com/CryptoSignal - #1 Quant Trading & Technical.."
+    github_id: CryptoSignal/crypto-signal
+    dockerhub_id: shadowreaver/crypto-signal
+    # TODO: Add package manager
+    category: financial-data
+  - name: Enigma Catalyst
+    show: True
+    description: "An Algorithmic Trading Library for Crypto-Assets in Python."
+    github_id: enigmampc/catalyst
+    pypi_id: enigma-catalyst
+    category: financial-data
+  - name: IB-insync
+    show: True
+    description: "Python sync/async framework for Interactive Brokers API."
+    github_id: erdewit/ib_insync
+    pypi_id: ib_insync
+    conda_id: conda-forge/ib-insync
+    category: financial-data
+  - name: finmarketpy
+    show: True
+    description: "Python library for backtesting trading strategies & analyzing.."
+    github_id: cuemacro/finmarketpy
+    pypi_id: finmarketpy
+    category: financial-data
+  - name: PyAlgoTrade
+    show: True
+    description: "Python Algorithmic Trading Library."
+    github_id: gbeced/pyalgotrade
+    pypi_id: pyalgotrade
+    license: Apache-2.0
+    category: financial-data
+  - name: FinTA
+    show: True
+    description: "Common financial technical indicators implemented in Pandas."
+    github_id: peerchemist/finta
+    pypi_id: finta
+    category: financial-data
+  - name: arch
+    show: True
+    description: "ARCH models in Python."
+    github_id: bashtage/arch
+    pypi_id: arch
+    category: financial-data
+  - name: Alpha Vantage
+    show: True
+    description: "A python wrapper for Alpha Vantage API for financial data."
+    github_id: RomelTorres/alpha_vantage
+    pypi_id: alpha_vantage
+    category: financial-data
+  - name: yfinance
+    show: True
+    description: "Yahoo! Finance market data downloader (+faster Pandas Datareader)."
+    github_id: ranaroussi/yfinance
+    pypi_id: yfinance
+    conda_id: ranaroussi/yfinance
+    category: financial-data
+  - name: Qlib
+    show: True
+    description: "Qlib is an AI-oriented quantitative investment platform, which aims to.."
+    github_id: microsoft/qlib
+    pypi_id: pyqlib
+    labels: ["pytorch"]
+    category: financial-data
+  # Hyperparameter Optimization
+  - name: Hyperopt
+    show: True
+    description: "Distributed Asynchronous Hyperparameter Optimization in Python."
+    pypi_id: hyperopt
+    github_id: hyperopt/hyperopt
+    conda_id: conda-forge/hyperopt
+    category: hyperopt
+  - name: Talos
+    show: True
+    description: "Hyperparameter Optimization for TensorFlow, Keras and PyTorch."
+    pypi_id: talos
+    github_id: autonomio/talos
+    labels: ["tensorflow"]
+    category: hyperopt
+  - name: scikit-optimize
+    show: True
+    description: "Sequential model-based optimization with a `scipy.optimize`.."
+    pypi_id: scikit-optimize
+    github_id: scikit-optimize/scikit-optimize
+    conda_id: conda-forge/scikit-optimize
+    category: hyperopt
+  - name: Optuna
+    show: True
+    description: "A hyperparameter optimization framework."
+    pypi_id: optuna
+    github_id: optuna/optuna
+    conda_id: conda-forge/optuna
+    category: hyperopt
+  - name: HpBandSter
+    show: True
+    description: "a distributed Hyperband implementation on Steroids."
+    pypi_id: hpbandster
+    github_id: automl/HpBandSter
+    category: hyperopt
+  - name: Dragonfly
+    show: True
+    description: "An open source python library for scalable Bayesian optimisation."
+    pypi_id: dragonfly-opt
+    github_id: dragonfly/dragonfly
+    category: hyperopt
+  - name: Keras Tuner
+    show: True
+    description: "Hyperparameter tuning for humans."
+    pypi_id: keras-tuner
+    github_id: keras-team/keras-tuner
+    labels: ["tensorflow"]
+    category: hyperopt
+  - name: Devol
+    show: True
+    description: "Genetic neural architecture search with Keras."
+    github_id: joeddav/devol
+    # TODO: Add package manager
+    category: hyperopt
+  - name: TPOT
+    show: True
+    description: "A Python Automated Machine Learning tool that optimizes machine.."
+    pypi_id: tpot
+    github_id: EpistasisLab/tpot
+    conda_id: conda-forge/tpot
+    labels: ["sklearn"]
+    category: hyperopt
+  - name: NNI
+    show: True
+    description: "An open source AutoML toolkit for automate machine learning lifecycle,.."
+    pypi_id: nni
+    github_id: microsoft/nni
+    category: hyperopt
+  - name: AutoKeras
+    show: True
+    description: "AutoML library for deep learning."
+    pypi_id: autokeras
+    github_id: keras-team/autokeras
+    labels: ["tensorflow"]
+    category: hyperopt
+  - name: AdaNet
+    show: True
+    description: "Fast and flexible AutoML with learning guarantees."
+    pypi_id: adanet
+    github_id: tensorflow/adanet
+    labels: ["tensorflow"]
+    category: hyperopt
+  - name: auto-sklearn
+    show: True
+    description: "Automated Machine Learning with scikit-learn."
+    pypi_id: auto-sklearn
+    github_id: automl/auto-sklearn
+    labels: ["sklearn"]
+    category: hyperopt
+  - name: Xcessiv
+    show: True
+    description: "A web-based application for quick, scalable, and automated.."
+    pypi_id: xcessiv
+    github_id: reiinakano/xcessiv
+    category: hyperopt
+  - name: Hyperas
+    show: True
+    description: "Keras + Hyperopt: A very simple wrapper for convenient.."
+    pypi_id: hyperas
+    github_id: maxpumperla/hyperas
+    labels: ["tensorflow"]
+    category: hyperopt
+  - name: SMAC3
+    show: True
+    description: "Sequential Model-based Algorithm Configuration."
+    pypi_id: smac
+    github_id: automl/SMAC3
+    category: hyperopt
+  - name: Orion
+    show: True
+    description: "Asynchronous Distributed Hyperparameter Optimization."
+    pypi_id: orion
+    github_id: Epistimio/orion
+    category: hyperopt
+  - name: Bayesian Optimization
+    show: True
+    description: "A Python implementation of global optimization with.."
+    pypi_id: bayesian-optimization
+    github_id: fmfn/BayesianOptimization
+    category: hyperopt
+  - name: Sherpa
+    show: True
+    description: "Hyperparameter optimization that enables researchers to experiment,.."
+    pypi_id: parameter-sherpa
+    github_id: sherpa-ai/sherpa
+    category: hyperopt
+  - name: HyperparameterHunter
+    show: True
+    description: "Easy hyperparameter optimization and automatic result.."
+    pypi_id: hyperparameter-hunter
+    github_id: HunterMcGushion/hyperparameter_hunter
+    category: hyperopt
+  - name: Ax
+    show: True
+    description: "Adaptive Experimentation Platform."
+    pypi_id: ax-platform
+    github_id: facebook/Ax
+    labels: ["pytorch"]
+    category: hyperopt
+  - name: Parfit
+    show: True
+    description: "A package for parallelizing the fit and flexibly scoring of.."
+    pypi_id: parfit
+    github_id: jmcarpenter2/parfit
+    labels: ["sklearn"]
+    category: hyperopt
+  - name: auto_ml
+    show: True
+    pypi_id: auto_ml
+    github_id: ClimbsRocks/auto_ml
+    category: hyperopt
+  - name: nevergrad
+    show: True
+    description: "A Python toolbox for performing gradient-free optimization."
+    pypi_id: nevergrad
+    github_id: facebookresearch/nevergrad
+    conda_id: conda-forge/nevergrad
+    category: hyperopt
+  - name: featuretools
+    show: True
+    description: "An open source python library for automated feature engineering."
+    pypi_id: featuretools
+    conda_id: conda-forge/featuretools
+    github_id: alteryx/featuretools
+    category: hyperopt
+  - name: MLBox
+    show: True
+    description: "MLBox is a powerful Automated Machine Learning python library."
+    pypi_id: mlbox
+    github_id: AxeldeRomblay/MLBox
+    category: hyperopt
+  - name: Test Tube
+    show: True
+    description: "Python library to easily log experiments and parallelize.."
+    pypi_id: test_tube
+    github_id: williamFalcon/test-tube
+    category: hyperopt
+  - name: Auto Tune Models
+    show: True
+    description: "Auto Tune Models - A multi-tenant, multi-data system for.."
+    pypi_id: atm
+    github_id: HDI-Project/ATM
+    category: hyperopt
+  - name: BoTorch
+    show: True
+    description: "Bayesian optimization in PyTorch."
+    pypi_id: botorch
+    github_id: pytorch/botorch
+    labels: ["pytorch"]
+    category: hyperopt
+  - name: automl-gs
+    show: True
+    description: "Provide an input CSV and a target field to predict, generate a.."
+    pypi_id: automl_gs
+    github_id: minimaxir/automl-gs
+    category: hyperopt
+  - name: AutoGluon
+    show: True
+    description: "AutoGluon: AutoML for Text, Image, and Tabular Data."
+    pypi_id: autogluon
+    github_id: awslabs/autogluon
+    labels: ["mxnet"]
+    category: hyperopt
+  - name: ENAS
+    show: True
+    description: "PyTorch implementation of Efficient Neural Architecture Search via.."
+    github_id: carpedm20/ENAS-pytorch
+    # TODO: Add package manager
+    category: hyperopt
+  - name: AlphaPy
+    show: True
+    description: "Automated Machine Learning [AutoML] with Python, scikit-learn, Keras,.."
+    pypi_id: alphapy
+    github_id: ScottfreeLLC/AlphaPy
+    category: hyperopt
+  - name: GPyOpt
+    show: True
+    description: "Gaussian Process Optimization using GPy."
+    pypi_id: gpyopt
+    github_id: SheffieldML/GPyOpt
+    category: hyperopt
+  - name: Hypermax
+    show: True
+    description: "Better, faster hyper-parameter optimization."
+    pypi_id: hypermax
+    github_id: electricbrainio/hypermax
+    category: hyperopt
+  - name: Hypertunity
+    show: True
+    description: "A toolset for black-box hyperparameter optimisation."
+    pypi_id: hypertunity
+    github_id: gdikov/hypertunity
+    category: hyperopt
+  - name: Auptimizer
+    show: True
+    description: "An automatic ML model optimization tool."
+    pypi_id: auptimizer
+    github_id: LGE-ARC-AdvancedAI/auptimizer
+    category: hyperopt
+  - name: Advisor
+    show: True
+    description: "Open-source implementation of Google Vizier for hyper parameters.."
+    pypi_id: advisor
+    github_id: tobegit3hub/advisor
+    dockerhub_id: tobegit3hub/advisor
+    category: hyperopt
+  # ML Workflow Tools
+  - name: DVC
+    show: True
+    description: "Data Version Control | Git for Data & Models."
+    github_id: iterative/dvc
+    pypi_id: dvc
+    brew_id: dvc
+    conda_id: conda-forge/dvc
+    apt_id: dvc
+    yum_id: dvc
+    category: ml-experiments
+  - name: ml-metadata
+    show: True
+    description: "For recording and retrieving metadata associated with ML.."
+    github_id: google/ml-metadata
+    pypi_id: ml-metadata
+    category: ml-experiments
+  - name: traintool
+    show: True
+    description: "Train off-the-shelf machine learning models in one.."
+    github_id: jrieke/traintool
+    pypi_id: traintool
+    labels: ["pytorch", "tensorflow", "sklearn"]
+    category: ml-experiments
+  - name: Studio.ml
+    show: True
+    description: "Studio: Simplify and expedite model building process."
+    pypi_id: studioml
+    github_id: studioml/studio
+    category: ml-experiments
+  - name: Labml
+    show: True
+    description: "Monitor deep learning model training and hardware usage from your mobile.."
+    pypi_id: labml
+    github_id: lab-ml/labml
+    category: ml-experiments
+  - name: ClearML
+    show: True
+    description: "ClearML - Auto-Magical Suite of tools to streamline your ML.."
+    pypi_id: clearml
+    github_id: allegroai/clearml
+    dockerhub_id: allegroai/trains
+    category: ml-experiments
+  - name: snakemake
+    show: True
+    description: "This is the development home of the workflow management system.."
+    pypi_id: snakemake
+    github_id: snakemake/snakemake
+    conda_id: bioconda/snakemake
+    category: ml-experiments
+  - name: sacred
+    show: True
+    description: "Sacred is a tool to help you configure, organize, log and reproduce.."
+    pypi_id: sacred
+    github_id: IDSIA/sacred
+    category: ml-experiments
+  - name: datmo
+    show: True
+    description: "Open source production model management tool for data scientists."
+    pypi_id: datmo
+    github_id: datmo/datmo
+    category: ml-experiments
+  - name: mlflow
+    show: True
+    description: "Open source platform for the machine learning lifecycle."
+    pypi_id: mlflow
+    github_id: mlflow/mlflow
+    conda_id: conda-forge/mlflow
+    category: ml-experiments
+  - name: Metaflow
+    show: True
+    description: "Build and manage real-life data science projects with ease."
+    pypi_id: metaflow
+    github_id: Netflix/metaflow
+    conda_id: conda-forge/metaflow
+    category: ml-experiments
+  - name: knockknock
+    show: True
+    description: "Knock Knock: Get notified when your training ends with only two.."
+    pypi_id: knockknock
+    github_id: huggingface/knockknock
+    conda_id: conda-forge/knockknock
+    category: ml-experiments
+  - name: kaggle
+    show: True
+    description: "Official Kaggle API."
+    pypi_id: kaggle
+    github_id: Kaggle/kaggle-api
+    conda_id: conda-forge/kaggle
+    category: ml-experiments
+  - name: steppy
+    show: True
+    description: "Lightweight, Python library for fast and reproducible experimentation."
+    pypi_id: steppy
+    github_id: minerva-ml/steppy
+    category: ml-experiments
+  - name: Guild AI
+    show: True
+    description: "Experiment tracking, ML developer tools."
+    pypi_id: guildai
+    github_id: guildai/guildai
+    category: ml-experiments
+  - name: TensorWatch
+    show: True
+    description: "Debugging, monitoring and visualization for Python Machine Learning.."
+    pypi_id: tensorwatch
+    github_id: microsoft/tensorwatch
+    category: ml-experiments
+  - name: TensorBoard Logger
+    show: True
+    description: "Log TensorBoard events without touching TensorFlow."
+    pypi_id: tensorboard_logger
+    github_id: TeamHG-Memex/tensorboard_logger
+    category: ml-experiments
+  - name: VisualDL
+    show: True
+    description: "Deep Learning Visualization Toolkit."
+    pypi_id: visualdl
+    github_id: PaddlePaddle/VisualDL
+    labels: ["paddle"]
+    category: ml-experiments
+  - name: Tensorboard
+    show: True
+    description: "TensorFlow's Visualization Toolkit."
+    pypi_id: tensorboard
+    github_id: tensorflow/tensorboard
+    conda_id: conda-forge/tensorboard
+    labels: ["tensorflow"]
+    category: ml-experiments
+  - name: tensorboardX
+    show: True
+    description: "tensorboard for pytorch (and chainer, mxnet, numpy, ...)."
+    pypi_id: tensorboardX
+    github_id: lanpa/tensorboardX
+    conda_id: conda-forge/tensorboardx
+    category: ml-experiments
+  - name: Catalyst
+    show: True
+    description: "Accelerated deep learning R&D."
+    pypi_id: catalyst
+    github_id: catalyst-team/catalyst
+    labels: ["pytorch"]
+    category: ml-experiments
+  - name: SageMaker SDK
+    show: True
+    description: "A library for training and deploying machine learning.."
+    pypi_id: sagemaker
+    github_id: aws/sagemaker-python-sdk
+    labels: ["mxnet", "tensorflow"]
+    category: ml-experiments
+  - name: TNT
+    show: True
+    description: "Simple tools for logging and visualizing, loading and training."
+    pypi_id: torchnet
+    github_id: pytorch/tnt
+    labels: ["pytorch"]
+    category: ml-experiments
+  - name: MXBoard
+    show: True
+    description: "Logging MXNet data for visualization in TensorBoard."
+    pypi_id: mxboard
+    github_id: awslabs/mxboard
+    labels: ["mxnet"]
+    category: ml-experiments
+  - name: SKLL
+    show: True
+    description: "SciKit-Learn Laboratory (SKLL) makes it easy to run machine.."
+    pypi_id: skll
+    github_id: EducationalTestingService/skll
+    labels: ["sklearn"]
+    category: ml-experiments
+  - name: AzureML SDK
+    show: True
+    description: "Python notebooks with ML and deep learning examples with Azure.."
+    pypi_id: azureml-sdk
+    github_id: Azure/MachineLearningNotebooks
+    category: ml-experiments
+  - name: ModelChimp
+    show: True
+    description: "Experiment tracking for machine and deep learning projects."
+    pypi_id: modelchimp
+    github_id: ModelChimp/modelchimp
+    dockerhub_id: modelchimp/modelchimp-server
+    category: ml-experiments
+  - name: PyCaret
+    show: True
+    description: "An open-source, low-code machine learning library in Python."
+    pypi_id: pycaret
+    github_id: pycaret/pycaret
+    category: ml-experiments
+  # Reinforcement Learning
+  - name: TensorForce
+    show: True
+    description: "Tensorforce: a TensorFlow library for applied.."
+    pypi_id: tensorforce
+    github_id: tensorforce/tensorforce
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  - name: PFRL
+    show: True
+    description: "PFRL: a PyTorch-based deep reinforcement learning library."
+    pypi_id: pfrl
+    github_id: pfnet/pfrl
+    category: reinforcement-learning
+  - name: OpenAI Gym
+    show: True
+    description: "A toolkit for developing and comparing reinforcement learning.."
+    pypi_id: gym
+    github_id: openai/gym
+    license: MIT
+    category: reinforcement-learning
+  - name: Dopamine
+    show: True
+    description: "Dopamine is a research framework for fast prototyping of.."
+    pypi_id: dopamine-rl
+    github_id: google/dopamine
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  - name: RLax
+    show: True
+    description: "A library of reinforcement learning building blocks in JAX."
+    pypi_id: rlax
+    github_id: deepmind/rlax
+    labels: ["jax"]
+    category: reinforcement-learning
+  - name: TRFL
+    show: True
+    description: "TensorFlow Reinforcement Learning."
+    pypi_id: trfl
+    github_id: deepmind/trfl
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  - name: PARL
+    show: True
+    description: "A high-performance distributed training framework for Reinforcement.."
+    pypi_id: parl
+    github_id: PaddlePaddle/PARL
+    labels: ["paddle"]
+    category: reinforcement-learning
+  - name: TensorLayer
+    show: True
+    description: "Deep Learning and Reinforcement Learning Library for.."
+    pypi_id: tensorlayer
+    github_id: tensorlayer/tensorlayer
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  - name: TF-Agents
+    show: True
+    description: "TF-Agents: A reliable, scalable and easy to use TensorFlow.."
+    pypi_id: tf-agents
+    github_id: tensorflow/agents
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  - name: ChainerRL
+    show: True
+    description: "ChainerRL is a deep reinforcement learning library built on top of.."
+    pypi_id: chainerrl
+    github_id: chainer/chainerrl
+    category: reinforcement-learning
+  - name: keras-rl
+    show: True
+    description: "Deep Reinforcement Learning for Keras."
+    pypi_id: keras-rl
+    github_id: keras-rl/keras-rl
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  - name: ReAgent
+    show: True
+    description: "A platform for Reasoning systems (Reinforcement Learning,.."
+    github_id: facebookresearch/ReAgent
+    license: BSD-3-Clause
+    labels: ["pytorch"]
+    # TODO: Add package manager
+    category: reinforcement-learning
+  - name: garage
+    show: True
+    description: "A toolkit for reproducible reinforcement learning research."
+    github_id: rlworkgroup/garage
+    pypi_id: garage
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  - name: Coach
+    show: True
+    description: "Reinforcement Learning Coach by Intel AI Lab enables easy.."
+    github_id: IntelLabs/coach
+    pypi_id: rl_coach
+    category: reinforcement-learning
+  - name: Stable Baselines
+    show: True
+    description: "A fork of OpenAI Baselines, implementations of reinforcement.."
+    github_id: hill-a/stable-baselines
+    pypi_id: stable-baselines
+    category: reinforcement-learning
+  - name: ViZDoom
+    show: True
+    description: "Doom-based AI Research Platform for Reinforcement Learning from Raw.."
+    github_id: mwydmuch/ViZDoom
+    pypi_id: vizdoom
+    category: reinforcement-learning
+  - name: DeepMind Lab
+    show: True
+    description: "A customisable 3D platform for agent-based AI research."
+    github_id: deepmind/lab
+    category: reinforcement-learning
+  - name: Acme
+    show: True
+    description: "A library of reinforcement learning components and agents."
+    github_id: deepmind/acme
+    pypi_id: dm-acme
+    labels: ["tensorflow"]
+    category: reinforcement-learning
+  # Data Containers and Structures
+  - name: pandas
+    show: True
+    description: "Flexible and powerful data analysis / manipulation library for.."
+    pypi_id: pandas
+    conda_id: conda-forge/pandas
+    github_id: pandas-dev/pandas
+    labels: ["pandas"]
+    category: data-containers
+  - name: numpy
+    show: True
+    description: "The fundamental package for scientific computing with Python."
+    pypi_id: numpy
+    conda_id: conda-forge/numpy
+    github_id: numpy/numpy
+    category: data-containers
+  - name: Arrow
+    show: True
+    description: "Apache Arrow is a cross-language development platform for in-.."
+    pypi_id: pyarrow
+    github_id: apache/arrow
+    conda_id: conda-forge/arrow
+    category: data-containers
+  - name: PandaPy
+    show: True
+    description: "PandaPy has the speed of NumPy and the usability of Pandas 10x to 50x.."
+    pypi_id: pandapy
+    github_id: firmai/pandapy
+    labels: ["pandas"]
+    category: data-containers
+  - name: xarray
+    show: True
+    description: "N-D labeled arrays and datasets in Python."
+    pypi_id: xarray
+    github_id: pydata/xarray
+    conda_id: conda-forge/xarray
+    category: data-containers
+  - name: sklearn-pandas
+    show: True
+    description: "Pandas integration with sklearn."
+    pypi_id: sklearn-pandas
+    github_id: scikit-learn-contrib/sklearn-pandas
+    labels: ["sklearn", "pandas"]
+    license: Zlib
+    category: data-containers
+  - name: pandasql
+    show: True
+    description: "sqldf for pandas."
+    pypi_id: pandasql
+    github_id: yhat/pandasql
+    labels: ["pandas"]
+    category: data-containers
+  - name: swifter
+    show: True
+    description: "A package which efficiently applies any function to a pandas.."
+    pypi_id: swifter
+    github_id: jmcarpenter2/swifter
+    conda_id: conda-forge/swifter
+    labels: ["pandas"]
+    category: data-containers
+  - name: Blaze
+    show: True
+    description: "NumPy and Pandas interface to Big Data."
+    pypi_id: blaze
+    github_id: blaze/blaze
+    conda_id: conda-forge/blaze
+    category: data-containers
+  - name: h5py
+    show: True
+    description: "HDF5 for Python -- The h5py package is a Pythonic interface to the HDF5.."
+    pypi_id: h5py
+    github_id: h5py/h5py
+    conda_id: conda-forge/h5py
+    category: data-containers
+  - name: datasketch
+    show: True
+    description: "MinHash, LSH, LSH Forest, Weighted MinHash, HyperLogLog,.."
+    pypi_id: datasketch
+    github_id: ekzhu/datasketch
+    category: data-containers
+  - name: datatable
+    show: True
+    description: "A Python package for manipulating 2-dimensional tabular data.."
+    pypi_id: datatable
+    github_id: h2oai/datatable
+    category: data-containers
+  - name: Vaex
+    show: True
+    description: "Out-of-Core hybrid Apache Arrow/NumPy DataFrame for Python, ML, visualize and.."
+    github_id: vaexio/vaex
+    conda_id: conda-forge/vaex
+    pypi_id: vaex
+    category: data-containers
+  - name: Koalas
+    show: True
+    description: "Koalas: pandas API on Apache Spark."
+    pypi_id: koalas
+    github_id: databricks/koalas
+    conda_id: conda-forge/koalas
+    labels: ["spark", "pandas"]
+    category: data-containers
+  - name: Bottleneck
+    show: True
+    description: "Fast NumPy array functions written in C."
+    pypi_id: Bottleneck
+    github_id: pydata/bottleneck
+    conda_id: conda-forge/bottleneck
+    category: data-containers
+  - name: PyTables
+    show: True
+    description: "A Python package to manage extremely large amounts of data."
+    pypi_id: tables
+    github_id: PyTables/PyTables
+    conda_id: conda-forge/pytables
+    category: data-containers
+  - name: TinyDB
+    show: True
+    description: "TinyDB is a lightweight document oriented database optimized for your.."
+    pypi_id: tinydb
+    github_id: msiemens/tinydb
+    conda_id: conda-forge/tinydb
+    category: data-containers
+  - name: pickleDB
+    show: True
+    description: "pickleDB is an open source key-value store using Python's json.."
+    pypi_id: pickledb
+    github_id: patx/pickledb
+    category: data-containers
+  - name: Bounter
+    show: True
+    description: "Efficient Counter that uses a limited (bounded) amount of memory.."
+    pypi_id: bounter
+    github_id: RaRe-Technologies/bounter
+    category: data-containers
+  - name: StaticFrame
+    show: True
+    description: "Immutable and grow-only Pandas-like DataFrames with a more explicit.."
+    github_id: InvestmentSystems/static-frame
+    pypi_id: static-frame
+    conda_id: conda-forge/static-frame
+    license: MIT
+    category: data-containers
+  - name: Modin
+    show: True
+    description: "Modin: Speed up your Pandas workflows by changing a single line of.."
+    pypi_id: modin
+    github_id: modin-project/modin
+    labels: ["pandas"]
+    category: data-containers
+  - name: Arctic
+    show: True
+    description: "Arctic is a high performance datastore for numeric data."
+    pypi_id: arctic
+    github_id: man-group/arctic
+    conda_id: conda-forge/arctic
+    description: "Arctic is a high performance datastore for numeric data."
+    category: data-containers
+  - name: numexpr
+    show: True
+    description: "Fast numerical array expression evaluator for Python, NumPy, PyTables,.."
+    pypi_id: numexpr
+    github_id: pydata/numexpr
+    conda_id: conda-forge/numexpr
+    category: data-containers
+  - name: Pandaral·lel
+    show: True
+    pypi_id: pandarallel
+    github_id: nalepae/pandarallel
+    labels: ["pandas", "jupyter"]
+    category: data-containers
+  - name: Pandas Summary
+    show: True
+    description: "An extension to pandas dataframes describe function."
+    pypi_id: pandas-summary
+    github_id: mouradmourafiq/pandas-summary
+    labels: ["pandas"]
+    category: data-containers
+  - name: fletcher
+    show: True
+    description: "Pandas ExtensionDType/Array backed by Apache Arrow."
+    pypi_id: fletcher
+    github_id: xhochy/fletcher
+    conda_id: conda-forge/fletcher
+    labels: ["pandas"]
+    category: data-containers
+  - name: zarr
+    show: True
+    description: "An implementation of chunked, compressed, N-dimensional arrays for Python."
+    pypi_id: zarr
+    github_id: zarr-developers/zarr-python
+    conda_id: conda-forge/zarr
+    category: data-containers
+  # Medical Data
+  - name: DLTK
+    show: True
+    description: "Deep Learning Toolkit for Medical Image Analysis."
+    pypi_id: dltk
+    github_id: DLTK/DLTK
+    labels: ["tensorflow"]
+    category: medical-data
+  - name: Nilearn
+    show: True
+    description: "Machine learning for NeuroImaging in Python."
+    pypi_id: nilearn
+    github_id: nilearn/nilearn
+    conda_id: conda-forge/nilearn
+    labels: ["sklearn"]
+    category: medical-data
+  - name: NiftyNet
+    show: True
+    description: "[unmaintained] An open-source convolutional neural.."
+    pypi_id: niftynet
+    github_id: NifTK/NiftyNet
+    labels: ["tensorflow"]
+    category: medical-data
+  - name: MONAI
+    show: True
+    description: "AI Toolkit for Healthcare Imaging."
+    pypi_id: monai
+    github_id: Project-MONAI/MONAI
+    labels: ["pytorch"]
+    category: medical-data
+  - name: MNE
+    show: True
+    description: "MNE: Magnetoencephalography (MEG) and Electroencephalography (EEG) in Python."
+    pypi_id: mne
+    github_id: mne-tools/mne-python
+    conda_id: conda-forge/mne
+    category: medical-data
+  - name: MedicalTorch
+    show: True
+    description: "A medical imaging framework for Pytorch."
+    pypi_id: medicaltorch
+    github_id: perone/medicaltorch
+    labels: ["pytorch"]
+    category: medical-data
+  - name: NiBabel
+    show: True
+    description: "Python package to access a cacophony of neuro-imaging file formats."
+    pypi_id: nibabel
+    github_id: nipy/nibabel
+    conda_id: conda-forge/nibabel
+    category: medical-data
+  - name: MedPy
+    show: True
+    description: "Medical image processing in Python."
+    pypi_id: MedPy
+    github_id: loli/medpy
+    category: medical-data
+  - name: DeepNeuro
+    show: True
+    description: "A deep learning python package for neuroimaging data. Made by:."
+    pypi_id: deepneuro
+    github_id: QTIM-Lab/DeepNeuro
+    category: medical-data
+  - name: Medical Detection Toolkit
+    show: True
+    description: "The Medical Detection Toolkit contains 2D + 3D.."
+    github_id: MIC-DKFZ/medicaldetectiontoolkit
+    labels: ["pytorch"]
+    # TODO: add package manager
+    category: medical-data
+  - name: NIPYPE
+    show: True
+    description: "Workflows and interfaces for neuroimaging packages."
+    pypi_id: nipype
+    github_id: nipy/nipype
+    conda_id: conda-forge/nipype
+    license: Apache-2.0
+    category: medical-data
+  - name: MedicalNet
+    show: True
+    description: "Many studies have shown that the performance on deep learning is.."
+    github_id: Tencent/MedicalNet
+    # TODO: add package manager
+    license: MIT
+    category: medical-data
+  - name: NIPY
+    show: True
+    description: "Neuroimaging in Python FMRI analysis package."
+    pypi_id: nipy
+    github_id: nipy/nipy
+    conda_id: conda-forge/nipy
+    category: medical-data
+  - name: Brainiak
+    show: True
+    description: "Brain Imaging Analysis Kit."
+    pypi_id: brainiak
+    github_id: brainiak/brainiak
+    dockerhub_id: brainiak/brainiak
+    category: medical-data
+  - name: Lifelines
+    show: True
+    description: "Survival analysis in Python."
+    pypi_id: lifelines
+    github_id: CamDavidsonPilon/lifelines
+    conda_id: conda-forge/lifelines
+    category: medical-data
+  - name: Glow
+    show: True
+    description: "An open-source toolkit for large-scale genomic analysis."
+    pypi_id: glow.py
+    github_id: projectglow/glow
+    category: medical-data
+  - name: DeepVariant
+    show: True
+    description: "DeepVariant is an analysis pipeline that uses a deep neural.."
+    github_id: google/deepvariant
+    conda_id: bioconda/deepvariant
+    labels: ["tensorflow"]
+    category: medical-data
+  - name: Hail
+    show: True
+    description: "Scalable genomic data analysis."
+    github_id: hail-is/hail
+    pypi_id: hail
+    labels: ["spark"]
+    category: medical-data
+  - name: DIPY
+    show: True
+    description: "DIPY is the paragon 3D/4D+ imaging library in Python. Contains generic.."
+    github_id: dipy/dipy
+    pypi_id: dipy
+    conda_id: conda-forge/dipy
+    category: medical-data
+  # Distributed Machine Learning
+  - name: BigDL
+    show: True
+    description: "BigDL: Distributed Deep Learning Framework for Apache Spark."
+    github_id: intel-analytics/BigDL
+    pypi_id: bigdl
+    maven_id: com.intel.analytics.bigdl:bigdl-SPARK_2.4
+    category: distributed-ml
+  - name: BytePS
+    show: True
+    description: "A high performance and generic framework for distributed DNN training."
+    github_id: bytedance/byteps
+    dockerhub_id: bytepsimage/tensorflow
+    license: Apache-2.0
+    pypi_id: byteps
+    category: distributed-ml
+  - name: DeepSpeed
+    show: True
+    description: "DeepSpeed is a deep learning optimization library that makes.."
+    github_id: microsoft/DeepSpeed
+    dockerhub_id: deepspeed/deepspeed
+    pypi_id: deepspeed
+    labels: ["pytorch"]
+    category: distributed-ml
+  - name: dask
+    show: True
+    description: "Parallel computing with task scheduling."
+    pypi_id: dask
+    github_id: dask/dask
+    helm_id: stable/dask
+    conda_id: conda-forge/dask
+    category: distributed-ml
+  - name: dask-ml
+    show: True
+    description: "Scalable Machine Learning with Dask."
+    pypi_id: dask-ml
+    github_id: dask/dask-ml
+    conda_id: conda-forge/dask-ml
+    category: distributed-ml
+  - name: dask.distributed
+    show: True
+    description: "A distributed task scheduler for Dask."
+    pypi_id: distributed
+    github_id: dask/distributed
+    conda_id: conda-forge/distributed
+    category: distributed-ml
+  - name: Submit it
+    show: True
+    description: "Python 3.6+ toolbox for submitting jobs to Slurm."
+    github_id: facebookincubator/submitit
+    pypi_id: submitit
+    conda_id: conda-forge/submitit
+    category: distributed-ml
+  - name: Hivemind
+    show: True
+    description: "Decentralized deep learning in PyTorch. Built to train models on.."
+    pypi_id: hivemind
+    github_id: learning-at-home/hivemind
+    category: distributed-ml
+  - name: Ray
+    show: True
+    description: "An open source framework that provides a simple, universal API for.."
+    pypi_id: ray
+    github_id: ray-project/ray
+    category: distributed-ml
+  - name: mpi4py
+    show: True
+    description: "Python bindings for MPI."
+    pypi_id: mpi4py
+    github_id: mpi4py/mpi4py
+    conda_id: conda-forge/mpi4py
+    category: distributed-ml
+  - name: horovod
+    show: True
+    description: "Distributed training framework for TensorFlow, Keras, PyTorch, and.."
+    pypi_id: horovod
+    github_id: horovod/horovod
+    helm_id: stable/horovod
+    category: distributed-ml
+  - name: LazyCluster
+    show: True
+    description: "Distributed machine learning made simple."
+    pypi_id: lazycluster
+    github_id: ml-tooling/lazycluster
+    category: distributed-ml
+  - name: ipyparallel
+    show: True
+    description: "Interactive Parallel Computing in Python."
+    pypi_id: ipyparallel
+    github_id: ipython/ipyparallel
+    conda_id: conda-forge/ipyparallel
+    labels: ["jupyter"]
+    category: distributed-ml
+  - name: TensorFlowOnSpark
+    show: True
+    description: "TensorFlowOnSpark brings TensorFlow programs to.."
+    pypi_id: tensorflowonspark
+    github_id: yahoo/TensorFlowOnSpark
+    labels: ["tensorflow", "spark"]
+    category: distributed-ml
+  - name: sk-dist
+    show: True
+    description: "Distributed scikit-learn meta-estimators in PySpark."
+    pypi_id: sk-dist
+    github_id: Ibotta/sk-dist
+    labels: ["sklearn", "spark"]
+    category: distributed-ml
+  - name: Mesh
+    show: True
+    description: "Mesh TensorFlow: Model Parallelism Made Easier."
+    pypi_id: mesh-tensorflow
+    github_id: tensorflow/mesh
+    labels: ["tensorflow"]
+    category: distributed-ml
+  - name: Elephas
+    show: True
+    description: "Distributed Deep learning with Keras & Spark."
+    pypi_id: elephas
+    github_id: maxpumperla/elephas
+    labels: ["keras", "spark"]
+    category: distributed-ml
+  - name: Apache Singa
+    show: True
+    description: "a distributed deep learning platform."
+    dockerhub_id: apache/singa
+    github_id: apache/singa
+    conda_id: nusdbsystem/singa
+    category: distributed-ml
+  - name: DEAP
+    show: True
+    description: "Distributed Evolutionary Algorithms in Python."
+    pypi_id: deap
+    github_id: deap/deap
+    conda_id: conda-forge/deap
+    category: distributed-ml
+  - name: TensorFrames
+    show: True
+    description: "[DEPRECATED] Tensorflow wrapper for DataFrames on.."
+    pypi_id: tensorframes
+    github_id: databricks/tensorframes
+    labels: ["tensorflow", "spark"]
+    category: distributed-ml
+  - name: MMLSpark
+    show: True
+    description: "Microsoft Machine Learning for Apache Spark."
+    github_id: Azure/mmlspark
+    pypi_id: mmlspark
+    labels: ["spark"]
+    category: distributed-ml
+  - name: Fiber
+    show: True
+    description: "Distributed Computing for AI Made Simple."
+    github_id: uber/fiber
+    pypi_id: fiber
+    category: distributed-ml
+  # Time Series Data
+  - name: Prophet
+    show: True
+    description: "Tool for producing high quality forecasts for time series data that has.."
+    pypi_id: fbprophet
+    github_id: facebook/prophet
+    category: time-series-data
+  - name: Darts
+    show: True
+    description: "A python library for easy manipulation and forecasting of time series."
+    pypi_id: u8darts
+    github_id: unit8co/darts
+    dockerhub_id: unit8/darts
+    category: time-series-data
+  - name: PyFlux
+    show: True
+    description: "Open source time series library for Python."
+    pypi_id: pyflux
+    github_id: RJT1990/pyflux
+    category: time-series-data
+  - name: tsfresh
+    show: True
+    description: "Automatic extraction of relevant features from time series:."
+    pypi_id: tsfresh
+    github_id: blue-yonder/tsfresh
+    conda_id: conda-forge/tsfresh
+    labels: ["sklearn"]
+    category: time-series-data
+  - name: tslearn
+    show: True
+    description: "A machine learning toolkit dedicated to time-series data."
+    pypi_id: tslearn
+    github_id: tslearn-team/tslearn
+    conda_id: conda-forge/tslearn
+    labels: ["sklearn"]
+    category: time-series-data
+  - name: sktime
+    show: True
+    description: "A unified framework for machine learning with time series."
+    pypi_id: sktime
+    github_id: alan-turing-institute/sktime
+    labels: ["sklearn"]
+    category: time-series-data
+  - name: GluonTS
+    show: True
+    description: "Probabilistic time series modeling in Python."
+    pypi_id: gluonts
+    github_id: awslabs/gluon-ts
+    labels: ["mxnet"]
+    category: time-series-data
+  - name: Streamz
+    show: True
+    description: "Real-time stream processing for python."
+    pypi_id: streamz
+    github_id: python-streamz/streamz
+    conda_id: conda-forge/streamz
+    category: time-series-data
+  - name: STUMPY
+    show: True
+    description: "STUMPY is a powerful and scalable Python library for computing a Matrix.."
+    pypi_id: stumpy
+    github_id: TDAmeritrade/stumpy
+    conda_id: conda-forge/stumpy
+    license: BSD-3-Clause
+    category: time-series-data
+  - name: tick
+    show: True
+    description: "Module for statistical learning, with a particular emphasis on time-.."
+    pypi_id: tick
+    github_id: X-DataInitiative/tick
+    category: time-series-data
+  - name: luminol
+    show: True
+    description: "Anomaly Detection and Correlation library."
+    pypi_id: luminol
+    github_id: linkedin/luminol
+    category: time-series-data
+  - name: seglearn
+    show: True
+    description: "Python module for machine learning time series:."
+    pypi_id: seglearn
+    github_id: dmbee/seglearn
+    category: time-series-data
+  - name: ADTK
+    show: True
+    description: "A Python toolkit for rule-based/unsupervised anomaly detection in time.."
+    pypi_id: adtk
+    github_id: arundo/adtk
+    category: time-series-data
+  # Vector Similarity Search (ANN)
+  - name: Annoy
+    show: True
+    description: "Approximate Nearest Neighbors in C++/Python optimized for memory usage.."
+    pypi_id: annoy
+    github_id: spotify/annoy
+    category: nn-search
+  - name: NMSLIB
+    show: True
+    description: "Non-Metric Space Library (NMSLIB): An efficient similarity search.."
+    pypi_id: nmslib
+    github_id: nmslib/nmslib
+    conda_id: conda-forge/nmslib
+    license: Apache-2.0
+    category: nn-search
+  - name: Milvus
+    show: True
+    description: "An open source embedding vector similarity search engine powered by.."
+    pypi_id: pymilvus
+    dockerhub_id: milvusdb/milvus
+    github_id: milvus-io/milvus
+    category: nn-search
+  - name: Faiss
+    show: True
+    description: "A library for efficient similarity search and clustering of dense vectors."
+    pypi_id: pymilvus
+    github_id: facebookresearch/faiss
+    conda_id: conda-forge/faiss
+    category: nn-search
+  - name: PySparNN
+    show: True
+    description: "Approximate Nearest Neighbor Search for Sparse Data in Python!."
+    github_id: facebookresearch/pysparnn
+    license: BSD-3-Clause
+    category: nn-search
+  - name: hnswlib
+    show: True
+    description: "Header-only C++/python library for fast approximate nearest neighbors."
+    pypi_id: hnswlib
+    github_id: nmslib/hnswlib
+    category: nn-search
+  - name: Magnitude
+    show: True
+    description: "A fast, efficient universal vector embedding utility package."
+    pypi_id: pymagnitude
+    github_id: plasticityai/magnitude
+    category: nn-search
+  - name: PyNNDescent
+    show: True
+    description: "A Python nearest neighbor descent for approximate nearest neighbors."
+    pypi_id: pynndescent
+    github_id: lmcinnes/pynndescent
+    conda_id: conda-forge/pynndescent
+    category: nn-search
+  - name: NearPy
+    show: True
+    description: "Python framework for fast (approximated) nearest neighbour search in.."
+    pypi_id: NearPy
+    github_id: pixelogik/NearPy
+    category: nn-search
+  - name: NGT
+    show: True
+    description: "Nearest Neighbor Search with Neighborhood Graph and Tree for High-.."
+    pypi_id: ngt
+    github_id: yahoojapan/NGT
+    category: nn-search
+  - name: N2
+    show: True
+    description: "TOROS N2 - lightweight approximate Nearest Neighbor library which runs fast.."
+    pypi_id: n2
+    github_id: kakao/n2
+    category: nn-search
+  # Recommendation Systems
+  - name: TF Ranking
+    show: True
+    description: "Learning to Rank in TensorFlow."
+    pypi_id: tensorflow_ranking
+    github_id: tensorflow/ranking
+    labels: ["tensorflow"]
+    category: recommender-systems
+  - name: RecBole
+    show: True
+    description: "A unified, comprehensive and efficient recommendation library."
+    pypi_id: recbole
+    github_id: RUCAIBox/RecBole
+    conda_id: aibox/recbole
+    labels: ["pytorch"]
+    category: recommender-systems
+  - name: TF Recommenders
+    show: True
+    description: "TensorFlow Recommenders is a library for building.."
+    pypi_id: tensorflow-recommenders
+    github_id: tensorflow/recommenders
+    labels: ["tensorflow"]
+    category: recommender-systems
+  - name: OpenRec
+    show: True
+    description: "OpenRec is an open-source and modular library for neural network-.."
+    pypi_id: openrec
+    github_id: ylongqi/openrec
+    category: recommender-systems
+  - name: scikit-surprise
+    show: True
+    description: "A Python scikit for building and analyzing recommender.."
+    pypi_id: scikit-surprise
+    github_id: NicolasHug/Surprise
+    conda_id: conda-forge/scikit-surprise
+    category: recommender-systems
+  - name: lightfm
+    show: True
+    description: "A Python implementation of LightFM, a hybrid recommendation algorithm."
+    pypi_id: lightfm
+    github_id: lyst/lightfm
+    conda_id: conda-forge/lightfm
+    category: recommender-systems
+  - name: implicit
+    show: True
+    description: "Fast Python Collaborative Filtering for Implicit Feedback Datasets."
+    pypi_id: implicit
+    github_id: benfred/implicit
+    conda_id: conda-forge/implicit
+    category: recommender-systems
+  - name: tensorrec
+    show: True
+    description: "A TensorFlow recommendation algorithm and framework in.."
+    pypi_id: tensorrec
+    github_id: jfkirk/tensorrec
+    labels: ["tensorflow"]
+    category: recommender-systems
+  - name: Spotlight
+    show: True
+    description: "Deep recommender models using PyTorch."
+    github_id: maciejkula/spotlight
+    conda_id: maciejkula/spotlight
+    labels: ["pytorch"]
+    category: recommender-systems
+  - name: Case Recommender
+    show: True
+    description: "Case Recommender: A Flexible and Extensible Python.."
+    github_id: caserec/CaseRecommender
+    pypi_id: caserecommender
+    labels: ["sklearn"]
+    category: recommender-systems
+  - name: recmetrics
+    show: True
+    description: "A library of metrics for evaluating recommender systems."
+    github_id: statisticianinstilettos/recmetrics
+    pypi_id: recmetrics
+    category: recommender-systems
+  - name: Recommenders
+    show: True
+    description: "Best Practices on Recommendation Systems."
+    github_id: microsoft/recommenders
+    category: recommender-systems
+  - name: Cornac
+    show: True
+    description: "A Comparative Framework for Multimodal Recommender Systems."
+    pypi_id: cornac
+    github_id: PreferredAI/cornac
+    conda_id: conda-forge/cornac
+    category: recommender-systems
+  # Audio Processing
+  - name: librosa
+    show: True
+    description: "Python library for audio and music analysis."
+    pypi_id: librosa
+    github_id: librosa/librosa
+    conda_id: conda-forge/librosa
+    category: audio
+  - name: Julius
+    show: True
+    description: "Fast PyTorch based DSP for audio and 1D signals."
+    pypi_id: julius
+    github_id: adefossez/julius
+    labels: ["pytorch"]
+    category: audio
+  - name: Madmom
+    show: True
+    description: "Python audio and music signal processing library."
+    pypi_id: madmom
+    github_id: CPJKU/madmom
+    category: audio
+  - name: Muda
+    show: True
+    description: "A library for augmenting annotated audio data."
+    pypi_id: muda
+    github_id: bmcfee/muda
+    category: audio
+  - name: Magenta
+    show: True
+    description: "Magenta: Music and Art Generation with Machine Intelligence."
+    pypi_id: magenta
+    github_id: magenta/magenta
+    labels: ["tensorflow"]
+    category: audio
+  - name: Pydub
+    show: True
+    description: "Manipulate audio with a simple and easy high level interface."
+    pypi_id: pydub
+    github_id: jiaaro/pydub
+    conda_id: conda-forge/pydub
+    category: audio
+  - name: pyAudioAnalysis
+    show: True
+    description: "Python Audio Analysis Library: Feature Extraction,.."
+    github_id: tyiannak/pyAudioAnalysis
+    pypi_id: pyAudioAnalysis
+    category: audio
+  - name: SpeechRecognition
+    show: True
+    description: "Speech recognition module for Python, supporting.."
+    pypi_id: SpeechRecognition
+    github_id: Uberi/speech_recognition
+    conda_id: conda-forge/speechrecognition
+    category: audio
+  - name: torchaudio
+    show: True
+    description: "Data manipulation and transformation for audio signal.."
+    pypi_id: torchaudio
+    github_id: pytorch/audio
+    labels: ["pytorch"]
+    category: audio
+  - name: aubio
+    show: True
+    description: "a library for audio and music analysis."
+    github_id: aubio/aubio
+    pypi_id: aubio
+    conda_id: conda-forge/aubio
+    category: audio
+  - name: Essentia
+    show: True
+    description: "C++ library for audio and music analysis, description and.."
+    pypi_id: essentia
+    github_id: MTG/essentia
+    category: audio
+  - name: DeepSpeech
+    show: True
+    description: "DeepSpeech is an open source embedded (offline, on-.."
+    pypi_id: deepspeech
+    github_id: mozilla/DeepSpeech
+    labels: ["tensorflow"]
+    category: audio
+  - name: Dejavu
+    show: True
+    description: "Audio fingerprinting and recognition in Python."
+    pypi_id: PyDejavu
+    github_id: worldveil/dejavu
+    category: audio
+  - name: Porcupine
+    show: True
+    description: "On-device wake word detection powered by deep learning."
+    pypi_id: pvporcupine
+    github_id: Picovoice/Porcupine
+    category: audio
+  - name: spleeter
+    show: True
+    description: "Deezer source separation library including pretrained models."
+    pypi_id: spleeter
+    github_id: deezer/spleeter
+    conda_id: conda-forge/spleeter
+    labels: ["tensorflow"]
+    category: audio
+  - name: DDSP
+    show: True
+    description: "DDSP: Differentiable Digital Signal Processing."
+    pypi_id: ddsp
+    github_id: magenta/ddsp
+    labels: ["tensorflow"]
+    category: audio
+  # Model Serialisation & Deployment
+  - name: onnx
+    show: True
+    description: "Open standard for machine learning interoperability."
+    pypi_id: onnx
+    github_id: onnx/onnx
+    conda_id: conda-forge/onnx
+    category: model-serialisation
+  - name: TorchServe
+    show: True
+    description: "Model Serving on PyTorch."
+    pypi_id: torchserve
+    github_id: pytorch/serve
+    conda_id: pytorch/torchserve
+    dockerhub_id: pytorch/torchserve
+    labels: ["pytorch"]
+    category: model-serialisation
+  - name: Larq Compute Engine
+    show: True
+    description: "Highly optimized inference engine for Binarized.."
+    pypi_id: larq-compute-engine
+    github_id: larq/compute-engine
+    category: model-serialisation
+  - name: mmdnn
+    show: True
+    description: "MMdnn is a set of tools to help users inter-operate among different deep.."
+    pypi_id: mmdnn
+    github_id: Microsoft/MMdnn
+    category: model-serialisation
+  - name: sklearn-porter
+    show: True
+    description: "Transpile trained scikit-learn estimators to C, Java,.."
+    pypi_id: sklearn-porter
+    github_id: nok/sklearn-porter
+    labels: ["sklearn"]
+    category: model-serialisation
+  - name: Core ML Tools
+    show: True
+    description: "Core ML tools contain supporting tools for Core ML model.."
+    pypi_id: coremltools
+    github_id: apple/coremltools
+    category: model-serialisation
+  - name: pytorch2keras
+    show: True
+    description: "PyTorch to Keras model convertor."
+    pypi_id: pytorch2keras
+    github_id: nerox8664/pytorch2keras
+    category: model-serialisation
+  - name: Hummingbird
+    show: True
+    description: "Hummingbird compiles trained ML models into tensor computation for.."
+    pypi_id: hummingbird-ml
+    github_id: microsoft/hummingbird
+    category: model-serialisation
+  - name: cortex
+    show: True
+    description: "Cost-effective serverless computing at scale."
+    github_id: cortexlabs/cortex
+    pypi_id: cortex
+    category: model-serialisation
+  # Privacy Machine Learning
+  - name: FATE
+    show: True
+    description: "An Industrial Grade Federated Learning Framework."
+    # TODO: add python distribution
+    github_id: FederatedAI/FATE
+    category: privacy-ml
+  - name: PySyft
+    show: True
+    description: "A library for answering questions using data you cannot see."
+    pypi_id: syft
+    github_id: OpenMined/PySyft
+    labels: ["pytorch"]
+    category: privacy-ml
+  - name: TensorFlow Privacy
+    show: True
+    description: "Library for training machine learning models with.."
+    github_id: tensorflow/privacy
+    pypi_id: tensorflow-privacy
+    labels: ["tensorflow"]
+    category: privacy-ml
+  - name: TFEncrypted
+    show: True
+    description: "A Framework for Encrypted Machine Learning in TensorFlow."
+    github_id: tf-encrypted/tf-encrypted
+    pypi_id: tf-encrypted
+    labels: ["tensorflow"]
+    category: privacy-ml
+  - name: CrypTen
+    show: True
+    description: "A framework for Privacy Preserving Machine Learning."
+    github_id: facebookresearch/CrypTen
+    pypi_id: crypten
+    labels: ["pytorch"]
+    category: privacy-ml
+  - name: Opacus
+    show: True
+    description: "Training PyTorch models with differential privacy."
+    github_id: pytorch/opacus
+    pypi_id: opacus
+    labels: ["pytorch"]
+    category: privacy-ml
+  # GPU Utilities
+  - name: gpustat
+    show: True
+    description: "A simple command-line utility for querying and monitoring GPU status."
+    github_id: wookayin/gpustat
+    pypi_id: gpustat
+    conda_id: conda-forge/gpustat
+    category: gpu-utilities
+  - name: GPUtil
+    show: True
+    description: "A Python module for getting the GPU status from NVIDA GPUs using.."
+    github_id: anderskm/gputil
+    pypi_id: gputil
+    category: gpu-utilities
+  - name: ArrayFire
+    show: True
+    description: "ArrayFire: a general purpose GPU library."
+    github_id: arrayfire/arrayfire
+    pypi_id: arrayfire
+    category: gpu-utilities
+  - name: cuGraph
+    show: True
+    description: "cuGraph - RAPIDS Graph Analytics Library."
+    github_id: rapidsai/cugraph
+    pypi_id: cugraph
+    category: gpu-utilities
+  - name: cuDF
+    show: True
+    description: "cuDF - GPU DataFrame Library."
+    github_id: rapidsai/cudf
+    pypi_id: cudf
+    category: gpu-utilities
+  - name: cuML
+    show: True
+    description: "cuML - RAPIDS Machine Learning Library."
+    github_id: rapidsai/cuml
+    pypi_id: cuml
+    category: gpu-utilities
+  - name: CuPy
+    show: True
+    description: "A NumPy-compatible array library accelerated by CUDA."
+    github_id: cupy/cupy
+    pypi_id: cupy
+    dockerhub_id: cupy/cupy
+    conda_id: conda-forge/cupy
+    category: gpu-utilities
+  - name: py3nvml
+    show: True
+    description: "Python 3 Bindings for NVML library. Get NVIDIA GPU status inside.."
+    github_id: fbcotter/py3nvml
+    pypi_id: py3nvml
+    conda_id: conda-forge/py3nvml
+    category: gpu-utilities
+  - name: scikit-cuda
+    show: True
+    description: "Python interface to GPU-powered libraries."
+    github_id: lebedov/scikit-cuda
+    pypi_id: scikit-cuda
+    category: gpu-utilities
+  - name: PyCUDA
+    show: True
+    description: "CUDA integration for Python, plus shiny features."
+    github_id: inducer/pycuda
+    pypi_id: pycuda
+    category: gpu-utilities
+  - name: nvidia-ml-py3
+    show: True
+    description: "Python 3 Bindings for the NVIDIA Management Library."
+    github_id: nicolargo/nvidia-ml-py3
+    pypi_id: nvidia-ml-py3
+    category: gpu-utilities
+  - name: SpeedTorch
+    show: True
+    description: "Library for faster pinned CPU - GPU transfer in Pytorch."
+    pypi_id: SpeedTorch
+    github_id: Santosh-Gupta/SpeedTorch
+    labels: ["pytorch"]
+    category: gpu-utilities
+  - name: Apex
+    show: True
+    description: "A PyTorch Extension: Tools for easy mixed precision and distributed.."
+    github_id: NVIDIA/apex
+    conda_id: conda-forge/nvidia-apex
+    labels: ["pytorch"]
+    category: gpu-utilities
+  - name: ipyexperiments
+    show: True
+    description: "jupyter/ipython experiment containers for GPU and.."
+    pypi_id: ipyexperiments
+    github_id: stas00/ipyexperiments
+    labels: ["jupyter"]
+    category: gpu-utilities
+  - name: DALI
+    show: True
+    description: "A GPU-accelerated library containing highly optimized building blocks.."
+    github_id: NVIDIA/DALI
+    license: Apache-2.0
+    category: gpu-utilities
+  - name: BlazingSQL
+    show: True
+    description: "BlazingSQL is a lightweight, GPU accelerated, SQL engine for.."
+    github_id: BlazingDB/blazingsql
+    conda_id: blazingsql/blazingsql-protocol
+    category: gpu-utilities
+  - name: cuSignal
+    show: True
+    description: "GPU accelerated signal processing."
+    github_id: rapidsai/cusignal
+    description: "GPU accelerated signal processing."
+    category: gpu-utilities
+  # Data Loading & Extraction
+  - name: Tablib
+    show: True
+    description: "Python Module for Tabular Datasets in XLS, CSV, JSON, YAML, &c."
+    pypi_id: tablib
+    github_id: jazzband/tablib
+    conda_id: conda-forge/tablib
+    category: data-loading
+  - name: python-magic
+    show: True
+    description: "A python wrapper for libmagic."
+    pypi_id: python-magic
+    github_id: ahupp/python-magic
+    conda_id: conda-forge/python-magic
+    category: data-loading
+  - name: SDV
+    show: True
+    description: "Synthetic Data Generation for tabular, relational and time series data."
+    pypi_id: sdv
+    github_id: sdv-dev/SDV
+    category: data-loading
+  - name: Intake
+    show: True
+    description: "Intake is a lightweight package for finding, investigating, loading and.."
+    pypi_id: intake
+    github_id: intake/intake
+    conda_id: conda-forge/intake
+    category: data-loading
+  - name: csvkit
+    show: True
+    description: "A suite of utilities for converting to and working with CSV, the king of.."
+    pypi_id: csvkit
+    github_id: wireservice/csvkit
+    conda_id: conda-forge/csvkit
+    category: data-loading
+  - name: Camelot
+    show: True
+    description: "Camelot: PDF Table Extraction for Humans."
+    pypi_id: camelot-py
+    github_id: atlanhq/camelot
+    category: data-loading
+  - name: snorkel
+    show: True
+    description: "A system for quickly generating training data with weak supervision."
+    pypi_id: snorkel
+    github_id: snorkel-team/snorkel
+    conda_id: conda-forge/snorkel
+    category: data-loading
+  - name: pyexcel-xlsx
+    show: True
+    description: "A wrapper library to read, manipulate and write data in xlsx and.."
+    pypi_id: pyexcel-xlsx
+    github_id: pyexcel/pyexcel-xlsx
+    conda_id: conda-forge/pyexcel-xlsx
+    category: data-loading
+  - name: Faker
+    show: True
+    description: "Faker is a Python package that generates fake data for you."
+    pypi_id: Faker
+    github_id: joke2k/faker
+    conda_id: conda-forge/faker
+    category: data-loading
+  - name: smart-open
+    show: True
+    description: "Utils for streaming large files (S3, HDFS, gzip, bz2...)."
+    pypi_id: smart-open
+    github_id: RaRe-Technologies/smart_open
+    category: data-loading
+  - name: pandas-datareader
+    show: True
+    description: "Extract data from a wide range of Internet sources into.."
+    pypi_id: pandas-datareader
+    github_id: pydata/pandas-datareader
+    conda_id: conda-forge/pandas-datareader
+    labels: ["pandas"]
+    category: data-loading
+  - name: openpyxl
+    show: True
+    description: "A Python library to read/write Excel 2010 xlsx/xlsm files."
+    pypi_id: openpyxl
+    gitlab_id: "https://foss.heptapod.net/api/graphql::openpyxl/openpyxl"
+    conda_id: openpyxl
+    dockerhub_id: "openpyxl/openpyxl-ci"
+    docs_url: https://openpyxl.readthedocs.io/en/stable/
+    license: MIT
+    category: data-loading
+  - name: TensorFlow Datasets
+    show: True
+    description: "TFDS is a collection of datasets ready to use with.."
+    pypi_id: tensorflow-datasets
+    github_id: tensorflow/datasets
+    labels: ["tensorflow"]
+    category: data-loading
+  - name: textract
+    show: True
+    description: "extract text from any document. no muss. no fuss."
+    pypi_id: textract
+    github_id: deanmalmgren/textract
+    conda_id: conda-forge/textract
+    category: data-loading
+  - name: PDFMiner
+    show: True
+    description: "Python PDF Parser (Not actively maintained). Check out pdfminer.six."
+    pypi_id: pdfminer
+    conda_id: conda-forge/pdfminer
+    github_id: euske/pdfminer
+    category: data-loading
+  - name: xmltodict
+    show: True
+    description: "Python module that makes working with XML feel like you are.."
+    pypi_id: xmltodict
+    github_id: martinblech/xmltodict
+    conda_id: conda-forge/xmltodict
+    category: data-loading
+  - name: Singer
+    show: True
+    description: "Standard for moving data between databases, web APIs, files, queues,.."
+    pypi_id: singer-python
+    github_id: singer-io/getting-started
+    description: "Standard for moving data between databases, web APIs, files, queues, and just about anything else you can think of."
+    license: AGPL-3.0
+    category: data-loading
+  - name: xlrd
+    show: True
+    description: "Please use openpyxl where you can..."
+    pypi_id: xlrd
+    github_id: python-excel/xlrd
+    conda_id: conda-forge/xlrd
+    category: data-loading
+  # Data Pipelines & Streaming
+  - name: Great Expectations
+    show: True
+    description: "Always know what to expect from your data."
+    pypi_id: great_expectations
+    github_id: great-expectations/great_expectations
+    category: data-pipelines
+  - name: pysparkling
+    show: True
+    description: "A pure Python implementation of Apache Spark's RDD and DStream.."
+    pypi_id: pysparkling
+    github_id: svenkreiss/pysparkling
+    category: data-pipelines
+  - name: streamparse
+    show: True
+    description: "Run Python in Apache Storm topologies. Pythonic API, CLI.."
+    pypi_id: streamparse
+    github_id: Parsely/streamparse
+    category: data-pipelines
+  - name: mrjob
+    show: True
+    description: "Run MapReduce jobs on Hadoop or Amazon Web Services."
+    pypi_id: mrjob
+    github_id: Yelp/mrjob
+    conda_id: conda-forge/mrjob
+    license: Apache-2.0
+    category: data-pipelines
+  - name: TFX
+    show: True
+    description: "TFX is an end-to-end platform for deploying production ML pipelines."
+    github_id: tensorflow/tfx
+    pypi_id: tfx
+    labels: ["tensorflow"]
+    category: data-pipelines
+  - name: Pypeline
+    show: True
+    description: "Concurrent data pipelines in Python ."
+    pypi_id: pypeln
+    github_id: cgarciae/pypeln
+    category: data-pipelines
+  - name: Botflow
+    show: True
+    description: "Python Fast Dataflow programming framework for Data pipeline work(.."
+    pypi_id: botflow
+    github_id: kkyon/botflow
+    category: data-pipelines
+  - name: BatchFlow
+    show: True
+    description: "BatchFlow helps you conveniently work with random or sequential.."
+    pypi_id: batchflow
+    github_id: analysiscenter/batchflow
+    category: data-pipelines
+  - name: Prefect
+    show: True
+    description: "The easiest way to automate your data."
+    pypi_id: prefect
+    github_id: PrefectHQ/prefect
+    conda_id: conda-forge/prefect
+    category: data-pipelines
+  - name: luigi
+    show: True
+    description: "Luigi is a Python module that helps you build complex pipelines of batch.."
+    github_id: spotify/luigi
+    pypi_id: luigi
+    helm_id: stable/luigi
+    conda_id: luigi
+    category: data-pipelines
+  - name: Databolt Flow
+    show: True
+    description: "Python library for building highly effective data science workflows."
+    pypi_id: d6tflow
+    github_id: d6t/d6tflow
+    category: data-pipelines
+  - name: dbt
+    show: True
+    description: "dbt (data build tool) enables data analysts and engineers to transform.."
+    github_id: fishtown-analytics/dbt
+    pypi_id: dbt
+    brew_id: dbt
+    conda_id: conda-forge/dbt
+    category: data-pipelines
+  - name: PyFunctional
+    show: True
+    description: "Python library for creating data pipelines with chain functional.."
+    github_id: EntilZha/PyFunctional
+    pypi_id: pyfunctional
+    category: data-pipelines
+  - name: Mara Pipelines
+    show: True
+    description: "A lightweight opinionated ETL framework, halfway between plain.."
+    github_id: mara/mara-pipelines
+    pypi_id: mara-pipelines
+    category: data-pipelines
+  - name: pdpipe
+    show: True
+    description: "Easy pipelines for pandas DataFrames."
+    github_id: pdpipe/pdpipe
+    pypi_id: pdpipe
+    labels: ["pandas"]
+    category: data-pipelines
+  - name: riko
+    show: True
+    description: "A Python stream processing engine modeled after Yahoo! Pipes."
+    github_id: nerevu/riko
+    pypi_id: riko
+    category: data-pipelines
+  - name: Dagster
+    show: True
+    description: "A data orchestrator for machine learning, analytics, and ETL."
+    github_id: dagster-io/dagster
+    pypi_id: dagster
+    conda_id: conda-forge/dagster
+    category: data-pipelines
+  - name: Kedro
+    show: True
+    description: "A Python framework for creating reproducible, maintainable and modular.."
+    github_id: quantumblacklabs/kedro
+    pypi_id: kedro
+    category: data-pipelines
+  - name: Airflow
+    show: True
+    description: "Platform to programmatically author, schedule, and monitor workflows."
+    github_id: apache/airflow
+    helm_id: stable/airflow
+    pypi_id: apache-airflow
+    dockerhub_id: apache/airflow
+    conda_id: conda-forge/airflow
+    description: "Platform to programmatically author, schedule, and monitor workflows."
+    category: data-pipelines
+  - name: Beam
+    show: True
+    description: "Unified programming model to define and execute data processing.."
+    github_id: apache/beam
+    pypi_id: apache-beam
+    description: "Unified programming model to define and execute data processing pipelines, including ETL, batch and stream processing."
+    category: data-pipelines
+  - name: faust
+    show: True
+    description: "Python Stream Processing."
+    github_id: robinhood/faust
+    pypi_id: faust
+    category: data-pipelines
+  - name: Celery
+    show: True
+    description: "Asynchronous task queue/job queue based on distributed message passing."
+    github_id: celery/celery
+    pypi_id: celery
+    conda_id: conda-forge/celery
+    description: "Asynchronous task queue/job queue based on distributed message passing."
+    category: data-pipelines
+  - name: bonobo
+    show: True
+    description: "Extract Transform Load for Python 3.5+."
+    github_id: python-bonobo/bonobo
+    pypi_id: bonobo
+    docs_url: http://docs.bonobo-project.org/en/master/
+    category: data-pipelines
+  - name: petl
+    show: True
+    description: "Python Extract Transform and Load Tables of Data."
+    github_id: petl-developers/petl
+    pypi_id: petl
+    conda_id: conda-forge/petl
+    docs_url: http://petl.readthedocs.org
+    category: data-pipelines
+  - name: TaskTiger
+    show: True
+    description: "Python task queue using Redis."
+    github_id: closeio/tasktiger
+    pypi_id: tasktiger
+    category: data-pipelines
+  - name: Optimus
+    show: True
+    description: "Agile Data Preparation Workflows madeeasy with pandas, dask,.."
+    pypi_id: optimuspyspark
+    github_id: ironmussa/Optimus
+    labels: ["spark"]
+    category: data-pipelines
+  - name: Hub
+    show: True
+    description: "Fastest unstructured dataset management for TensorFlow/PyTorch..."
+    github_id: activeloopai/Hub
+    pypi_id: hub
+    category: data-pipelines
+    labels: ["tensorflow", "pytorch"]
+  # Probabilistic Methods
+  - name: Baal
+    show: True
+    description: "Using approximate bayesian posteriors in deep nets for active learning."
+    pypi_id: baal
+    github_id: ElementAI/baal
+    category: probabilistics
+  - name: Funsor
+    show: True
+    description: "Functional tensors for probabilistic programming."
+    pypi_id: funsor
+    github_id: pyro-ppl/funsor
+    labels: ["pytorch"]
+    category: probabilistics
+  - name: Orbit
+    show: True
+    description: "A Python package for Bayesian forecasting with object-oriented design.."
+    pypi_id: orbit-ml
+    github_id: uber/orbit
+    category: probabilistics
+  - name: pomegranate
+    show: True
+    description: "Fast, flexible and easy to use probabilistic modelling in Python."
+    pypi_id: pomegranate
+    github_id: jmschrei/pomegranate
+    conda_id: conda-forge/pomegranate
+    category: probabilistics
+  - name: Pyro
+    show: True
+    description: "Deep universal probabilistic programming with Python and PyTorch."
+    pypi_id: pyro-ppl
+    github_id: pyro-ppl/pyro
+    labels: ["pytorch"]
+    category: probabilistics
+  - name: Edward
+    show: True
+    description: "A probabilistic programming language in TensorFlow. Deep.."
+    pypi_id: edward
+    github_id: blei-lab/edward
+    labels: ["tensorflow"]
+    category: probabilistics
+  - name: GPyTorch
+    show: True
+    description: "A highly efficient and modular implementation of Gaussian Processes.."
+    pypi_id: gpytorch
+    github_id: cornellius-gp/gpytorch
+    labels: ["pytorch"]
+    category: probabilistics
+  - name: tensorflow-probability
+    show: True
+    description: "Probabilistic reasoning and statistical analysis in.."
+    pypi_id: tensorflow-probability
+    github_id: tensorflow/probability
+    conda_id: conda-forge/tensorflow-probability
+    labels: ["tensorflow"]
+    category: probabilistics
+  - name: pgmpy
+    show: True
+    description: "Python Library for learning (Structure and Parameter) and inference.."
+    pypi_id: pgmpy
+    github_id: pgmpy/pgmpy
+    category: probabilistics
+  - name: GPflow
+    show: True
+    description: "Gaussian processes in TensorFlow."
+    pypi_id: gpflow
+    github_id: GPflow/GPflow
+    conda_id: conda-forge/gpflow
+    labels: ["tensorflow"]
+    category: probabilistics
+  - name: PyStan
+    show: True
+    description: "PyStan, a Python interface to Stan, a platform for statistical modeling..."
+    pypi_id: pystan
+    github_id: stan-dev/pystan
+    conda_id: conda-forge/pystan
+    category: probabilistics
+  - name: pyhsmm
+    show: True
+    description: "Bayesian inference in HSMMs and HMMs."
+    pypi_id: pyhsmm
+    github_id: mattjj/pyhsmm
+    category: probabilistics
+  - name: PyMC3
+    show: True
+    description: "Probabilistic Programming in Python: Bayesian Modeling and.."
+    pypi_id: pymc3
+    github_id: pymc-devs/pymc3
+    conda_id: conda-forge/pymc3
+    category: probabilistics
+  - name: ZhuSuan
+    show: True
+    description: "A probabilistic programming library for Bayesian deep learning,.."
+    github_id: thu-ml/zhusuan
+    labels: ["tensorflow"]
+    category: probabilistics
+  # Adversarial Robustness
+  - name: ART
+    show: True
+    description: "Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning.."
+    pypi_id: adversarial-robustness-toolbox
+    github_id: Trusted-AI/adversarial-robustness-toolbox
+    category: adversarial
+  - name: Foolbox
+    show: True
+    description: "A Python toolbox to create adversarial examples that fool neural networks.."
+    pypi_id: foolbox
+    github_id: bethgelab/foolbox
+    category: adversarial
+  - name: TextAttack
+    show: True
+    description: "TextAttack is a Python framework for adversarial attacks, data.."
+    pypi_id: textattack
+    github_id: QData/TextAttack
+    category: adversarial
+  - name: advertorch
+    show: True
+    description: "A Toolbox for Adversarial Robustness Research."
+    pypi_id: advertorch
+    github_id: BorealisAI/advertorch
+    license: GPL-3.0
+    labels: ["pytorch"]
+    category: adversarial
+  - name: CleverHans
+    show: True
+    description: "An adversarial example library for constructing attacks,.."
+    pypi_id: cleverhans
+    github_id: cleverhans-lab/cleverhans
+    labels: ["tensorflow"]
+    category: adversarial
+  - name: AdvBox
+    show: True
+    description: "Advbox is a toolbox to generate adversarial examples that fool.."
+    pypi_id: advbox
+    github_id: advboxes/AdvBox
+    category: adversarial
+  - name: Adversary
+    show: True
+    description: "Tool to generate adversarial text examples and test machine.."
+    pypi_id: Adversary
+    github_id: airbnb/artificial-adversary
+    category: adversarial
+  # Pytorch Utilities
+  - name: AdaBound
+    show: True
+    description: "An optimizer that trains as fast as Adam and as good as SGD."
+    pypi_id: adabound
+    github_id: Luolc/AdaBound
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Lambda Networks
+    show: True
+    description: "Implementation of LambdaNetworks, a new approach to.."
+    pypi_id: lambda-networks
+    github_id: lucidrains/lambda-networks
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Tez
+    show: True
+    description: "Tez is a super-simple and lightweight Trainer for PyTorch. It.."
+    pypi_id: tez
+    github_id: abhishekkrthakur/tez
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Pywick
+    show: True
+    description: "High-level batteries-included neural network training library for.."
+    pypi_id: pywick
+    github_id: achaiah/pywick
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Poutyne
+    show: True
+    description: "A simplified framework and utilities for PyTorch."
+    pypi_id: poutyne
+    github_id: GRAAL-Research/poutyne
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: PML
+    show: True
+    description: "The easiest way to use deep metric learning in your application. Modular,.."
+    pypi_id: pytorch-metric-learning
+    github_id: KevinMusgrave/pytorch-metric-learning
+    conda_id: metric-learning/pytorch-metric-learning
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Performer Pytorch
+    show: True
+    description: "An implementation of Performer, a linear attention-.."
+    pypi_id: performer-pytorch
+    github_id: lucidrains/performer-pytorch
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Antialiased CNNs
+    show: True
+    description: "pip install antialiased-cnns to improve stability and.."
+    pypi_id: antialiased-cnns
+    github_id: adobe/antialiased-cnns
+    labels: ["pytorch"]
+    license: "CC BY-NC-SA 4.0"
+    category: pytorch-utils
+  - name: torch-scatter
+    show: True
+    description: "PyTorch Extension Library of Optimized Scatter Operations."
+    pypi_id: torch-scatter
+    github_id: rusty1s/pytorch_scatter
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Higher
+    show: True
+    description: "higher is a pytorch library allowing users to obtain higher.."
+    pypi_id: higher
+    github_id: facebookresearch/higher
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: PyTorch Sparse
+    show: True
+    description: "PyTorch Extension Library of Optimized Autograd Sparse.."
+    pypi_id: torch-sparse
+    github_id: rusty1s/pytorch_sparse
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: pytorch-summary
+    show: True
+    description: "Model summary in PyTorch similar to `model.summary()`.."
+    github_id: sksq96/pytorch-summary
+    pypi_id: torchsummary
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: SRU
+    show: True
+    description: "Training RNNs as Fast as CNNs (https://arxiv.org/abs/1709.02755)."
+    pypi_id: sru
+    github_id: asappresearch/sru
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Torchmeta
+    show: True
+    description: "A collection of extensions and data-loaders for few-shot learning.."
+    pypi_id: torchmeta
+    github_id: tristandeleu/pytorch-meta
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Pytorch Toolbelt
+    show: True
+    description: "PyTorch extensions for fast R&D prototyping and Kaggle.."
+    pypi_id: pytorch_toolbelt
+    github_id: BloodAxe/pytorch-toolbelt
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: EfficientNets
+    show: True
+    description: "Pretrained EfficientNet, EfficientNet-Lite, MixNet,.."
+    pypi_id: geffnet
+    github_id: rwightman/gen-efficientnet-pytorch
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Torch-Struct
+    show: True
+    description: "Fast, general, and tested differentiable structured prediction.."
+    github_id: harvardnlp/pytorch-struct
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: TabNet
+    show: True
+    description: "PyTorch implementation of TabNet paper :.."
+    github_id: dreamquark-ai/tabnet
+    pypi_id: pytorch-tabnet
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: torchdiffeq
+    show: True
+    description: "Differentiable ODE solvers with full GPU support and.."
+    github_id: rtqichen/torchdiffeq
+    pypi_id: torchdiffeq
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: torchsde
+    show: True
+    description: "Differentiable SDE solvers with GPU support and efficient.."
+    github_id: google-research/torchsde
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Tensor Sensor
+    show: True
+    description: "The goal of this library is to generate more helpful.."
+    github_id: parrt/tensor-sensor
+    pypi_id: tensor-sensor
+    labels: ["pytorch"]
+    category: pytorch-utils
+  # Tensorflow Utilities
+  - name: tensor2tensor
+    show: True
+    description: "Library of deep learning models and datasets designed to.."
+    pypi_id: tensor2tensor
+    github_id: tensorflow/tensor2tensor
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: Saliency
+    show: True
+    description: "Framework-agnostic implementation for state-of-the-art saliency.."
+    pypi_id: saliency
+    github_id: PAIR-code/saliency
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: TF Addons
+    show: True
+    description: "Useful extra functionality for TensorFlow 2.x maintained by.."
+    pypi_id: tensorflow-addons
+    github_id: tensorflow/addons
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: TF Compression
+    show: True
+    description: "Data compression in TensorFlow."
+    pypi_id: tensorflow-compression
+    github_id: tensorflow/compression
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: tensorflow-hub
+    show: True
+    description: "A library for transfer learning by reusing parts of.."
+    pypi_id: tensorflow-hub
+    github_id: tensorflow/hub
+    conda_id: conda-forge/tensorflow-hub
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: TensorFlow I/O
+    show: True
+    pypi_id: tensorflow-io
+    github_id: tensorflow/io
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: Neural Structured Learning
+    show: True
+    description: "Training neural models with structured signals."
+    pypi_id: neural-structured-learning
+    github_id: tensorflow/neural-structured-learning
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: TensorNets
+    show: True
+    description: "High level network definitions with pre-trained weights in.."
+    pypi_id: tensornets
+    github_id: taehoonlee/tensornets
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: TensorFlow Transform
+    show: True
+    description: "Input pipeline framework."
+    pypi_id: tensorflow-transform
+    github_id: tensorflow/transform
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: TensorFlow Cloud
+    show: True
+    description: "The TensorFlow Cloud repository provides APIs that.."
+    pypi_id: tensorflow-cloud
+    github_id: tensorflow/cloud
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: TF Model Optimization
+    show: True
+    description: "A toolkit to optimize ML models for deployment for.."
+    pypi_id: tensorflow-model-optimization
+    github_id: tensorflow/model-optimization
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  # Others
+  - name: tensorly
+    show: True
+    description: "TensorLy: Tensor Learning in Python."
+    pypi_id: tensorly
+    conda_id: conda-forge/tensorly
+    github_id: tensorly/tensorly
+  - name: kmodes
+    show: True
+    description: "Python implementations of the k-modes and k-prototypes clustering.."
+    pypi_id: kmodes
+    github_id: nicodv/kmodes
+  - name: SymPy
+    show: True
+    description: "A computer algebra system written in pure Python."
+    pypi_id: sympy
+    conda_id: conda-forge/sympy
+    github_id: sympy/sympy
+  - name: sklearn-contrib-lightning
+    show: True
+    description: "Large-scale linear classification, regression and.."
+    pypi_id: sklearn-contrib-lightning
+    github_id: scikit-learn-contrib/lightning
+    conda_id: conda-forge/sklearn-contrib-lightning
+    labels: ["sklearn"]
+    category: sklearn-utils
+  - name: scikit-multilearn
+    show: True
+    description: "A scikit-learn based module for multi-label et. al..."
+    pypi_id: scikit-multilearn
+    github_id: scikit-multilearn/scikit-multilearn
+    labels: ["sklearn"]
+    category: sklearn-utils
+  - name: vecstack
+    show: True
+    description: "Python package for stacking (machine learning technique)."
+    pypi_id: vecstack
+    github_id: vecxoz/vecstack
+    #category: model-ensembles
+  - name: mlens
+    show: True
+    description: "ML-Ensemble high performance ensemble learning."
+    pypi_id: mlens
+    github_id: flennerhag/mlens
+    #category: model-ensembles
+  - name: Autograd
+    show: True
+    description: "Efficiently computes derivatives of numpy code."
+    pypi_id: autograd
+    github_id: HIPS/autograd
+    conda_id: conda-forge/autograd
+  - name: MLxtend
+    show: True
+    description: "A library of extension and helper modules for Python's data.."
+    pypi_id: mlxtend
+    github_id: rasbt/mlxtend
+    conda_id: conda-forge/mlxtend
+    labels: ["sklearn"]
+    category: sklearn-utils
+  - name: metric-learn
+    show: True
+    description: "Metric learning algorithms in Python."
+    pypi_id: metric-learn
+    github_id: scikit-learn-contrib/metric-learn
+    labels: ["sklearn"]
+  - name: gplearn
+    show: True
+    description: "Genetic Programming in Python, with a scikit-learn inspired API."
+    pypi_id: gplearn
+    github_id: trevorstephens/gplearn
+    labels: ["sklearn"]
+  - name: pyjanitor
+    show: True
+    description: "Clean APIs for data cleaning. Python implementation of R package Janitor."
+    pypi_id: pyjanitor
+    conda_id: conda-forge/pyjanitor
+    github_id: ericmjl/pyjanitor
+  - name: PyOD
+    show: True
+    description: "(JMLR'19) A Python Toolbox for Scalable Outlier Detection (Anomaly.."
+    pypi_id: pyod
+    github_id: yzhao062/pyod
+  - name: AstroML
+    show: True
+    description: "Machine learning, statistics, and data mining for astronomy and.."
+    pypi_id: astroML
+    github_id: astroML/astroML
+    conda_id: conda-forge/astroml
+    labels: ["sklearn"]
+  - name: Mars
+    show: True
+    description: "Mars is a tensor-based unified framework for large-scale data.."
+    pypi_id: pymars
+    github_id: mars-project/mars
+  - name: PySwarms
+    show: True
+    description: "A research toolkit for particle swarm optimization in Python."
+    pypi_id: pyswarms
+    github_id: ljvmiranda921/pyswarms
+  - name: modAL
+    show: True
+    description: "A modular active learning framework for Python."
+    pypi_id: modAL
+    github_id: modAL-python/modAL
+    labels: ["sklearn"]
+  - name: apricot
+    show: True
+    description: "apricot implements submodular optimization for the purpose of selecting.."
+    pypi_id: apricot-select
+    github_id: jmschrei/apricot
+  - name: DeepChem
+    show: True
+    description: "Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry,.."
+    pypi_id: deepchem
+    github_id: deepchem/deepchem
+    labels: ["tensorflow"]
+  - name: StreamAlert
+    show: True
+    description: "StreamAlert is a serverless, realtime data analysis framework.."
+    github_id: airbnb/streamalert
+  - name: cleanlab
+    show: True
+    description: "The standard package for machine learning with noisy labels and.."
+    pypi_id: cleanlab
+    github_id: cgnorthcutt/cleanlab
+  - name: dabl
+    show: True
+    description: "Data Analysis Baseline Library."
+    pypi_id: dabl
+    github_id: amueller/dabl
+    labels: ["sklearn"]
+    category: sklearn-utils
+  - name: River
+    show: True
+    description: "Online machine learning in Python."
+    # TODO: pypi_id: river
+    github_id: online-ml/river
+  - name: imbalanced-learn
+    show: True
+    description: "A Python Package to Tackle the Curse of Imbalanced.."
+    pypi_id: imbalanced-learn
+    github_id: scikit-learn-contrib/imbalanced-learn
+    conda_id: conda-forge/imbalanced-learn
+    labels: ["sklearn"]
+    category: sklearn-utils
+  - name: category_encoders
+    show: True
+    pypi_id: category_encoders
+    conda_id: conda-forge/category_encoders
+    github_id: scikit-learn-contrib/category_encoders
+    labels: ["sklearn"]
+    category: sklearn-utils
+  - name: Prince
+    show: True
+    description: "Python factor analysis library (PCA, CA, MCA, MFA, FAMD)."
+    pypi_id: prince
+    github_id: MaxHalford/prince
+    labels: ["sklearn"]
+  - name: BioPandas
+    show: True
+    description: "Working with molecular structures in pandas DataFrames."
+    pypi_id: biopandas
+    conda_id: conda-forge/biopandas
+    labels: ["pandas"]
+    github_id: rasbt/biopandas
+  - name: Streamlit
+    show: True
+    description: "Streamlit The fastest way to build data apps in Python."
+    pypi_id: streamlit
+    github_id: streamlit/streamlit
+  - name: Cython BLIS
+    show: True
+    description: "Fast matrix-multiplication as a self-contained Python library no.."
+    pypi_id: blis
+    github_id: explosion/cython-blis
+    conda_id: conda-forge/cython-blis
+  - name: baikal
+    show: True
+    description: "A graph-based functional API for building complex scikit-learn pipelines."
+    pypi_id: baikal
+    github_id: alegonz/baikal
+    conda_id: conda-forge/cython-blis
+  - name: Trax
+    show: True
+    description: "Trax Deep Learning with Clear Code and Speed."
+    pypi_id: trax
+    github_id: google/trax
+  - name: Pythran
+    show: True
+    description: "Ahead of Time compiler for numeric kernels."
+    pypi_id: pythran
+    conda_id: conda-forge/pythran
+    dnf_id: pythran
+    yay_id: python-pythran
+    github_id: serge-sans-paille/pythran
+  - name: Feature Engine
+    show: True
+    description: "Feature engineering package with sklearn like functionality."
+    pypi_id: feature_engine
+    conda_id: conda-forge/feature_engine
+    github_id: solegalli/feature_engine
+  - name: PennyLane
+    show: True
+    description: "PennyLane is a cross-platform Python library for differentiable.."
+    pypi_id: pennylane
+    github_id: PennyLaneAI/PennyLane
+  - name: dash
+    show: True
+    description: "Analytical Web Apps for Python, R, Julia, and Jupyter. No JavaScript.."
+    github_id: plotly/dash
+    conda_id: conda-forge/dash
+    pypi_id: dash
+    category: data-viz
+  - name: sense2vec
+    show: True
+    description: "Contextually-keyed word vectors."
+    github_id: explosion/sense2vec
+    conda_id: conda-forge/sense2vec
+    pypi_id: sense2vec
+    category: nlp
+  - name: pygal
+    show: True
+    description: "PYthon svg GrAph plotting Library."
+    github_id: Kozea/pygal
+    conda_id: conda-forge/pygal
+    pypi_id: pygal
+    category: graph
+  - name: SUOD
+    show: True
+    description: "(MLSys' 21) An Acceleration System for Large-scare Unsupervised.."
+    github_id: yzhao062/SUOD
+    pypi_id: suod
+  - name: gokart
+    show: True
+    description: "A wrapper of the data pipeline library luigi."
+    github_id: m3dev/gokart
+    pypi_id: gokart
+    category: ml-experiments
+  - name: alibi-detect
+    show: True
+    description: "Algorithms for outlier and adversarial instance detection,.."
+    github_id: SeldonIO/alibi-detect
+    pypi_id: alibi-detect
+  - name: PDPbox
+    show: True
+    description: "python partial dependence plot toolbox."
+    github_id: SauceCat/PDPbox
+    conda_id: conda-forge/pdpbox
+    pypi_id: pdpbox
+    category: data-viz
+  - name: mljar-supervised
+    show: True
+    description: "Automated Machine Learning Pipeline with Feature Engineering.."
+    github_id: mljar/mljar-supervised
+    pypi_id: mljar-supervised
+    category: hyperopt
+  - name: Neuraxle
+    show: True
+    description: "A Sklearn-like Framework for Hyperparameter Tuning and AutoML in.."
+    github_id: Neuraxio/Neuraxle
+    pypi_id: neuraxle
+    category: hyperopt
+  - name: hdbscan
+    show: True
+    description: "A high performance implementation of HDBSCAN clustering."
+    github_id: scikit-learn-contrib/hdbscan
+    conda_id: conda-forge/hdbscan
+    pypi_id: hdbscan
+    labels: ["sklearn"]
+  - name: efficientnet
+    show: True
+    description: "Implementation of EfficientNet model. Keras and.."
+    github_id: qubvel/efficientnet
+    pypi_id: efficientnet
+    labels: ["tensorflow"]
+    category: tensorflow-utils
+  - name: facenet-pytorch
+    show: True
+    description: "Pretrained Pytorch face detection (MTCNN) and recognition.."
+    github_id: timesler/facenet-pytorch
+    pypi_id: facenet-pytorch
+    labels: ["pytorch"]
+    category: image
+  - name: chainercv
+    show: True
+    description: "ChainerCV: a Library for Deep Learning in Computer Vision."
+    github_id: chainer/chainercv
+    pypi_id: chainercv
+    category: image
+  - name: spark-nlp
+    show: True
+    description: "State of the Art Natural Language Processing."
+    github_id: JohnSnowLabs/spark-nlp
+    pypi_id: spark-nlp
+    labels: ["spark"]
+    category: nlp
+  - name: carla
+    show: True
+    description: "Open-source simulator for autonomous driving research."
+    github_id: carla-simulator/carla
+    pypi_id: carla
+  - name: espnet
+    show: True
+    description: "End-to-End Speech Processing Toolkit."
+    github_id: espnet/espnet
+    pypi_id: espnet
+    category: audio
+  - name: fastNLP
+    show: True
+    description: "fastNLP: A Modularized and Extensible NLP Framework. Currently still.."
+    github_id: fastnlp/fastNLP
+    pypi_id: fastnlp
+    category: nlp
+  - name: pysc2
+    show: True
+    description: "StarCraft II Learning Environment."
+    github_id: deepmind/pysc2
+    pypi_id: pysc2
+  - name: PaddleHub
+    show: True
+    description: "Awesome pre-trained models toolkit based on PaddlePaddle.300+.."
+    github_id: PaddlePaddle/PaddleHub
+    pypi_id: paddlehub
+    labels: ["paddle"]
+  - name: analytics-zoo
+    show: True
+    description: "Distributed Tensorflow, Keras and PyTorch on Apache.."
+    github_id: intel-analytics/analytics-zoo
+    pypi_id: analytics-zoo
+    labels: ["spark"]
+    category: distributed-ml
+  - name: mtcnn
+    show: True
+    description: "MTCNN face detection implementation for TensorFlow, as a PIP package."
+    github_id: ipazc/mtcnn
+    pypi_id: mtcnn
+    labels: ["tensorflow"]
+    category: image
+  - name: neuralcoref
+    show: True
+    description: "Fast Coreference Resolution in spaCy with Neural Networks."
+    github_id: huggingface/neuralcoref
+    conda_id: conda-forge/neuralcoref
+    pypi_id: neuralcoref
+    category: nlp
+  - name: textgenrnn
+    show: True
+    description: "Easily train your own text-generating neural network of any.."
+    github_id: minimaxir/textgenrnn
+    pypi_id: textgenrnn
+    labels: ["tensorflow"]
+    category: nlp
+  - name: segmentation_models
+    show: True
+    github_id: qubvel/segmentation_models
+    pypi_id: segmentation_models
+    labels: ["tensorflow"]
+    category: image
+  - name: reformer-pytorch
+    show: True
+    description: "Reformer, the efficient Transformer, in Pytorch."
+    github_id: lucidrains/reformer-pytorch
+    pypi_id: reformer-pytorch
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: EfficientNet-PyTorch
+    show: True
+    description: "A PyTorch implementation of EfficientNet and.."
+    github_id: lukemelas/EfficientNet-PyTorch
+    pypi_id: efficientnet-pytorch
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: dlib
+    show: True
+    description: "A toolkit for making real world machine learning and data analysis.."
+    github_id: davisking/dlib
+    pypi_id: dlib
+    conda_id: conda-forge/dlib
+    category: ml-frameworks
+  - name: agate
+    show: True
+    description: "A Python data analysis library that is optimized for humans instead of machines."
+    github_id: wireservice/agate
+    pypi_id: agate
+    conda_id: conda-forge/agate
+  - name: glfw
+    show: True
+    description: "A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input."
+    github_id: glfw/glfw
+    pypi_id: glfw
+    conda_id: conda-forge/glfw
+    category: image
+  - name: haystack
+    show: True
+    description: "End-to-end Python framework for building natural language search.."
+    github_id: deepset-ai/haystack
+    pypi_id: haystack
+    category: nlp
+  - name: pyopencl
+    show: True
+    description: "OpenCL integration for Python, plus shiny features."
+    github_id: inducer/pyopencl
+    pypi_id: pyopencl
+    conda_id: conda-forge/pyopencl
+  - name: python-soundfile
+    show: True
+    description: "SoundFile is an audio library based on libsndfile, CFFI, and.."
+    github_id: bastibe/python-soundfile
+    pypi_id: soundfile
+    category: audio
+  - name: ogb
+    show: True
+    description: "Benchmark datasets, data loaders, and evaluators for graph machine learning."
+    github_id: snap-stanford/ogb
+    pypi_id: ogb
+    category: graph
+  - name: datalad
+    show: True
+    description: "Keep code, data, containers under control with git and git-annex."
+    github_id: datalad/datalad
+    pypi_id: datalad
+    conda_id: conda-forge/datalad
+  - name: pytorch-forecasting
+    show: True
+    description: "Time series forecasting with PyTorch."
+    github_id: jdb78/pytorch-forecasting
+    pypi_id: pytorch-forecasting
+    category: time-series-data
+  - name: kglib
+    show: True
+    description: "Grakn Knowledge Graph Library (ML R&D)."
+    github_id: graknlabs/kglib
+    pypi_id: grakn-kglib
+    category: graph
+  - name: elegy
+    show: True
+    description: "Elegy is a framework-agnostic Trainer interface for the Jax.."
+    github_id: poets-ai/elegy
+    pypi_id: elegy
+    labels: ["tensorflow", "jax"]
+    category: ml-frameworks
+  - name: lightly
+    show: True
+    description: "A python library for self-supervised learning on images."
+    github_id: lightly-ai/lightly
+    pypi_id: lightly
+    labels: ["pytorch"]
+    category: image
+  - name: traingenerator
+    show: True
+    description: "A web app to generate template code for machine learning."
+    github_id: jrieke/traingenerator
+  - name: micrograd
+    show: True
+    description: "A tiny scalar-valued autograd engine and a neural net library.."
+    github_id: karpathy/micrograd
+    pypi_id: micrograd
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: pretrainedmodels
+    show: True
+    description: "Pretrained ConvNets for pytorch: NASNet, ResNeXt,.."
+    github_id: Cadene/pretrained-models.pytorch
+    pypi_id: pretrainedmodels
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: Graphviz
+    show: True
+    description: "Simple Python interface for Graphviz."
+    github_id: xflr6/graphviz
+    pypi_id: graphviz
+    category: data-viz
+  - name: Datasette
+    show: True
+    description: "An open source multi-tool for exploring and publishing data."
+    github_id: simonw/datasette
+    pypi_id: datasette
+    brew_id: datasette
+  - name: tinygrad
+    show: True
+    description: "You like pytorch? You like micrograd? You love tinygrad!."
+    github_id: geohot/tinygrad
+    labels: ["pytorch"]
+    category: pytorch-utils
+  - name: OpenNRE
+    show: True
+    description: "An Open-Source Package for Neural Relation Extraction (NRE)."
+    github_id: thunlp/OpenNRE
+    # TODO: add package manager
+    category: nlp
+  - name: FairScale
+    show: True
+    description: "PyTorch extensions for high performance and large scale training."
+    github_id: facebookresearch/fairscale
+    pypi_id: fairscale
+    labels: ["pytorch"]
+    license: BSD-3-Clause
+    category: distributed-ml
+  - name: Sematch
+    show: True
+    description: "semantic similarity framework for knowledge graph."
+    github_id: gsi-upm/sematch
+    pypi_id: sematch
+    license: Apache-2.0
+    category: graph
+  - name: Wand
+    show: True
+    description: "The ctypes-based simple ImageMagick binding for Python."
+    github_id: emcconville/wand
+    pypi_id: wand
+    license: MIT
+    category: image
+  - name: pyvips
+    show: True
+    description: "python binding for libvips using cffi."
+    github_id: libvips/pyvips
+    pypi_id: pyvips
+    conda_id: conda-forge/pyvips
+    category: image
+  - name: nude.py
+    show: True
+    description: "Nudity detection with Python."
+    github_id: hhatto/nude.py
+    pypi_id: nudepy
+    category: image
+  - name: Norfair
+    show: True
+    description: "Lightweight Python library for adding real-time 2D object tracking to.."
+    github_id: tryolabs/norfair
+    pypi_id: norfair
+    category: image
+  - name: scipy
+    show: True
+    description: "Ecosystem of open-source software for mathematics, science, and engineering."
+    github_id: scipy/scipy
+    pypi_id: scipy
+    description: "Ecosystem of open-source software for mathematics, science, and engineering."
+    conda_id: conda-forge/scipy
+  - name: Auto TS
+    show: True
+    description: "Automatically build ARIMA, SARIMAX, VAR, FB Prophet and XGBoost.."
+    github_id: AutoViML/Auto_TS
+    pypi_id: auto-ts
+    category: time-series-data
+  - name: featurewiz
+    show: True
+    description: "Use advanced feature engineering strategies and select the.."
+    github_id: AutoViML/featurewiz
+    pypi_id: featurewiz
+    category: hyperopt
+  - name: Auto ViML
+    show: True
+    description: "Automatically Build Multiple ML Models with a Single Line of Code..."
+    github_id: AutoViML/Auto_ViML
+    pypi_id: autoviml
+    category: hyperopt
+  - name: ANN Benchmarks
+    show: True
+    github_id: erikbern/ann-benchmarks
+    resource: True
+    category: nn-search
+  - name: Datasets
+    show: True
+    description: "The largest hub of ready-to-use NLP datasets for ML models with.."
+    pypi_id: datasets
+    github_id: huggingface/datasets
+    category: data-loading
+  - name: best-of-web-python - Web Scraping
+    show: True
+    github_id: ml-tooling/best-of-web-python
+    description: "Collection of web-scraping and crawling libraries."
+    resource: True
+    category: web-scraping
+  - name: m2cgen
+    show: True
+    description: "Transform ML models into a native code (Java, C, Python, Go, JavaScript,.."
+    github_id: BayesWitnesses/m2cgen
+    category: "model-serialisation"
+    pypi_id: m2cgen
+  - name: audioread
+    show: True
+    description: "cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio decoding.."
+    github_id: beetbox/audioread
+    category: audio
+    conda_id: conda-forge/audioread
+    pypi_id: audioread
+  - name: python_speech_features
+    show: True
+    github_id: jameslyons/python_speech_features
+    category: audio
+    pypi_id: python_speech_features
+  - name: tinytag
+    show: True
+    description: "Read music meta data and length of MP3, OGG, OPUS, MP4, M4A, FLAC, WMA and.."
+    github_id: devsnd/tinytag
+    category: audio
+    pypi_id: tinytag
+  - name: kapre
+    show: True
+    description: "kapre: Keras Audio Preprocessors."
+    github_id: keunwoochoi/kapre
+    category: audio
+    labels: ["tensorflow"]
+    pypi_id: kapre
+  - name: jieba
+    show: True
+    github_id: fxsjy/jieba
+    category: chinese-nlp
+    conda_id: conda-forge/jieba
+    pypi_id: jieba
+  - name: snownlp
+    show: True
+    github_id: isnowfy/snownlp
+    category: chinese-nlp
+    pypi_id: snownlp
+  - name: bcolz
+    show: True
+    description: "A columnar data container that can be compressed."
+    github_id: Blosc/bcolz
+    category: data-containers
+    conda_id: conda-forge/bcolz
+    pypi_id: bcolz
+  - name: tabulator-py
+    show: True
+    description: "Python library for reading and writing tabular data via streams."
+    github_id: frictionlessdata/tabulator-py
+    category: data-loading
+    conda_id: conda-forge/tabulator-py
+    pypi_id: tabulator
+  - name: messytables
+    show: True
+    description: "Tools for parsing messy tabular data. This is now superseded by.."
+    github_id: okfn/messytables
+    category: data-loading
+    pypi_id: messytables
+  - name: datatest
+    show: True
+    description: "Tools for test driven data-wrangling and data validation."
+    github_id: shawnbrown/datatest
+    category: data-loading
+    pypi_id: datatest
+  - name: rows
+    show: True
+    description: "A common, beautiful interface to tabular data, no matter the format."
+    github_id: turicas/rows
+    category: data-loading
+    pypi_id: rows
+  - name: dpark
+    show: True
+    description: "Python clone of Spark, a MapReduce alike framework in Python."
+    github_id: douban/dpark
+    category: data-pipelines
+    labels: ["spark"]
+    pypi_id: dpark
+  - name: plotnine
+    show: True
+    description: "A grammar of graphics for Python."
+    github_id: has2k1/plotnine
+    category: data-viz
+    conda_id: conda-forge/plotnine
+    pypi_id: plotnine
+  - name: python-ternary
+    show: True
+    description: "Ternary plotting library for python with matplotlib."
+    github_id: marcharper/python-ternary
+    category: data-viz
+    conda_id: conda-forge/python-ternary
+    pypi_id: python-ternary
+  - name: joypy
+    show: True
+    description: "Joyplots in Python with matplotlib & pandas."
+    github_id: sbebo/joypy
+    category: data-viz
+    conda_id: conda-forge/joypy
+    pypi_id: joypy
+  - name: Multicore-TSNE
+    show: True
+    description: "Parallel t-SNE implementation with Python and Torch.."
+    github_id: DmitryUlyanov/Multicore-TSNE
+    category: data-viz
+    labels: ["pytorch"]
+    conda_id: conda-forge/multicore-tsne
+    pypi_id: MulticoreTSNE
+  - name: data-validation
+    show: True
+    description: "Library for exploring and validating machine learning.."
+    github_id: tensorflow/data-validation
+    category: data-viz
+    labels: ["tensorflow", "jupyter"]
+    pypi_id: tensorflow-data-validation
+  - name: lets-plot
+    show: True
+    description: "An open-source plotting library for statistical data."
+    github_id: JetBrains/lets-plot
+    category: data-viz
+    pypi_id: lets-plot
+  - name: petastorm
+    show: True
+    description: "Petastorm library enables single machine or distributed training.."
+    github_id: uber/petastorm
+    category: distributed-ml
+    pypi_id: petastorm
+  - name: ta
+    show: True
+    description: "Technical Analysis Library using Pandas and Numpy."
+    github_id: bukosabino/ta
+    category: financial-data
+    pypi_id: ta
+  - name: stockstats
+    show: True
+    description: "Supply a wrapper ``StockDataFrame`` based on the.."
+    github_id: jealous/stockstats
+    category: financial-data
+    pypi_id: stockstats
+  - name: optunity
+    show: True
+    description: "optimization routines for hyperparameter tuning."
+    github_id: claesenm/optunity
+    category: hyperopt
+    license: BSD-3-Clause
+    pypi_id: optunity
+  - name: mahotas
+    show: True
+    description: "Computer Vision in Python."
+    github_id: luispedro/mahotas
+    category: image
+    conda_id: conda-forge/mahotas
+    pypi_id: mahotas
+  - name: vidgear
+    show: True
+    description: "High-performance cross-platform Video Processing Python framework.."
+    github_id: abhiTronix/vidgear
+    category: image
+    pypi_id: vidgear
+  - name: vit-pytorch
+    show: True
+    description: "Implementation of Vision Transformer, a simple way to.."
+    github_id: lucidrains/vit-pytorch
+    category: image
+    labels: ["pytorch"]
+    pypi_id: vit-pytorch
+  - name: CellProfiler
+    show: True
+    description: "An open-source application for biological image analysis."
+    github_id: CellProfiler/CellProfiler
+    category: image
+    pypi_id: cellprofiler
+  - name: arviz
+    show: True
+    description: "Exploratory analysis of Bayesian models with Python."
+    github_id: arviz-devs/arviz
+    category: interpretability
+    conda_id: conda-forge/arviz
+    pypi_id: arviz
+  - name: dtreeviz
+    show: True
+    description: "A python library for decision tree visualization and model interpretation."
+    github_id: parrt/dtreeviz
+    category: interpretability
+    pypi_id: dtreeviz
+  - name: fairlearn
+    show: True
+    description: "A Python package to assess and improve fairness of machine.."
+    github_id: fairlearn/fairlearn
+    category: interpretability
+    labels: ["sklearn"]
+    conda_id: conda-forge/fairlearn
+    pypi_id: fairlearn
+  - name: random-forest-importances
+    show: True
+    description: "Code to compute permutation and drop-column.."
+    github_id: parrt/random-forest-importances
+    category: interpretability
+    labels: ["sklearn"]
+    pypi_id: rfpimp
+  - name: explainerdashboard
+    show: True
+    description: "Quickly build Explainable AI dashboards that show the inner.."
+    github_id: oegedijk/explainerdashboard
+    category: interpretability
+    pypi_id: explainerdashboard
+  - name: Hub
+    show: True
+    description: "Fastest unstructured dataset management for TensorFlow/PyTorch..."
+    github_id: activeloopai/Hub
+    category: ml-experiments
+    conda_id: conda-forge/hub
+    pypi_id: hub
+  - name: wandb client
+    show: True
+    description: "A tool for visualizing and tracking your machine learning.."
+    github_id: wandb/client
+    category: ml-experiments
+    pypi_id: wandb
+  - name: livelossplot
+    show: True
+    description: "Live training loss plot in Jupyter Notebook for Keras,.."
+    github_id: stared/livelossplot
+    category: ml-experiments
+    labels: ["jupyter"]
+    pypi_id: livelossplot
+  - name: lore
+    show: True
+    description: "Lore makes machine learning approachable for Software Engineers and.."
+    github_id: instacart/lore
+    category: ml-experiments
+    pypi_id: lore
+  - name: hiddenlayer
+    show: True
+    description: "Neural network graphs and training metrics for.."
+    github_id: waleedka/hiddenlayer
+    category: ml-experiments
+    labels: ["pytorch", "tensorflow", "jupyter"]
+    pypi_id: hiddenlayer
+  - name: quinn
+    show: True
+    description: "pyspark methods to enhance developer productivity."
+    github_id: MrPowers/quinn
+    category: ml-experiments
+    labels: ["spark"]
+    pypi_id: quinn
+  - name: Lasagne
+    show: True
+    description: "Lightweight library to build and train neural networks in Theano."
+    github_id: Lasagne/Lasagne
+    category: ml-frameworks
+    pypi_id: lasagne
+  - name: fklearn
+    show: True
+    description: "fklearn: Functional Machine Learning."
+    github_id: nubank/fklearn
+    category: ml-frameworks
+    pypi_id: fklearn
+  - name: tensorflow-upstream
+    show: True
+    description: "TensorFlow ROCm port."
+    github_id: ROCmSoftwarePlatform/tensorflow-upstream
+    category: ml-frameworks
+    labels: ["tensorflow"]
+    pypi_id: "tensorflow-rocm"
+  - name: neon
+    show: True
+    description: "Intel Nervana reference deep learning framework committed to best.."
+    github_id: NervanaSystems/neon
+    category: ml-frameworks
+    pypi_id: nervananeon
+  - name: vaderSentiment
+    show: True
+    description: "VADER Sentiment Analysis. VADER (Valence Aware Dictionary and.."
+    github_id: cjhutto/vaderSentiment
+    category: nlp
+    pypi_id: vadersentiment
+  - name: gpt-2-simple
+    show: True
+    description: "Python package to easily retrain OpenAI's GPT-2 text-.."
+    github_id: minimaxir/gpt-2-simple
+    category: nlp
+    labels: ["tensorflow"]
+    pypi_id: gpt-2-simple
+  - name: pyclustering
+    show: True
+    description: "pyclustring is a Python, C++ data mining library."
+    github_id: annoviko/pyclustering
+    category: others
+    conda_id: conda-forge/pyclustering
+    pypi_id: pyclustering
+  - name: causalml
+    show: True
+    description: "Uplift modeling and causal inference with machine learning.."
+    github_id: uber/causalml
+    category: others
+    pypi_id: causalml
+  - name: TabPy
+    show: True
+    description: "Execute Python code on the fly and display results in Tableau visualizations:."
+    github_id: tableau/TabPy
+    category: others
+    pypi_id: tabpy
+  - name: pycm
+    show: True
+    description: "Multi-class confusion matrix library in Python."
+    github_id: sepandhaghighi/pycm
+    category: others
+    pypi_id: pycm
+  - name: minisom
+    show: True
+    description: "MiniSom is a minimalistic implementation of the Self Organizing.."
+    github_id: JustGlowing/minisom
+    category: others
+    license: CC-BY-3.0
+    pypi_id: minisom
+  - name: impyute
+    show: True
+    description: "Data imputations library to preprocess datasets with missing data."
+    github_id: eltonlaw/impyute
+    category: others
+    pypi_id: impyute
+  - name: rrcf
+    show: True
+    description: "Implementation of the Robust Random Cut Forest algorithm for anomaly.."
+    github_id: kLabUM/rrcf
+    category: others
+    pypi_id: rrcf
+  - name: hmmlearn
+    show: True
+    description: "Hidden Markov Models in Python, with scikit-learn like API."
+    github_id: hmmlearn/hmmlearn
+    category: probabilistics
+    labels: ["sklearn"]
+    conda_id: conda-forge/hmmlearn
+    pypi_id: hmmlearn
+  - name: patsy
+    show: True
+    description: "Describing statistical models in Python using symbolic formulas."
+    github_id: pydata/patsy
+    category: probabilistics
+    conda_id: conda-forge/patsy
+    pypi_id: patsy
+  - name: filterpy
+    show: True
+    description: "Python Kalman filtering and optimal estimation library. Implements.."
+    github_id: rlabbe/filterpy
+    category: probabilistics
+    conda_id: conda-forge/filterpy
+    pypi_id: filterpy
+  - name: SALib
+    show: True
+    description: "Sensitivity Analysis Library in Python (Numpy). Contains Sobol, Morris,.."
+    github_id: SALib/SALib
+    category: probabilistics
+    conda_id: conda-forge/salib
+    pypi_id: salib
+  - name: pingouin
+    show: True
+    description: "Statistical package in Python based on Pandas."
+    github_id: raphaelvallat/pingouin
+    category: probabilistics
+    conda_id: conda-forge/pingouin
+    pypi_id: pingouin
+  - name: scikit-posthocs
+    show: True
+    description: "Multiple Pairwise Comparisons (Post Hoc) Tests in Python."
+    github_id: maximtrp/scikit-posthocs
+    category: probabilistics
+    labels: ["sklearn"]
+    pypi_id: scikit-posthocs
+  - name: pytorch-optimizer
+    show: True
+    description: "torch-optimizer -- collection of optimizers for.."
+    github_id: jettify/pytorch-optimizer
+    category: pytorch-utils
+    labels: ["pytorch"]
+    pypi_id: torch_optimizer
+  - name: fastFM
+    show: True
+    description: "fastFM: A Library for Factorization Machines."
+    github_id: ibayer/fastFM
+    category: recommender-systems
+    pypi_id: fastfm
+  - name: baselines
+    show: True
+    description: "OpenAI Baselines: high-quality implementations of reinforcement.."
+    github_id: openai/baselines
+    category: reinforcement-learning
+    pypi_id: baselines
+  - name: sklearn-crfsuite
+    show: True
+    description: "scikit-learn inspired API for CRFsuite."
+    github_id: TeamHG-Memex/sklearn-crfsuite
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: sklearn-crfsuite
+  - name: combo
+    show: True
+    description: "(AAAI' 20) A Python Toolbox for Machine Learning Model.."
+    github_id: yzhao062/combo
+    category: sklearn-utils
+    labels: ["sklearn", "xgboost"]
+    pypi_id: combo
+  - name: scikit-opt
+    show: True
+    description: "Genetic Algorithm, Particle Swarm Optimization, Simulated.."
+    github_id: guofei9987/scikit-opt
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: scikit-opt
+  - name: scikit-lego
+    show: True
+    description: "Extra blocks for scikit-learn pipelines."
+    github_id: koaning/scikit-lego
+    category: sklearn-utils
+    labels: ["sklearn"]
+    conda_id: conda-forge/scikit-lego
+    pypi_id: scikit-lego
+  - name: fancyimpute
+    show: True
+    description: "Multivariate imputation and matrix completion algorithms.."
+    github_id: iskandr/fancyimpute
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: fancyimpute
+  - name: skope-rules
+    show: True
+    description: "machine learning with logical rules in Python."
+    github_id: scikit-learn-contrib/skope-rules
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: skope-rules
+  - name: iterative-stratification
+    show: True
+    description: "scikit-learn cross validators for iterative.."
+    github_id: trent-b/iterative-stratification
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: iterative-stratification
+  - name: scikit-tda
+    show: True
+    description: "Topological Data Analysis for Python."
+    github_id: scikit-tda/scikit-tda
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: scikit-tda
+  - name: tffm
+    show: True
+    description: "TensorFlow implementation of an arbitrary order Factorization Machine."
+    github_id: geffy/tffm
+    category: tensorflow-utils
+    labels: ["tensorflow"]
+    pypi_id: tffm
+  - name: pmdarima
+    show: True
+    description: "A statistical library designed to fill the void in Python's time series.."
+    github_id: alkaline-ml/pmdarima
+    category: time-series-data
+    pypi_id: pmdarima
+  - name: pyts
+    show: True
+    description: "A Python package for time series classification."
+    github_id: johannfaouzi/pyts
+    category: time-series-data
+    conda_id: conda-forge/pyts
+    pypi_id: pyts
+  - name: pydlm
+    show: True
+    description: "A python library for Bayesian time series modeling."
+    github_id: wwrechard/pydlm
+    category: time-series-data
+    pypi_id: pydlm
+  - name: matrixprofile-ts
+    show: True
+    description: "A Python library for detecting patterns and anomalies.."
+    github_id: target/matrixprofile-ts
+    category: time-series-data
+    pypi_id: matrixprofile-ts
+  - name: robustness
+    show: True
+    description: "A library for experimenting with, training and evaluating neural.."
+    github_id: MadryLab/robustness
+    category: adversarial
+    pypi_id: robustness
+  - name: TTS
+    show: True
+    description: "Deep learning for Text to Speech (Discussion forum:.."
+    github_id: mozilla/TTS
+    category: audio
+  - name: spark-deep-learning
+    show: True
+    description: "Deep Learning Pipelines for Apache Spark."
+    github_id: databricks/spark-deep-learning
+    category: data-pipelines
+    labels: ["spark"]
+  - name: mrq
+    show: True
+    description: "Mr. Queue - A distributed worker task queue in Python using Redis & gevent."
+    github_id: pricingassistant/mrq
+    category: data-pipelines
+    pypi_id: mrq
+  - name: zenml
+    show: True
+    description: "ZenML : MLOps framework to create reproducible ML pipelines for.."
+    github_id: maiot-io/zenml
+    category: data-pipelines
+    pypi_id: zenml
+  - name: flupy
+    show: True
+    description: "Fluent data pipelines for python and your shell."
+    github_id: olirice/flupy
+    category: data-pipelines
+    pypi_id: flupy
+  - name: ploomber
+    show: True
+    description: "Lean Data Science workflows: develop and test locally. Deploy to.."
+    github_id: ploomber/ploomber
+    category: data-pipelines
+    pypi_id: ploomber
+  - name: animatplot
+    show: True
+    description: "A python package for animating plots build on matplotlib."
+    github_id: t-makaro/animatplot
+    category: data-viz
+    conda_id: conda-forge/animatplot
+    pypi_id: animatplot
+  - name: ivis
+    show: True
+    description: "Dimensionality reduction in very large datasets using Siamese.."
+    github_id: beringresearch/ivis
+    category: data-viz
+    labels: ["tensorflow"]
+    pypi_id: ivis
+  - name: somoclu
+    show: True
+    description: "Massively parallel self-organizing maps: accelerate training on.."
+    github_id: peterwittek/somoclu
+    category: distributed-ml
+    conda_id: conda-forge/somoclu
+    pypi_id: somoclu
+  - name: tf-quant-finance
+    show: True
+    description: "High-performance TensorFlow library for quantitative.."
+    github_id: google/tf-quant-finance
+    category: financial-data
+    labels: ["tensorflow"]
+    pypi_id: tf-quant-finance
+  - name: surpriver
+    show: True
+    description: "Find big moving stocks before they move using machine.."
+    github_id: tradytics/surpriver
+    category: financial-data
+  - name: AutoGL
+    show: True
+    description: "An autoML framework & toolkit for machine learning on graphs."
+    github_id: THUMNLab/AutoGL
+    category: graph
+    labels: ["pytorch"]
+    pypi_id: auto-graph-learning
+  - name: pytorch_geometric_temporal
+    show: True
+    github_id: benedekrozemberczki/pytorch_geometric_temporal
+    category: graph
+    labels: ["pytorch"]
+    pypi_id: torch-geometric-temporal
+  - name: sklearn-deap
+    show: True
+    description: "Use evolutionary algorithms instead of gridsearch in.."
+    github_id: rsteca/sklearn-deap
+    category: hyperopt
+    labels: ["sklearn"]
+    pypi_id: sklearn-deap
+  - name: lazypredict
+    show: True
+    description: "Lazy Predict help build a lot of basic models without much code.."
+    github_id: shankarpandala/lazypredict
+    category: hyperopt
+    labels: ["sklearn"]
+    pypi_id: lazypredict
+  - name: image-match
+    show: True
+    description: "Quickly search over billions of images."
+    github_id: EdjoLabs/image-match
+    category: image
+    pypi_id: image_match
+  - name: checklist
+    show: True
+    description: "Beyond Accuracy: Behavioral Testing of NLP models with CheckList."
+    github_id: marcotcr/checklist
+    category: interpretability
+    labels: ["jupyter"]
+    pypi_id: checklist
+  - name: DALEX
+    show: True
+    description: "moDel Agnostic Language for Exploration and eXplanation."
+    github_id: ModelOriented/DALEX
+    category: interpretability
+    pypi_id: dalex
+  - name: deeplift
+    show: True
+    description: "Public facing deeplift repo."
+    github_id: kundajelab/deeplift
+    category: interpretability
+    pypi_id: deeplift
+  - name: tcav
+    show: True
+    description: "Code for the TCAV ML interpretability project."
+    github_id: tensorflow/tcav
+    category: interpretability
+    labels: ["tensorflow"]
+    pypi_id: tcav
+  - name: aequitas
+    show: True
+    description: "Bias and Fairness Audit Toolkit."
+    github_id: dssg/aequitas
+    category: interpretability
+    pypi_id: aequitas
+  - name: fairness-indicators
+    show: True
+    description: "Tensorflow's Fairness Evaluation and Visualization.."
+    github_id: tensorflow/fairness-indicators
+    category: interpretability
+    labels: ["tensorflow", "jupyter"]
+    pypi_id: fairness-indicators
+  - name: model-card-toolkit
+    show: True
+    description: "a tool that leverages rich metadata and lineage.."
+    github_id: tensorflow/model-card-toolkit
+    category: interpretability
+    pypi_id: model-card-toolkit
+  - name: contextual-ai
+    show: True
+    description: "Contextual AI adds explainability to different stages of.."
+    github_id: SAP/contextual-ai
+    category: interpretability
+    pypi_id: contextual-ai
+  - name: aim
+    show: True
+    description: "Aim a super-easy way to record, search and compare 1000s of ML training.."
+    github_id: aimhubio/aim
+    category: ml-experiments
+    pypi_id: aim
+  - name: tfdeploy
+    show: True
+    description: "Deploy tensorflow graphs for fast evaluation and export to.."
+    github_id: riga/tfdeploy
+    category: model-serialisation
+    labels: ["tensorflow"]
+    pypi_id: tfdeploy
+  - name: skift
+    show: True
+    description: "scikit-learn wrappers for Python fastText."
+    github_id: shaypal5/skift
+    category: nlp
+    labels: ["sklearn"]
+    pypi_id: skift
+  - name: textvec
+    show: True
+    description: "Text vectorization tool to outperform TFIDF for classification tasks."
+    github_id: textvec/textvec
+    category: nlp
+    labels: ["sklearn"]
+    pypi_id: textvec
+  - name: pdftabextract
+    show: True
+    description: "A set of tools for extracting tables from PDF files.."
+    github_id: WZBSocialScienceCenter/pdftabextract
+    category: ocr
+    pypi_id: pdftabextract
+  - name: scikit-rebate
+    show: True
+    description: "A scikit-learn-compatible Python implementation of ReBATE, a.."
+    github_id: EpistasisLab/scikit-rebate
+    category: others
+    labels: ["sklearn"]
+    pypi_id: skrebate
+  - name: pandas-ml
+    show: True
+    description: "pandas, scikit-learn, xgboost and seaborn integration."
+    github_id: pandas-ml/pandas-ml
+    category: others
+    labels: ["sklearn", "pandas"]
+    pypi_id: pandas-ml
+  - name: bambi
+    show: True
+    description: "BAyesian Model-Building Interface (Bambi) in Python."
+    github_id: bambinos/bambi
+    category: probabilistics
+    pypi_id: bambi
+  - name: DESlib
+    show: True
+    description: "A Python library for dynamic classifier and ensemble selection."
+    github_id: scikit-learn-contrib/DESlib
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: deslib
+  - name: skggm
+    show: True
+    description: "Scikit-learn compatible estimation of general graphical models."
+    github_id: skggm/skggm
+    category: sklearn-utils
+    labels: ["sklearn"]
+    pypi_id: skggm
+  - name: rq
+    show: True
+    description: "Simple job queues for Python."
+    github_id: rq/rq
+    category: data-pipelines
+    conda_id: conda-forge/rq
+    pypi_id: rq
+  - name: best-of-python - DB Clients
+    show: True
+    github_id: ml-tooling/best-of-python
+    homepage: https://github.com/ml-tooling/best-of-python#database-clients
+    description: "Collection of database clients for python."
+    resource: True
+    category: db-clients
+  - name: Gradio
+    show: True
+    description: "Wrap UIs around any model, share with anyone."
+    pypi_id: gradio
+    github_id: gradio-app/gradio
+    description: "Wrap UIs around any model, share with anyone."
+  - name: FiftyOne
+    show: True
+    description: "Visualize, create, and debug image and video datasets.."
+    pypi_id: fiftyone
+    github_id: voxel51/fiftyone
+    description: "Visualize, create, and debug image and video datasets and model predictions."
+    category: data-viz
+    labels: ["tensorflow", "pytorch", "jupyter"]
+  - name: celer
+    show: True
+    description: "Fast solver for L1-type problems: Lasso, sparse Logisitic regression,.."
+    pypi_id: celer
+    github_id: mathurinm/celer
+    labels: ["sklearn"]
+    category: sklearn-utils
+  - name: sentence-transformers
+    show: True
+    description: "Sentence Embeddings with BERT & XLNet."
+    pypi_id: sentence-transformers
+    github_id: UKPLab/sentence-transformers
+    category: nlp
+    labels: ["pytorch"]
+  - name: pyRDF2Vec
+    show: True
+    description: "Python Implementation and Extension of RDF2Vec."
+    pypi_id: pyrdf2vec
+    github_id: IBCNServices/pyRDF2Vec
+    description: "Python Implementation and Extension of RDF2Vec"
+    category: graph
+  - name: atspy
+    show: True
+    description: "AtsPy: Automated Time Series Models in Python (by @firmai)."
+    github_id: firmai/atspy
+    category: time-series-data
+    pypi_id: atspy
+  - name: cartopy
+    show: True
+    github_id: SciTools/cartopy
+    category: data-viz
+    conda_id: conda-forge/cartopy
+    pypi_id: cartopy
+  - name: joblib
+    show: True
+    description: "Computing with Python functions."
+    github_id: joblib/joblib
+    category: data-pipelines
+    conda_id: conda-forge/joblib
+    pypi_id: joblib
+  - name: findspark
+    show: True
+    description: "Find pyspark to make it importable."
+    github_id: minrk/findspark
+    category: others
+    labels: ["spark"]
+    conda_id: conda-forge/findspark
+    pypi_id: findspark
+  - name: Keras-Preprocessing
+    show: True
+    description: "Utilities for working with image data, text data, and.."
+    github_id: keras-team/keras-preprocessing
+    category: tensorflow-utilities
+    labels: ["tensorflow"]
+    conda_id: conda-forge/keras-preprocessing
+    pypi_id: keras-preprocessing
+  - name: snowballstemmer
+    show: True
+    description: "Snowball compiler and stemming algorithms."
+    github_id: snowballstem/snowball
+    category: nlp
+    conda_id: conda-forge/snowballstemmer
+    pypi_id: snowballstemmer
+  - name: Shapely
+    show: True
+    description: "Manipulation and analysis of geometric objects."
+    github_id: Toblerity/Shapely
+    category: geospatial-data
+    conda_id: conda-forge/shapely
+    pypi_id: shapely
+  - name: Vulkan Kompute
+    show: True
+    description: "General purpose GPU compute framework for cross vendor.."
+    github_id: EthicalML/vulkan-kompute
+    category: gpu-utilities
+    license: Apache-2.0
+    pypi_id: kp
+  - name: pydeck
+    show: True
+    description: "WebGL2 powered geospatial visualization layers."
+    github_id: visgl/deck.gl
+    category: geospatial-data
+    pypi_id: pydeck
+    npm_id: deck.gl
+    labels: ["jupyter"]
+    conda_id: conda-forge/pydeck
+  - name: D-Tale
+    show: True
+    description: "Visualizer for pandas data structures."
+    pypi_id: dtale
+    github_id: man-group/dtale
+    labels: ["pandas", "jupyter"]
+    license: LGPL-2.1
+    category: data-viz
+    conda_id: conda-forge/dtale
+  - name: Mozart
+    show: True
+    description: "An optical music recognition (OMR) system. Converts sheet.."
+    github_id: aashrafh/Mozart
+    category: ocr
+    labels: ["sklearn"]
+  - name: CausalNex
+    show: True
+    description: "A Python library that helps data scientists to infer.."
+    pypi_id: causalnex
+    labels: ["pytorch", "sklearn"]
+    github_id: quantumblacklabs/causalnex
+    category: interpretability
+    license: Apache-2.0
+  - name: bodywork-core
+    show: True
+    description: "MLOps tool for deploying machine learning projects to.."
+    pypi_id: bodywork-core
+    github_id: bodywork-ml/bodywork-core
+    category: data-pipelines
+  - name: scikit-opt
+    show: True
+    description: "Genetic Algorithm, Particle Swarm Optimization, Simulated.."
+    github_id: guofei9987/scikit-opt
+    pypi_id: scikit-opt
+    description: "Swarm Intelligence in Python."
