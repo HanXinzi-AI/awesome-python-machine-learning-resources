@@ -66,14 +66,14 @@
 - ⏱️&nbsp; 项目包上次更新时间
 - 📥&nbsp; 工具库被下载次数
 - 📦&nbsp; 项目依赖的工具库数量
-- <img src="https://git.io/JLy1A" style="display:inline;" width="13" height="13">&nbsp; Tensorflow related project
-- <img src="https://git.io/JLy1F" style="display:inline;" width="13" height="13">&nbsp; Sklearn related project
-- <img src="https://git.io/JLy1Q" style="display:inline;" width="13" height="13">&nbsp; PyTorch related project
-- <img src="https://git.io/JLy1X" style="display:inline;" width="13" height="13">&nbsp; MxNet related project
-- <img src="https://git.io/JLy1N" style="display:inline;" width="13" height="13">&nbsp; Apache Spark related project
-- <img src="https://git.io/JLy1E" style="display:inline;" width="13" height="13">&nbsp; Jupyter related project
-- <img src="https://git.io/JLy1M" style="display:inline;" width="13" height="13">&nbsp; PaddlePaddle related project
-- <img src="https://git.io/JLy1S" style="display:inline;" width="13" height="13">&nbsp; Pandas related project
+- <img src="https://git.io/JLy1A" style="display:inline;" width="13" height="13">&nbsp; 基于Tensorflow的项目
+- <img src="https://git.io/JLy1F" style="display:inline;" width="13" height="13">&nbsp; 基于Sklearn的项目
+- <img src="https://git.io/JLy1Q" style="display:inline;" width="13" height="13">&nbsp; 基于pytorch的项目
+- <img src="https://git.io/JLy1X" style="display:inline;" width="13" height="13">&nbsp; 基于MxNet的项目
+- <img src="https://git.io/JLy1N" style="display:inline;" width="13" height="13">&nbsp; 基于Apache Spark的项目
+- <img src="https://git.io/JLy1E" style="display:inline;" width="13" height="13">&nbsp; 基于Jupyter的项目
+- <img src="https://git.io/JLy1M" style="display:inline;" width="13" height="13">&nbsp; 基于PaddlePaddle的项目
+- <img src="https://git.io/JLy1S" style="display:inline;" width="13" height="13">&nbsp; 基于Pandas的项目
 
 <br>
 
