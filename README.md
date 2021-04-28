@@ -11169,20 +11169,20 @@ _用于连接，操作和查询数据库的库。_
 	conda install -c conda-forge datalad
 	```
 	</details>
-<details><summary><b><a href="https://github.com/solegalli/feature_engine">Feature Engine</a></b> (🥉20 ·  ⭐ 500) - 具有sklearn类功能的功能工程包。<code><a href="http://bit.ly/3aKzpTv">BSD-3</a></code></summary>
+<details><summary><b><a href="https://github.com/inducer/pyopencl">pyopencl</a></b> (🥉20 ·  ⭐ 800) - 适用于Python的OpenCL集成。<code>❗Unlicensed</code></summary>
 
-- [GitHub](https://github.com/solegalli/feature_engine) (👨‍💻 22 · 🔀 140 · 📋 110 - 23% open · ⏱️ 25.04.2021):
+- [GitHub](https://github.com/inducer/pyopencl) (👨‍💻 86 · 🔀 210 · 📦 500 · 📋 270 - 20% open · ⏱️ 23.04.2021):
 
 	```
-	git clone https://github.com/solegalli/feature_engine
+	git clone https://github.com/inducer/pyopencl
 	```
-- [PyPi](https://pypi.org/project/feature_engine) (📥 22K / month):
+- [PyPi](https://pypi.org/project/pyopencl) (📥 20K / month):
 	```
-	pip install feature_engine
+	pip install pyopencl
 	```
-- [Conda](https://anaconda.org/conda-forge/feature_engine) (📥 2.6K · ⏱️ 25.01.2021):
+- [Conda](https://anaconda.org/conda-forge/pyopencl) (📥 380K · ⏱️ 05.04.2021):
 	```
-	conda install -c conda-forge feature_engine
+	conda install -c conda-forge pyopencl
 	```
 	</details>
 <details><summary><b><a href="https://github.com/rasbt/biopandas">BioPandas</a></b> (🥉20 ·  ⭐ 340) - 在pandas DataFrames中处理分子结构。<code><a href="http://bit.ly/3aKzpTv">BSD-3</a></code> <code><img src="https://git.io/JLy1S" style="display:inline;" width="13" height="13"></code></summary>
