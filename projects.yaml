@@ -1,7 +1,7 @@
 configuration:
   markdown_header_file: "config/header.md"
   markdown_footer_file: "config/footer.md"
-  projects_history_folder: "history"
+  #projects_history_folder: "history"
 
 categories:
   - category: "ml-frameworks"
@@ -4460,12 +4460,6 @@ projects:
     pypi_id: vecstack
     github_id: vecxoz/vecstack
     #category: model-ensembles
-  - name: mlens
-    show: True
-    description: "ML-Ensemble high performance ensemble learning."
-    pypi_id: mlens
-    github_id: flennerhag/mlens
-    #category: model-ensembles
   - name: Autograd
     show: True
     description: "Efficiently computes derivatives of numpy code."
@@ -4510,27 +4504,11 @@ projects:
     github_id: astroML/astroML
     conda_id: conda-forge/astroml
     labels: ["sklearn"]
-  - name: Mars
-    show: True
-    description: "Mars is a tensor-based unified framework for large-scale data.."
-    pypi_id: pymars
-    github_id: mars-project/mars
   - name: PySwarms
     show: True
     description: "A research toolkit for particle swarm optimization in Python."
     pypi_id: pyswarms
     github_id: ljvmiranda921/pyswarms
-  - name: modAL
-    show: True
-    description: "A modular active learning framework for Python."
-    pypi_id: modAL
-    github_id: modAL-python/modAL
-    labels: ["sklearn"]
-  - name: apricot
-    show: True
-    description: "apricot implements submodular optimization for the purpose of selecting.."
-    pypi_id: apricot-select
-    github_id: jmschrei/apricot
   - name: DeepChem
     show: True
     description: "Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry,.."
@@ -4597,12 +4575,6 @@ projects:
     pypi_id: blis
     github_id: explosion/cython-blis
     conda_id: conda-forge/cython-blis
-  - name: baikal
-    show: True
-    description: "A graph-based functional API for building complex scikit-learn pipelines."
-    pypi_id: baikal
-    github_id: alegonz/baikal
-    conda_id: conda-forge/cython-blis
   - name: Trax
     show: True
     description: "Trax Deep Learning with Clear Code and Speed."
@@ -4622,11 +4594,6 @@ projects:
     pypi_id: feature_engine
     conda_id: conda-forge/feature_engine
     github_id: solegalli/feature_engine
-  - name: PennyLane
-    show: True
-    description: "PennyLane is a cross-platform Python library for differentiable.."
-    pypi_id: pennylane
-    github_id: PennyLaneAI/PennyLane
   - name: dash
     show: True
     description: "Analytical Web Apps for Python, R, Julia, and Jupyter. No JavaScript.."
@@ -4659,11 +4626,6 @@ projects:
     github_id: m3dev/gokart
     pypi_id: gokart
     category: ml-experiments
-  - name: alibi-detect
-    show: True
-    description: "Algorithms for outlier and adversarial instance detection,.."
-    github_id: SeldonIO/alibi-detect
-    pypi_id: alibi-detect
   - name: PDPbox
     show: True
     description: "python partial dependence plot toolbox."
@@ -4837,12 +4799,6 @@ projects:
     github_id: snap-stanford/ogb
     pypi_id: ogb
     category: graph
-  - name: datalad
-    show: True
-    description: "Keep code, data, containers under control with git and git-annex."
-    github_id: datalad/datalad
-    pypi_id: datalad
-    conda_id: conda-forge/datalad
   - name: pytorch-forecasting
     show: True
     description: "Time series forecasting with PyTorch."
@@ -4869,10 +4825,6 @@ projects:
     pypi_id: lightly
     labels: ["pytorch"]
     category: image
-  - name: traingenerator
-    show: True
-    description: "A web app to generate template code for machine learning."
-    github_id: jrieke/traingenerator
   - name: micrograd
     show: True
     description: "A tiny scalar-valued autograd engine and a neural net library.."
@@ -5299,12 +5251,6 @@ projects:
     github_id: tableau/TabPy
     category: others
     pypi_id: tabpy
-  - name: pycm
-    show: True
-    description: "Multi-class confusion matrix library in Python."
-    github_id: sepandhaghighi/pycm
-    category: others
-    pypi_id: pycm
   - name: minisom
     show: True
     description: "MiniSom is a minimalistic implementation of the Self Organizing.."
@@ -5776,14 +5722,6 @@ projects:
     labels: ["spark"]
     conda_id: conda-forge/findspark
     pypi_id: findspark
-  - name: Keras-Preprocessing
-    show: True
-    description: "Utilities for working with image data, text data, and.."
-    github_id: keras-team/keras-preprocessing
-    category: tensorflow-utilities
-    labels: ["tensorflow"]
-    conda_id: conda-forge/keras-preprocessing
-    pypi_id: keras-preprocessing
   - name: snowballstemmer
     show: True
     description: "Snowball compiler and stemming algorithms."
