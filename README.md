@@ -11304,7 +11304,7 @@ _用于连接，操作和查询数据库的库。_
 	```
 	conda install -c conda-forge cython-blis
 	```
-	</details>
+</details>
 <details><summary><b><a href="https://github.com/jmschrei/apricot">apricot</a></b> (🥉18 ·  ⭐ 310) - 杏出于选择的目的而实现了子模优化。<code><a href="http://bit.ly/34MBwT8">MIT</a></code></summary>
 
 - [GitHub](https://github.com/jmschrei/apricot) (👨‍💻 2 · 🔀 29 · 📥 8 · 📦 15 · 📋 17 - 17% open · ⏱️ 18.02.2021):
@@ -11343,18 +11343,6 @@ _用于连接，操作和查询数据库的库。_
 - [Conda](https://anaconda.org/conda-forge/astroml) (📥 23K · ⏱️ 16.02.2020):
 	```
 	conda install -c conda-forge astroml
-	```
-	</details>
-<details><summary><b><a href="https://github.com/pandas-ml/pandas-ml">pandas-ml</a></b> (🥉17 ·  ⭐ 270 · 💀) - pandas，scikit-learn，xgboost和Seaborn集成。<code><a href="http://bit.ly/3aKzpTv">BSD-3</a></code> <code><img src="https://git.io/JLy1F" style="display:inline;" width="13" height="13"></code> <code><img src="https://git.io/JLy1S" style="display:inline;" width="13" height="13"></code></summary>
-
-- [GitHub](https://github.com/pandas-ml/pandas-ml) (👨‍💻 4 · 🔀 59 · 📥 5 · 📋 41 - 58% open · ⏱️ 05.03.2019):
-
-	```
-	git clone https://github.com/pandas-ml/pandas-ml
-	```
-- [PyPi](https://pypi.org/project/pandas-ml) (📥 6.3K / month):
-	```
-	pip install pandas-ml
 	```
 	</details>
 <details><summary><b><a href="https://github.com/jrieke/traingenerator">traingenerator</a></b> (🥉10 ·  ⭐ 980 · 🐣) - 一个Web应用程序，用于生成机器学习的模板代码。<code><a href="http://bit.ly/34MBwT8">MIT</a></code></summary>
