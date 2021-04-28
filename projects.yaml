@@ -3353,12 +3353,6 @@ projects:
     github_id: tensorflow/recommenders
     labels: ["tensorflow"]
     category: recommender-systems
-  - name: OpenRec
-    show: True
-    description: "OpenRec is an open-source and modular library for neural network-.."
-    pypi_id: openrec
-    github_id: ylongqi/openrec
-    category: recommender-systems
   - name: scikit-surprise
     show: True
     description: "A Python scikit for building and analyzing recommender.."
@@ -4189,13 +4183,6 @@ projects:
     pypi_id: advbox
     github_id: advboxes/AdvBox
     category: adversarial
-  - name: Adversary
-    show: True
-    description: "Tool to generate adversarial text examples and test machine.."
-    pypi_id: Adversary
-    github_id: airbnb/artificial-adversary
-    category: adversarial
-  # Pytorch Utilities
   - name: AdaBound
     show: True
     description: "An optimizer that trains as fast as Adam and as good as SGD."
@@ -4421,18 +4408,6 @@ projects:
     github_id: tensorflow/model-optimization
     labels: ["tensorflow"]
     category: tensorflow-utils
-  # Others
-  - name: tensorly
-    show: True
-    description: "TensorLy: Tensor Learning in Python."
-    pypi_id: tensorly
-    conda_id: conda-forge/tensorly
-    github_id: tensorly/tensorly
-  - name: kmodes
-    show: True
-    description: "Python implementations of the k-modes and k-prototypes clustering.."
-    pypi_id: kmodes
-    github_id: nicodv/kmodes
   - name: SymPy
     show: True
     description: "A computer algebra system written in pure Python."
@@ -4454,12 +4429,6 @@ projects:
     github_id: scikit-multilearn/scikit-multilearn
     labels: ["sklearn"]
     category: sklearn-utils
-  - name: vecstack
-    show: True
-    description: "Python package for stacking (machine learning technique)."
-    pypi_id: vecstack
-    github_id: vecxoz/vecstack
-    #category: model-ensembles
   - name: Autograd
     show: True
     description: "Efficiently computes derivatives of numpy code."
@@ -4696,11 +4665,6 @@ projects:
     github_id: fastnlp/fastNLP
     pypi_id: fastnlp
     category: nlp
-  - name: pysc2
-    show: True
-    description: "StarCraft II Learning Environment."
-    github_id: deepmind/pysc2
-    pypi_id: pysc2
   - name: PaddleHub
     show: True
     description: "Awesome pre-trained models toolkit based on PaddlePaddle.300+.."
@@ -5251,25 +5215,12 @@ projects:
     github_id: tableau/TabPy
     category: others
     pypi_id: tabpy
-  - name: minisom
-    show: True
-    description: "MiniSom is a minimalistic implementation of the Self Organizing.."
-    github_id: JustGlowing/minisom
-    category: others
-    license: CC-BY-3.0
-    pypi_id: minisom
   - name: impyute
     show: True
     description: "Data imputations library to preprocess datasets with missing data."
     github_id: eltonlaw/impyute
     category: others
     pypi_id: impyute
-  - name: rrcf
-    show: True
-    description: "Implementation of the Robust Random Cut Forest algorithm for anomaly.."
-    github_id: kLabUM/rrcf
-    category: others
-    pypi_id: rrcf
   - name: hmmlearn
     show: True
     description: "Hidden Markov Models in Python, with scikit-learn like API."
@@ -5612,20 +5563,6 @@ projects:
     github_id: WZBSocialScienceCenter/pdftabextract
     category: ocr
     pypi_id: pdftabextract
-  - name: scikit-rebate
-    show: True
-    description: "A scikit-learn-compatible Python implementation of ReBATE, a.."
-    github_id: EpistasisLab/scikit-rebate
-    category: others
-    labels: ["sklearn"]
-    pypi_id: skrebate
-  - name: pandas-ml
-    show: True
-    description: "pandas, scikit-learn, xgboost and seaborn integration."
-    github_id: pandas-ml/pandas-ml
-    category: others
-    labels: ["sklearn", "pandas"]
-    pypi_id: pandas-ml
   - name: bambi
     show: True
     description: "BAyesian Model-Building Interface (Bambi) in Python."
