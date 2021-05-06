@@ -743,7 +743,7 @@ _通用机器学习和深度学习框架。_
 	pip install torchbearer
 	```
 </details>
-<details><summary><b><a href="https://github.com/google/objax">Objax</a></b> (🥉20 ·  ⭐ 590) - Objax是提供对象的机器学习框架。<code><a href="http://bit.ly/3nYMfla">Apache-2</a></code> <code>jax</code></summary>
+<details><summary><b><a href="https://github.com/google/objax">Objax</a></b> (🥉20 ·  ⭐ 590) - Objax是加速研究与应用的开源深度学习框架。<code><a href="http://bit.ly/3nYMfla">Apache-2</a></code> <code>jax</code></summary>
 
 - [GitHub](https://github.com/google/objax) (👨‍💻 20 · 🔀 44 · 📦 12 · 📋 87 - 40% open · ⏱️ 21.04.2021):
 
@@ -755,7 +755,7 @@ _通用机器学习和深度学习框架。_
 	pip install objax
 	```
 </details>
-<details><summary><b><a href="https://github.com/mindsdb/mindsdb">MindsDB</a></b> (🥉19 ·  ⭐ 3.7K) - 现有数据库的预测性AI层。<code><a href="http://bit.ly/2M0xdwT">❗️GPL-3.0</a></code> <code><img src="https://git.io/JLy1Q" style="display:inline;" width="13" height="13"></code></summary>
+<details><summary><b><a href="https://github.com/mindsdb/mindsdb">MindsDB</a></b> (🥉19 ·  ⭐ 3.7K) - 为各种现有数据库提供预测性AI层。<code><a href="http://bit.ly/2M0xdwT">❗️GPL-3.0</a></code> <code><img src="https://git.io/JLy1Q" style="display:inline;" width="13" height="13"></code></summary>
 
 - [GitHub](https://github.com/mindsdb/mindsdb) (👨‍💻 56 · 🔀 440 · 📋 570 - 8% open · ⏱️ 23.04.2021):
 
@@ -799,7 +799,7 @@ _通用机器学习和深度学习框架。_
 	git clone https://github.com/facebookresearch/StarSpace
 	```
 </details>
-<details><summary><b><a href="https://github.com/neoml-lib/neoml">NeoML</a></b> (🥉14 ·  ⭐ 590) - 深度学习和传统机器学习学习的机器学习框架。<code><a href="http://bit.ly/3nYMfla">Apache-2</a></code></summary>
+<details><summary><b><a href="https://github.com/neoml-lib/neoml">NeoML</a></b> (🥉14 ·  ⭐ 590) - neoml是可以用于深度学习和传统机器学习的工具库。<code><a href="http://bit.ly/3nYMfla">Apache-2</a></code></summary>
 
 - [GitHub](https://github.com/neoml-lib/neoml) (👨‍💻 21 · 🔀 84 · 📋 30 - 56% open · ⏱️ 24.04.2021):
 
